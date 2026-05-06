@@ -1,0 +1,19 @@
+! Instructions for compiling revised verb model for Plains Cree
+
+read lexc lexicon.lexc
+define Morph
+
+source phonology/phonology.xfscript
+define Phon
+
+set flag-is-epsilon ON
+
+regex Morph .o. Phon .o. Bx -> 0 ;
+
+define FST
+clear stack
+push FST
+
+save stack crk-analyzer.fomabin
+invert net
+save stack crk-generator.fomabin

@@ -1,0 +1,81 @@
+LEXICON VerbArgClass
+@P.class.II@ VerbOrder ;
+@P.class.AI@ VerbOrder ;
+@P.class.TI@ VerbOrder ;
+@P.class.TA@ VerbOrder ;
+
+LEXICON VerbOrder
+@P.order.Ind@ IndependentPrefixes  ;
+@P.order.Cnj@ ConjunctPreverbs ;
+@P.order.Cond@ ConditionalPreverbs ;
+@P.order.Imp@ LexicalPreverbGate ;
+
+LEXICON IndependentPrefixes
+@D.class.II@@P.person.NI@0:@D.class.II@@P.person.NI@nit2 IndependentPrefixesBound ;
+@D.class.II@@P.person.KI@0:@D.class.II@@P.person.KI@kit2 IndependentPrefixesBound ;
+@P.person.NULL@ TensePreverbs ;
+
+LEXICON IndependentPrefixesBound
+0:%< TensePreverbs ;
+
+LEXICON ConjunctPreverbs
+PV/ê+:ê ConjunctPreverbsBound ;
+PV/kâ+:kâ ConjunctPreverbsBound ;
+PV/ta+:ta TensePreverbsBound ;
+PV/ka+:ka TensePreverbsBound ;
+@P.err.Morph@ TensePreverbs ;
+IC+:^IC LexicalPreverbGate ;
+
+LEXICON ConjunctPreverbsBound
+0:-%< TensePreverbs ;
+
+LEXICON ConditionalPreverbs
+@P.conjunct.CC@IC+:@P.conjunct.CC@^IC LexicalPreverbGate ;
+0 LexicalPreverbGate ;
+
+LEXICON TensePreverbs
+0 LexicalPreverbGate ;
+PV/kî+:kî TensePreverbsBound ;
+PV/wî+:wî TensePreverbsBound ;
+PV/kî+PV/wî+:kî-%<wî TensePreverbsBound ;
+@R.order.Ind@PV/ka+:@R.order.Ind@ka TensePreverbsBound ;
+
+LEXICON TensePreverbsBound
+0:-%< LexicalPreverbGate ;
+
+LEXICON LexicalPreverbGate
+0 Reduplication ;
+0 LexicalPreverbs ;
+0 VerbStems ;
+
+LEXICON Reduplication
+RdplW+:d2ay2 ReduplicationBound ;
+RdplS+:d2âh  ReduplicationBound ;
+RdplW+RdplS+:d2ay2-%<d2âh ReduplicationBound ;
+@P.err.Morph@RdplS+RdplW+:@P.err.Morph@d2âh-%<d2ay2 ReduplicationBound ;
+
+LEXICON ReduplicationBound
+0:-%< LexicalPreverbs ;
+0:-%< VerbStems ;
+
+LEXICON LexicalPreverbs
+PV/miyo+:miýo LexicalPreverbsBound ;
+@R.class.AI@@D.comitative.COM@@P.comitative.COM@PV/wîci+:@R.class.AI@@D.comitative.COM@@P.comitative.COM@wî^COMt2 LexicalPreverbsBound ;
+@R.class.TI@@D.comitative.COM@@P.comitative.COM@PV/wîci+:@R.class.TI@@D.comitative.COM@@P.comitative.COM@wî^COMt2 LexicalPreverbsBound ;
+
+LEXICON LexicalPreverbsBound
+0:-%< LexicalPreverbGate ;
+
+! LEXICON ComitativePreverb
+! @D.class.AI@@P.comitative.NULL@ VerbStems ;
+! @R.class.AI@@P.comitative.NULL@ VerbStems ;
+! @R.class.AI@@P.comitative.COM@PV/wîci+:@R.class.AI@@P.comitative.COM@wîci ComitativePreverbBound ;
+
+! LEXICON ComitativePreverbBound
+! 0:-%< VerbStems ;
+
+LEXICON VerbStems
+@R.class.II@ VII_Stems ;
+@R.class.AI@ VAI_Stems ;
+@R.class.TI@ VTI_Stems ;
+@R.class.TA@ VTA_Stems ;
