@@ -1,0 +1,87 @@
+! Copyright © 2015–2026 Alberta Language Technology Lab (ALTLab)
+! http://altlab.ualberta.ca/
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU Affero General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! This program is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU Affero General Public License for more details.
+!
+! You should have received a copy of the GNU Affero General Public License
+! along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+! noun_affixes.lexc
+! ! ALL OF AEW NI CLASSES GO TO A SINGLE NI LEXICON
+! ! ALL OF AEW NA CLASSES GO TO A SINGLE NA LEXICON
+! ! ALL OF AEW DEPENDENT NA CLASSES GO TO A SINGLE NAD LEXICON (including kinship)
+! ! ALL OF AEW DEPENDENT NI CLASSES GO TO A SINGLE NID LEXICON
+! ! i2, i4 (animate dependent only), w3 (animate dependnet nouns only) should be the only special character we need for the noun affixes; -im possesion is done by flag diacritics in the affixes file
+
+! Noun affixes
+
+LEXICON NOUN_PREFIXES
+@P.noun.Indep@     NOUN_INDEP_PREFIXES ;
+@P.noun.DepKin@    NOUN_DEP_KINSHIP_PREFIXES ;
+@P.noun.DepNonKin@ NOUN_DEP_NONKINSHIP_PREFIXES ;
+
+LEXICON NOUN_INDEP_PREFIXES
+@P.person.NI@:@P.person.NI@nit2%<  PRENOUNS_GATE ;
+@P.person.KI@:@P.person.KI@kit2%<  PRENOUNS_GATE ;
+@P.person.O@:@P.person.O@ot2%<     PRENOUNS_GATE ;
+@P.person.NULL@                    PRENOUNS_GATE ;
+
+LEXICON NOUN_DEP_KINSHIP_PREFIXES
+@P.person.NI@:@P.person.NI@ni4%<   PRENOUNS_GATE ;
+@P.person.KI@:@P.person.KI@ki4%<   PRENOUNS_GATE ;
+@P.person.O@:@P.person.O@w3%<      PRENOUNS_GATE ;
+
+LEXICON NOUN_DEP_NONKINSHIP_PREFIXES
+@P.person.NI@:@P.person.NI@ni4%<   PRENOUNS_GATE ;
+@P.person.KI@:@P.person.KI@ki4%<   PRENOUNS_GATE ;
+@P.person.O@:@P.person.O@w3%<      PRENOUNS_GATE ;
+@P.person.MI@0:@P.person.MI@0mi4%< PRENOUNS_GATE ;
+
+LEXICON PRENOUNS_GATE
+NOUNSTEMS_GATE ;
+PRENOUNS ;
+
+!! Here we continue to lexical prenouns (in prenouns.lexc)
+!
+! LEXICON PRENOUNS
+! PN/prenoun+:prenoun PRENOUNS_BOUND ;
+! ...
+! Here we return from prenouns
+
+LEXICON PRENOUNS_BOUND
+@U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%^EGLOT%< PRENOUNS_GATE ;
+@U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@-%<   PRENOUNS_GATE ;
+! @D.cnj.CC@@P.frag.FRAG@ NOUN_FRAG ;
+
+@U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@%^IC%^EGLOT%< PRENOUNS_GATE ;
+@U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@%^IC-%<   PRENOUNS_GATE ;
+! @R.cnj.CC@@C.cnj@@P.frag.FRAG@:@R.cnj.CC@@C.cnj@@P.frag.FRAG@%^IC NOUN_FRAG ;
+
+LEXICON NOUNSTEMS_GATE
+@R.noun.Indep@     NOUN_INDEP_STEMS ;
+@R.noun.DepKin@    NOUN_DEP_KINSHIP_STEMS ;
+@R.noun.DepNonKin@ NOUN_DEP_NONKINSHIP_STEMS ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Looping through the NOUN stems in the following LEXICONs
+!
+! LEXICON NOUN_INDEP_STEMS
+! asikan NA ;
+!
+! LEXICON NOUN_DEP_KINSHIP_STEMS
+! nôhkom:ohkom NA ;
+!
+! LEXICON NOUN_DEP_NONKINSHIP_STEMS
+! mitâs:tâs NA ;
+!
+! End of place-holder noun stems
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
