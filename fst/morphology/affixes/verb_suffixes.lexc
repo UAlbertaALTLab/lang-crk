@@ -1025,7 +1025,7 @@ LEXICON VTA_IMP_SG
 ! Immediate
 ! 2Sg ->
 +Imm+2Sg+1SgO:%>in VERBS_Endlex ;
-+Imm+2Sg+3SgO:%>0 VERBS_Endlex ;
++Imm+2Sg+3SgO:0 VERBS_Endlex ;
 +Imm+2Sg+1PlO:%>inân VERBS_Endlex ;
 +Imm+2Sg+3PlO:%>ik VERBS_Endlex ;
 ! Delayed
