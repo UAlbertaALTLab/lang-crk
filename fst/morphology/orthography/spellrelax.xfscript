@@ -105,7 +105,7 @@ c (->) j,   # English influence on spelling <c>
 # w (->) y,
 
 # Proto-Algonquian dialectal /y/
-n (->) ý,
+ý (->) y,
 
 {iw} (->) {ow},       # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 {ow} (->) {iw},
@@ -140,9 +140,8 @@ c (->) {ts} ,,      # Another English influence on spelling <c>
 
 s (->) š,
 
-# Plains and Woods Cree to Swampy Cree
-n <- [ ý | y ] ,,
-n (->) {th} ,,
+# Woods and Swampy Cree to Plains Cree
+[ ý | y ] (->) [ n | t h ] ,,
 ê (->) [ î | i ] ,,
 
 # Adding missing or reduced short i's in interconsonantal contexts
