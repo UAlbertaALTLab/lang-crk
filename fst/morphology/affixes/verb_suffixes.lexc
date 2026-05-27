@@ -78,24 +78,24 @@ LEXICON VTA-i-PL
 
 LEXICON VII_Diminutive
 0 VII_Class ;
-@D.diminutive.DIM@@R.infl.VII-n@+V+II+Der/Dim:@D.diminutive.DIM@@R.infl.VII-n@%>s^DIMi VII_Class ;
-@D.diminutive.DIM@@R.infl.VII-v@+V+II+Der/Dim:@D.diminutive.DIM@@R.infl.VII-v@%>s^DIMi VII_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VII-n@+V+II+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VII-n@%>s^DIMi VII_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VII-v@+V+II+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VII-v@%>s^DIMi VII_Class ;
 
 LEXICON VAI_Diminutive
 0 VAI_Class ;
-@D.diminutive.DIM@@R.infl.VAI-ae@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@R.infl.VAI-ae@@P.infl.VAI-io@%>s^DIMi VAI_Class ;
-@D.diminutive.DIM@@R.infl.VAI-io@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@R.infl.VAI-io@@P.infl.VAI-io@%>s^DIMi VAI_Class ;
-@D.diminutive.DIM@@R.infl.VAI-n@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@R.infl.VAI-n@@P.infl.VAI-io@%>is^DIMi VAI_Class ;
-@D.diminutive.DIM@@R.infl.VAI-m@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@R.infl.VAI-m@@P.infl.VAI-io@%>as^DIMi VAI_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-ae@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-ae@@P.infl.VAI-io@%>s^DIMi VAI_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-io@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-io@@P.infl.VAI-io@%>s^DIMi VAI_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-n@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-n@@P.infl.VAI-io@%>is^DIMi VAI_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-m@@P.infl.VAI-io@+V+AI+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VAI-m@@P.infl.VAI-io@%>as^DIMi VAI_Class ;
 
 LEXICON VTI_Diminutive
 0 VTI_Class ;
-@D.diminutive.DIM@@R.infl.VTI-m@@P.infl.VTI-io@+V+TI+Der/Dim:@D.diminutive.DIM@@R.infl.VTI-m@@P.infl.VTI-io@%>as^DIMi VTI_Class ;
-@D.diminutive.DIM@@D.infl.VTI-m@@P.infl.VTI-io@+V+TI+Der/Dim:@D.diminutive.DIM@@D.infl.VTI-m@@P.infl.VTI-io@%>s^DIMi VTI_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VTI-m@@P.infl.VTI-io@+V+TI+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@R.infl.VTI-m@@P.infl.VTI-io@%>as^DIMi VTI_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@@D.infl.VTI-m@@P.infl.VTI-io@+V+TI+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@D.infl.VTI-m@@P.infl.VTI-io@%>s^DIMi VTI_Class ;
 
 LEXICON VTA_Diminutive
-0 VTA_Class ;
-@D.diminutive.DIM@+V+TA+Der/Dim:@D.diminutive.DIM@%>s^DIMi VTA_Class ;
+@C.diminutive@ VTA_Class ;
+@D.diminutive.DIM@@P.diminutive.DIM@+V+TA+Der/Dim:@D.diminutive.DIM@@P.diminutive.DIM@@P.diminutive.DIM@ VTA_Class ;
 
 LEXICON VII_Class
 +V+II:0 VII_Derivation ;
@@ -799,79 +799,157 @@ LEXICON VTA_IndependentSuffixes
 @R.person.NULL@ VTA_IND_3 ;
 
 LEXICON VTA_IND_1
-@D.number.SG@ VTA_IND_1_PL ;
-@D.number.PL@ VTA_IND_1_SG ;
+@D.diminutive.DIM@@D.number.SG@ VTA_IND_1_PL ;
+@D.diminutive.DIM@@D.number.PL@ VTA_IND_1_SG ;
+@R.diminutive.DIM@@D.number.SG@ VTA_IND_1_PL_DIM ;
+@R.diminutive.DIM@@D.number.PL@ VTA_IND_1_SG_DIM ;
 
 LEXICON VTA_IND_2
-@D.number.SG@ VTA_IND_2_PL ;
-@D.number.PL@ VTA_IND_2_SG ;
+@D.diminutive.DIM@@D.number.SG@ VTA_IND_2_PL ;
+@D.diminutive.DIM@@D.number.PL@ VTA_IND_2_SG ;
+@R.diminutive.DIM@@D.number.SG@ VTA_IND_2_PL_DIM ;
+@R.diminutive.DIM@@D.number.PL@ VTA_IND_2_SG_DIM ;
 
 LEXICON VTA_IND_3
-@D.number.SG@ VTA_IND_3_PL ;
-@D.number.PL@ VTA_IND_3_SG ;
+@D.diminutive.DIM@@D.number.SG@ VTA_IND_3_PL ;
+@D.diminutive.DIM@@D.number.PL@ VTA_IND_3_SG ;
+@R.diminutive.DIM@@D.number.SG@ VTA_IND_3_PL_DIM ;
+@R.diminutive.DIM@@D.number.PL@ VTA_IND_3_SG_DIM ;
 
 LEXICON VTA_IND_1_SG
 +1Sg+3SgO:%>âw VERBS_Endlex ;
 +1Sg+3PlO:%>âwak VERBS_Endlex ;
 +1Sg+4Sg/PlO:%>i2mâwa VERBS_Endlex ;
 
+LEXICON VTA_IND_1_SG_DIM
++1Sg+3SgO:%>â%>s%^DIMi%>w VERBS_Endlex ;
++1Sg+3PlO:%>â%>s%^DIMi%>wak VERBS_Endlex ;
++1Sg+4Sg/PlO:%>i2%>s%^DIMi%>mâwa VERBS_Endlex ;
+
+!! Alternative implementation
+! LEXICON VTA_IND_1_DIR
+! @D.diminutive.DIM@:@D.diminutive.DIM@%>â VTA_IND_1_SG ;
+! @R.diminutive.DIM@:@D.diminutive.DIM@%>â%>s%^DIMi VTA_IND_1_SG ;
+
+! LEXICON VTA_IND_1_SG
+! +1Sg+3SgO:%>w VERBS_Endlex ;
+! +1Sg+3PlO:%>wak VERBS_Endlex ;
+! +1Sg+4Sg/PlO:%>mâwa VERBS_Endlex ;
+
 LEXICON VTA_IND_1_PL
 +3Sg+1SgO:%>i2k VERBS_Endlex ;
-+3Sg+1PlO:%>i2konân VERBS_Endlex ;
-+1Pl+3SgO:%>ânân VERBS_Endlex ;
-+1Pl+3PlO:%>ânânak VERBS_Endlex ;
-+1Pl+4Sg/PlO:%>i2mânâna VERBS_Endlex ;
-+3Pl+1SgO:%>i2kwak VERBS_Endlex ; !
-+3Pl+1SgO+Dial:%>i2kowak VERBS_Endlex ; !
-+3Pl+1PlO:%>i2konânak VERBS_Endlex ;
-+4Sg/Pl+1PlO:%>i2konâna VERBS_Endlex ;
-+4Sg/Pl+1SgO:%>i2koýiwa VERBS_Endlex ;
++3Sg+1PlO:%>i2ko%>nân VERBS_Endlex ;
++1Pl+3SgO:%>â%>nân VERBS_Endlex ;
++1Pl+3PlO:%>â%>nânak VERBS_Endlex ;
++1Pl+4Sg/PlO:%>i2%>mânâna VERBS_Endlex ;
++3Pl+1SgO:%>i2kw%>ak VERBS_Endlex ; !
++3Pl+1SgO+Dial:%>i2ko%>wak VERBS_Endlex ; !
++3Pl+1PlO:%>i2ko%>nânak VERBS_Endlex ;
++4Sg/Pl+1PlO:%>i2ko%>nâna VERBS_Endlex ;
++4Sg/Pl+1SgO:%>i2ko%>ýiwa VERBS_Endlex ;
+
+LEXICON VTA_IND_1_PL_DIM
++3Sg+1SgO:%>i2%>s%^DIMi%>k VERBS_Endlex ;
++3Sg+1PlO:%>i2ko%>s%^DIMi%>nân VERBS_Endlex ;
++1Pl+3SgO:%>â%>s%^DIMi%>nân VERBS_Endlex ;
++1Pl+3PlO:%>â%>s%^DIMi%>nânak VERBS_Endlex ;
++1Pl+4Sg/PlO:%>i2%>s%^DIMi%>mânâna VERBS_Endlex ;
++3Pl+1SgO:%>i2ko%>s%^DIMi%>wak VERBS_Endlex ; !
++3Pl+1PlO:%>i2ko%>s%^DIMi%>nânak VERBS_Endlex ;
++4Sg/Pl+1PlO:%>i2ko%>s%^DIMi%>nâna VERBS_Endlex ;
++4Sg/Pl+1SgO:%>i2ko%>s%^DIMi%>ýiwa VERBS_Endlex ;
 
 LEXICON VTA_IND_2_SG
-+1Sg+2SgO:%>i2tin VERBS_Endlex ;
-+1Sg+2PlO:%>i2tinâwâw VERBS_Endlex ;
-+2Sg+1SgO:%>in VERBS_Endlex ;
-+2Sg+1PlO:%>inân VERBS_Endlex ;
-+2Sg+3SgO:%>âw VERBS_Endlex ;
-+2Sg+3PlO:%>âwak VERBS_Endlex ;
-+2Sg+4Sg/PlO:%>i2mâwa VERBS_Endlex ;
++1Sg+2SgO:%>i2ti%>n VERBS_Endlex ;
++1Sg+2PlO:%>i2ti%>nâwâw VERBS_Endlex ;
++2Sg+1SgO:%>i%>n VERBS_Endlex ;
++2Sg+1PlO:%>i%>nân VERBS_Endlex ;
++2Sg+3SgO:%>â%>w VERBS_Endlex ;
++2Sg+3PlO:%>â%>wak VERBS_Endlex ;
++2Sg+4Sg/PlO:%>i2%>mâwa VERBS_Endlex ;
+
+LEXICON VTA_IND_2_SG_DIM
++1Sg+2SgO:%>i2ti%>s%^DIMi%>n VERBS_Endlex ;
++1Sg+2PlO:%>i2ti%>s%^DIMi%>nâwâw VERBS_Endlex ;
++2Sg+1SgO:%>i%>s%^DIMi%>n VERBS_Endlex ;
++2Sg+1PlO:%>i%>s%^DIMi%>nân VERBS_Endlex ;
++2Sg+3SgO:%>â%>s%^DIMi%>w VERBS_Endlex ;
++2Sg+3PlO:%>â%>s%^DIMi%>wak VERBS_Endlex ;
++2Sg+4Sg/PlO:%>i2%>s%^DIMi%>mâwa VERBS_Endlex ;
 
 LEXICON VTA_IND_2_PL
 +3Sg+2SgO:%>i2k VERBS_Endlex ;
-+3Sg+21PlO:%>i2konaw VERBS_Endlex ;
-+3Sg+2PlO:%>i2kowâw VERBS_Endlex ;
-+1Pl+2SgO:%>i2tinân VERBS_Endlex ;
-+1Pl+2PlO:%>i2tinân VERBS_Endlex ;
-+21Pl+3SgO:%>ânaw VERBS_Endlex ;
-+21Pl+3PlO:%>ânawak VERBS_Endlex ;
-+21Pl+4Sg/PlO:%>i2mânawa VERBS_Endlex ;
-+2Pl+1SgO:%>inâwâw VERBS_Endlex ;
-+2Pl+3SgO:%>âwâw VERBS_Endlex ;
-+2Pl+1PlO:%>inân VERBS_Endlex ;
-+2Pl+3PlO:%>âwâwak VERBS_Endlex ;
-+2Pl+4Sg/PlO:%>i2mâwâwa VERBS_Endlex ;
-+3Pl+2SgO:%>i2kwak VERBS_Endlex ;
-+3Pl+2SgO:%>i2kowak VERBS_Endlex ;
-+3Pl+21PlO:%>i2konawak VERBS_Endlex ;
-+3Pl+2PlO:%>i2kowâwak VERBS_Endlex ;
-+4Sg/Pl+21PlO:%>i2konawa VERBS_Endlex ;
-+4Sg/Pl+2PlO:%>i2kowâwa VERBS_Endlex ;
-+4Sg/Pl+2SgO:%>i2koýiwa VERBS_Endlex ;
++3Sg+21PlO:%>i2ko%>naw VERBS_Endlex ;
++3Sg+2PlO:%>i2ko%>wâw VERBS_Endlex ;
++1Pl+2SgO:%>i2ti%>nân VERBS_Endlex ;
++1Pl+2PlO:%>i2ti%>nân VERBS_Endlex ;
++21Pl+3SgO:%>â%>naw VERBS_Endlex ;
++21Pl+3PlO:%>â%>nawak VERBS_Endlex ;
++21Pl+4Sg/PlO:%>i2%>mânawa VERBS_Endlex ;
++2Pl+1SgO:%>i%>nâwâw VERBS_Endlex ;
++2Pl+3SgO:%>â%>wâw VERBS_Endlex ;
++2Pl+1PlO:%>i%>nân VERBS_Endlex ;
++2Pl+3PlO:%>â%>wâwak VERBS_Endlex ;
++2Pl+4Sg/PlO:%>i2%>mâwâwa VERBS_Endlex ;
++3Pl+2SgO:%>i2k%>wak VERBS_Endlex ;
++3Pl+2SgO:%>i2ko%>wak VERBS_Endlex ;
++3Pl+21PlO:%>i2ko%>nawak VERBS_Endlex ;
++3Pl+2PlO:%>i2ko%>wâwak VERBS_Endlex ;
++4Sg/Pl+21PlO:%>i2ko%>nawa VERBS_Endlex ;
++4Sg/Pl+2PlO:%>i2ko%>wâwa VERBS_Endlex ;
++4Sg/Pl+2SgO:%>i2ko%>ýiwa VERBS_Endlex ;
+
+LEXICON VTA_IND_2_PL_DIM
++3Sg+2SgO:%>i2%>s%^DIMi%>k VERBS_Endlex ;
++3Sg+21PlO:%>i2ko%>s%^DIMi%>naw VERBS_Endlex ;
++3Sg+2PlO:%>i2ko%>s%^DIMi%>wâw VERBS_Endlex ;
++1Pl+2SgO:%>i2ti%>s%^DIMi%>nân VERBS_Endlex ;
++1Pl+2PlO:%>i2ti%>s%^DIMi%>nân VERBS_Endlex ;
++21Pl+3SgO:%>â%>s%^DIMi%>naw VERBS_Endlex ;
++21Pl+3PlO:%>â%>s%^DIMi%>nawak VERBS_Endlex ;
++21Pl+4Sg/PlO:%>i2%>s%^DIMi%>mânawa VERBS_Endlex ;
++2Pl+1SgO:%>i%>s%^DIMi%>nâwâw VERBS_Endlex ;
++2Pl+3SgO:%>â%>s%^DIMi%>wâw VERBS_Endlex ;
++2Pl+1PlO:%>i%>s%^DIMi%>nân VERBS_Endlex ;
++2Pl+3PlO:%>â%>s%^DIMi%>wâwak VERBS_Endlex ;
++2Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâwâwa VERBS_Endlex ;
++3Pl+2SgO:%>i2k%>s%^DIMi%>wak VERBS_Endlex ;
++3Pl+2SgO:%>i2ko%>s%^DIMi%>wak VERBS_Endlex ;
++3Pl+21PlO:%>i2ko%>s%^DIMi%>nawak VERBS_Endlex ;
++3Pl+2PlO:%>i2ko%>s%^DIMi%>wâwak VERBS_Endlex ;
++4Sg/Pl+21PlO:%>i2ko%>s%^DIMi%>nawa VERBS_Endlex ;
++4Sg/Pl+2PlO:%>i2ko%>s%^DIMi%>wâwa VERBS_Endlex ;
++4Sg/Pl+2SgO:%>i2ko%>s%^DIMi%>ýiwa VERBS_Endlex ;
 
 LEXICON VTA_IND_3_SG
-+3Sg+4Sg/PlO:%>êw VERBS_Endlex ;
-+3Sg+5Sg/PlO:%>i2mêw VERBS_Endlex ;
++3Sg+4Sg/PlO:%>ê%>w VERBS_Endlex ;
++3Sg+5Sg/PlO:%>i2%>mêw VERBS_Endlex ;
+
+LEXICON VTA_IND_3_SG_DIM
++3Sg+4Sg/PlO:%>ê%>s%^DIMi%>w VERBS_Endlex ;
++3Sg+5Sg/PlO:%>i2%>s%^DIMi%>mêw VERBS_Endlex ;
 
 LEXICON VTA_IND_3_PL
-+3Pl+4Sg/PlO:%>êwak VERBS_Endlex ;
-+3Pl+5Sg/PlO:%>i2mêwak VERBS_Endlex ;
-+4Sg/Pl+3PlO:%>i2kowak VERBS_Endlex ;
-+4Sg/Pl+3PlO:%>i2kwak VERBS_Endlex ;
-+4Sg/Pl+3PlO+Dial:%>i2kowak VERBS_Endlex ;
-+4Sg/Pl+3SgO:%>i2k VERBS_Endlex ;
-+4Sg/Pl+3SgO+Dial:%>i2kow VERBS_Endlex ;
-+4Sg/Pl+5Sg/PlO:%>êýiwa VERBS_Endlex ;
-+5Sg/Pl+4Sg/PlO:%>i2koýiwa VERBS_Endlex ;
++3Pl+4Sg/PlO:%>ê%>wak VERBS_Endlex ;
++3Pl+5Sg/PlO:%>i2%>mêwak VERBS_Endlex ;
++4Sg/Pl+3PlO:%>i2ko%>wak VERBS_Endlex ;
++4Sg/Pl+3PlO:%>i2k%>wak VERBS_Endlex ;
++4Sg/Pl+3PlO+Dial:%>i2ko%>wak VERBS_Endlex ;
++4Sg/Pl+3SgO:%>i2%>k VERBS_Endlex ;
++4Sg/Pl+3SgO+Dial:%>i2%>kow VERBS_Endlex ;
++4Sg/Pl+5Sg/PlO:%>ê%>ýiwa VERBS_Endlex ;
++5Sg/Pl+4Sg/PlO:%>i2ko%>ýiwa VERBS_Endlex ;
+
+LEXICON VTA_IND_3_PL_DIM
++3Pl+4Sg/PlO:%>ê%>s%^DIMi%>wak VERBS_Endlex ;
++3Pl+5Sg/PlO:%>i2%>s%^DIMi%>mêwak VERBS_Endlex ;
++4Sg/Pl+3PlO:%>i2ko%>s%^DIMi%>wak VERBS_Endlex ;
+! +4Sg/Pl+3PlO:%>i2k%>wak VERBS_Endlex ;
++4Sg/Pl+3PlO+Dial:%>i2ko%>s%^DIMi%>wak VERBS_Endlex ;
++4Sg/Pl+3SgO:%>i2%>s%^DIMi%>k VERBS_Endlex ;
++4Sg/Pl+3SgO+Dial:%>i2%>s%^DIMi%>kow VERBS_Endlex ;
++4Sg/Pl+5Sg/PlO:%>ê%>s%^DIMi%>ýiwa VERBS_Endlex ;
++5Sg/Pl+4Sg/PlO:%>i2ko%>s%^DIMi%>ýiwa VERBS_Endlex ;
 
 LEXICON VTA_ConjunctSuffixes
 @D.number.SG@ VTA_CNJ_PL ;
