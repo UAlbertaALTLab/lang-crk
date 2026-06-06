@@ -1236,16 +1236,16 @@ LEXICON VTA_COND_PL
 +4Sg/Pl+3PlO:%>i2ko%>twâw%>i VERBS_Endlex ;
 +4Sg/Pl+5Sg/PlO:%>â%>ýic%>i VERBS_Endlex ; ! From NS 152
 ! 5Sg/Pl ->
-+5Sg/Pl+4Sg/PlO:%>i2ko%>ýici VERBS_Endlex ;
++5Sg/Pl+4Sg/PlO:%>i2ko%>ýic%>i VERBS_Endlex ;
 ! X ->
-+X+1SgO:%>i2k%>awiyân%>i VERBS_Endlex ;
-+X+2SgO:%>i2k%>awiyan%>i VERBS_Endlex ;
-+X+3SgO:%>i2%>hc%>i VERBS_Endlex ;
-+X+1PlO:%>i2k%>awiyâhk%>i VERBS_Endlex ;
-+X+21PlO:%>i2k%>awiyahk%>i VERBS_Endlex ;
-+X+2PlO:%>i2k%>awiyêk%>o VERBS_Endlex ;
-+X+3PlO:%>i2%>htwâw%>i VERBS_Endlex ;
-+X+4Sg/PlO:%>i2%>mihc%>i VERBS_Endlex ;
++X+1SgO:%>i2kawi%>yân%>i VERBS_Endlex ;
++X+2SgO:%>i2kawi%>yan%>i VERBS_Endlex ;
++X+3SgO:%>i2hc%>i VERBS_Endlex ;
++X+1PlO:%>i2kawi%>yâhk%>i VERBS_Endlex ;
++X+21PlO:%>i2kawi%>yahk%>i VERBS_Endlex ;
++X+2PlO:%>i2kawi%>yêk%>o VERBS_Endlex ;
++X+3PlO:%>ihtwâw%>i VERBS_Endlex ;
++X+4Sg/PlO:%>i2mihc%>i VERBS_Endlex ;
 ! Inanimate actor
 +%0Sg/Pl+1PlO:%>iko%>yâhk%>i VERBS_Endlex ;
 +%0Sg/Pl+21PlO:%>iko%>yahk%>o VERBS_Endlex ;
@@ -1255,52 +1255,52 @@ LEXICON VTA_COND_PL
 
 LEXICON VTA_COND_PL_DIM
 ! 1Pl ->
-+1Pl+2SgO:%>i2t%>i%^DIMs%>âhki VERBS_Endlex ;
-+1Pl+3SgO:%>â%>s%^DIMi%>yâhki VERBS_Endlex ;
-+1Pl+2PlO:%>i2t%>i%^DIMs%>âhki VERBS_Endlex ;
-+1Pl+3PlO:%>â%>s%^DIMi%>yâhkwâwi VERBS_Endlex ;
-+1Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyâhki VERBS_Endlex ;
++1Pl+2SgO:%>i2t%>i%^DIMs%>âhk%>i VERBS_Endlex ;
++1Pl+3SgO:%>â%>s%^DIMi%>yâhk%>i VERBS_Endlex ;
++1Pl+2PlO:%>i2t%>i%^DIMs%>âhk%>i VERBS_Endlex ;
++1Pl+3PlO:%>â%>s%^DIMi%>yâhkwâw%>i VERBS_Endlex ;
++1Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyâhk%>i VERBS_Endlex ;
 ! 21Pl ->
-+21Pl+3SgO:%>â%>s%^DIMi%>yahki VERBS_Endlex ; ! Variant in Alberta
-+21Pl+3SgO:%>â%>s%^DIMi%>yahko VERBS_Endlex ;
-+21Pl+3PlO:%>â%>s%^DIMi%>yahkwâwi VERBS_Endlex ;
-+21Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyahki VERBS_Endlex ;
-+21Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyahko VERBS_Endlex ;
++21Pl+3SgO:%>â%>s%^DIMi%>yahk%>i VERBS_Endlex ; ! Variant in Alberta
++21Pl+3SgO:%>â%>s%^DIMi%>yahk%>o VERBS_Endlex ;
++21Pl+3PlO:%>â%>s%^DIMi%>yahkwâw%>i VERBS_Endlex ;
++21Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyahk%>i VERBS_Endlex ;
++21Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyahk%>o VERBS_Endlex ;
 ! 2Pl ->
-+2Pl+1SgO:%>i%>s%^DIMi%>yêko VERBS_Endlex ;
-+2Pl+3SgO:%>â%>s%^DIMi%>yêko VERBS_Endlex ;
-+2Pl+1PlO:%>i%>s%^DIMi%>yâhki VERBS_Endlex ;
-+2Pl+3PlO:%>â%>s%^DIMi%>yêkwâwi VERBS_Endlex ;
-+2Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyêko VERBS_Endlex ;
++2Pl+1SgO:%>i%>s%^DIMi%>yêk%>o VERBS_Endlex ;
++2Pl+3SgO:%>â%>s%^DIMi%>yêk%>o VERBS_Endlex ;
++2Pl+1PlO:%>i%>s%^DIMi%>yâhk%>i VERBS_Endlex ;
++2Pl+3PlO:%>â%>s%^DIMi%>yêkwâw%>i VERBS_Endlex ;
++2Pl+4Sg/PlO:%>i2%>s%^DIMi%>mâyêk%>o VERBS_Endlex ;
 ! 3Pl ->
-+3Pl+1SgO:%>it%>i%^DIMs%>wâwi VERBS_Endlex ;
-+3Pl+2SgO:%>i2s%>i%^DIMs%>kwâwi VERBS_Endlex ;
-+3Pl+1PlO:%>i2ko%>s%^DIMi%>yâhkwâwi VERBS_Endlex ;
-+3Pl+21PlO:%>i2ko%>s%^DIMi%>yahkwâwi VERBS_Endlex ;
-+3Pl+2PlO:%>i2ko%>s%^DIMi%>yêkwâwi VERBS_Endlex ;
-+3Pl+4Sg/PlO:%>â%>s%^DIMi%>twâwi VERBS_Endlex ; ! From NS 152
-+3Pl+5Sg/PlO:%>i2%>s%^DIMi%>mâtwâwi VERBS_Endlex ; ! From NS 152
++3Pl+1SgO:%>it%>i%^DIMs%>wâw%>i VERBS_Endlex ;
++3Pl+2SgO:%>i2s%>i%^DIMs%>kwâw%>i VERBS_Endlex ;
++3Pl+1PlO:%>i2ko%>s%^DIMi%>yâhkwâw%>i VERBS_Endlex ;
++3Pl+21PlO:%>i2ko%>s%^DIMi%>yahkwâw%>i VERBS_Endlex ;
++3Pl+2PlO:%>i2ko%>s%^DIMi%>yêkwâw%>i VERBS_Endlex ;
++3Pl+4Sg/PlO:%>â%>s%^DIMi%>twâw%>i VERBS_Endlex ; ! From NS 152
++3Pl+5Sg/PlO:%>i2%>s%^DIMi%>mâtwâw%>i VERBS_Endlex ; ! From NS 152
 ! 4Sg/Pl ->
-+4Sg/Pl+1SgO:%>i2%>s%^DIMi%>mici VERBS_Endlex ;
-+4Sg/Pl+2SgO:%>i2%>s%^DIMi%>miski VERBS_Endlex ;
-+4Sg/Pl+3SgO:%>i2ko%>s%^DIMi%>ci VERBS_Endlex ;
-+4Sg/Pl+1PlO:%>i2ko%>s%^DIMi%>yâhki VERBS_Endlex ;
-+4Sg/Pl+21PlO:%>i2ko%>s%^DIMi%>yahki VERBS_Endlex ;
-+4Sg/Pl+21PlO:%>i2ko%>s%^DIMi%>yahko VERBS_Endlex ;
-+4Sg/Pl+2PlO:%>i2ko%>s%^DIMi%>yêko VERBS_Endlex ;
-+4Sg/Pl+3PlO:%>i2ko%>s%^DIMi%>twâwi VERBS_Endlex ;
-+4Sg/Pl+5Sg/PlO:%>â%>s%^DIMi%>ýici VERBS_Endlex ; ! From NS 152
++4Sg/Pl+1SgO:%>i2%>s%^DIMi%>mic%>i VERBS_Endlex ;
++4Sg/Pl+2SgO:%>i2%>s%^DIMi%>misk%>i VERBS_Endlex ;
++4Sg/Pl+3SgO:%>i2ko%>s%^DIMi%>cvi VERBS_Endlex ;
++4Sg/Pl+1PlO:%>i2ko%>s%^DIMi%>yâhk%>i VERBS_Endlex ;
++4Sg/Pl+21PlO:%>i2ko%>s%^DIMi%>yahk%>i VERBS_Endlex ;
++4Sg/Pl+21PlO:%>i2ko%>s%^DIMi%>yahk%>o VERBS_Endlex ;
++4Sg/Pl+2PlO:%>i2ko%>s%^DIMi%>yêk%>o VERBS_Endlex ;
++4Sg/Pl+3PlO:%>i2ko%>s%^DIMi%>twâw%>i VERBS_Endlex ;
++4Sg/Pl+5Sg/PlO:%>â%>s%^DIMi%>ýic%>i VERBS_Endlex ; ! From NS 152
 ! 5Sg/Pl ->
-+5Sg/Pl+4Sg/PlO:%>i2ko%>s%^DIMi%>ýici VERBS_Endlex ;
++5Sg/Pl+4Sg/PlO:%>i2ko%>s%^DIMi%>ýic%>i VERBS_Endlex ;
 ! X ->
-+X+1SgO:%>i2k%>i%^DIMs%>awiyâni VERBS_Endlex ;
-+X+2SgO:%>i2k%>i%^DIMs%>awiyani VERBS_Endlex ;
-+X+3SgO:%>i2%>s%^DIMi%>hci VERBS_Endlex ;
-+X+1PlO:%>i2k%>i%^DIMs%>awiyâhki VERBS_Endlex ;
-+X+21PlO:%>i2k%>i%^DIMis%>awiyahki VERBS_Endlex ;
-+X+2PlO:%>i2k%>i%^DIMs%>awiyêko VERBS_Endlex ;
-+X+3PlO:%>i2%>s%^DIMi%>htwâwi VERBS_Endlex ;
-+X+4Sg/PlO:%>i2%>s%^DIMi%>mihci VERBS_Endlex ;
++X+1SgO:%>i2kawi%>%s^DIMi%>yân%>i VERBS_Endlex ;
++X+2SgO:%>i2kawi%>s%^DIMi%>yan%>i VERBS_Endlex ;
++X+3SgO:%>i2hc%>i%^DIMs%>i VERBS_Endlex ;
++X+1PlO:%>i2kawi%>s%^DIMi%>yâhk%>i VERBS_Endlex ;
++X+21PlO:%>i2kawi%>s%^DIMi%>i VERBS_Endlex ;
++X+2PlO:%>i2kawi%>s%^DIMi%>yêk%>o VERBS_Endlex ;
++X+3PlO:%>i2htwaw%>i%^DIMs%>i VERBS_Endlex ;
++X+4Sg/PlO:%>i2mihc%>i%^DIMs%>i VERBS_Endlex ;
 ! Inanimate actor
 +%0Sg/Pl+1PlO:%>iko%>s%^DIMi%>yâhk%>i VERBS_Endlex ;
 +%0Sg/Pl+21PlO:%>iko%>s%^DIMi%>yahk%>o VERBS_Endlex ;
