@@ -831,14 +831,18 @@ LEXICON VTA_IND_3
 @R.diminutive.DIM@@D.number.PL@ VTA_IND_3_SG_DIM ;
 
 LEXICON VTA_IND_1_SG
-+1Sg+3SgO:%>âw VERBS_Endlex ;
-+1Sg+3PlO:%>âwak VERBS_Endlex ;
-+1Sg+4Sg/PlO:%>i2mâwa VERBS_Endlex ;
++1Sg+3SgO:%>â%>w VERBS_Endlex ;
++1Sg+3PlO:%>â%>wak VERBS_Endlex ;
++1Sg+4Sg/PlO:%>i2%>mâwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1SgO:%>iko%>n VERBS_ENDLEX ;
 
 LEXICON VTA_IND_1_SG_DIM
 +1Sg+3SgO:%>â%>s%^DIMi%>w VERBS_Endlex ;
 +1Sg+3PlO:%>â%>s%^DIMi%>wak VERBS_Endlex ;
 +1Sg+4Sg/PlO:%>i2%>s%^DIMi%>mâwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1SgO:%>iko%>s%^DIMi%>n VERBS_ENDLEX ;
 
 !! Alternative implementation
 ! LEXICON VTA_IND_1_DIR
@@ -862,6 +866,8 @@ LEXICON VTA_IND_1_PL
 +3Pl+1PlO:%>i2ko%>nânak VERBS_Endlex ;
 +4Sg/Pl+1PlO:%>i2ko%>nâna VERBS_Endlex ;
 +4Sg/Pl+1SgO:%>i2ko%>ýiwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1PlO:%>iko%>nân VERBS_ENDLEX ;
 
 LEXICON VTA_IND_1_PL_DIM
 +3Sg+1SgO:%>i2ko%>s%^DIMi VERBS_Endlex ;
@@ -873,6 +879,8 @@ LEXICON VTA_IND_1_PL_DIM
 +3Pl+1PlO:%>i2ko%>s%^DIMi%>nânak VERBS_Endlex ;
 +4Sg/Pl+1PlO:%>i2ko%>s%^DIMi%>nâna VERBS_Endlex ;
 +4Sg/Pl+1SgO:%>i2ko%>s%^DIMi%>ýiwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1PlO:%>iko%>s%^DIMi%>nân VERBS_ENDLEX ;
 
 LEXICON VTA_IND_2_SG
 +1Sg+2SgO:%>i2ti%>n VERBS_Endlex ;
@@ -882,6 +890,7 @@ LEXICON VTA_IND_2_SG
 +2Sg+3SgO:%>â%>w VERBS_Endlex ;
 +2Sg+3PlO:%>â%>wak VERBS_Endlex ;
 +2Sg+4Sg/PlO:%>i2%>mâwa VERBS_Endlex ;
++%0Sg/Pl+2SgO:%>iko%>n VERBS_ENDLEX ;
 
 LEXICON VTA_IND_2_SG_DIM
 +1Sg+2SgO:%>i2ti%>s%^DIMi%>n VERBS_Endlex ;
@@ -891,6 +900,7 @@ LEXICON VTA_IND_2_SG_DIM
 +2Sg+3SgO:%>â%>s%^DIMi%>w VERBS_Endlex ;
 +2Sg+3PlO:%>â%>s%^DIMi%>wak VERBS_Endlex ;
 +2Sg+4Sg/PlO:%>i2%>s%^DIMi%>mâwa VERBS_Endlex ;
++%0Sg/Pl+2SgO:%>iko%>s%^DIMi%>n VERBS_ENDLEX ;
 
 LEXICON VTA_IND_2_PL
 +3Sg+2SgO:%>i2k VERBS_Endlex ;
@@ -913,6 +923,10 @@ LEXICON VTA_IND_2_PL
 +4Sg/Pl+21PlO:%>i2ko%>nawa VERBS_Endlex ;
 +4Sg/Pl+2PlO:%>i2ko%>wâwa VERBS_Endlex ;
 +4Sg/Pl+2SgO:%>i2ko%>ýiwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+21PlO:%>iko%>naw VERBS_ENDLEX ;
++%0Sg/Pl+21PlO:%>iko%>nânaw VERBS_ENDLEX ;
++%0Sg/Pl+2PlO:%>iko%>nâwâw VERBS_ENDLEX ;
 
 LEXICON VTA_IND_2_PL_DIM
 +3Sg+2SgO:%>i2ko%>s%^DIMi VERBS_Endlex ;
@@ -935,14 +949,24 @@ LEXICON VTA_IND_2_PL_DIM
 +4Sg/Pl+21PlO:%>i2ko%>s%^DIMi%>nawa VERBS_Endlex ;
 +4Sg/Pl+2PlO:%>i2ko%>s%^DIMi%>wâwa VERBS_Endlex ;
 +4Sg/Pl+2SgO:%>i2ko%>s%^DIMi%>ýiwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+21PlO:%>iko%>s%^DIMi%>naw VERBS_ENDLEX ;
++%0Sg/Pl+21PlO:%>iko%>s%^DIMi%>nânaw VERBS_ENDLEX ;
++%0Sg/Pl+2PlO:%>iko%>s%^DIMi%>nâwâw VERBS_ENDLEX ;
 
 LEXICON VTA_IND_3_SG
 +3Sg+4Sg/PlO:%>ê%>w VERBS_Endlex ;
 +3Sg+5Sg/PlO:%>i2%>mêw VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+3SgO:%>iko%>w VERBS_ENDLEX ;
++%0Sg/Pl+4Sg/PlO:%>iko%>ýiwa VERBS_ENDLEX ;
 
 LEXICON VTA_IND_3_SG_DIM
 +3Sg+4Sg/PlO:%>ê%>s%^DIMi%>w VERBS_Endlex ;
 +3Sg+5Sg/PlO:%>i2%>s%^DIMi%>mêw VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+3SgO:%>iko%>s%^DIMi%>w VERBS_ENDLEX ;
++%0Sg/Pl+4Sg/PlO:%>iko%>s%^DIMi%>ýiwa VERBS_ENDLEX ;
 
 LEXICON VTA_IND_3_PL
 +3Pl+4Sg/PlO:%>ê%>wak VERBS_Endlex ;
@@ -954,6 +978,8 @@ LEXICON VTA_IND_3_PL
 +4Sg/Pl+3SgO+Dial:%>i2ko%>w VERBS_Endlex ;
 +4Sg/Pl+5Sg/PlO:%>ê%>ýiwa VERBS_Endlex ;
 +5Sg/Pl+4Sg/PlO:%>i2ko%>ýiwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+3PlO:%>iko%>wak VERBS_ENDLEX ;
 
 LEXICON VTA_IND_3_PL_DIM
 +3Pl+4Sg/PlO:%>ê%>s%^DIMi%>wak VERBS_Endlex ;
@@ -965,6 +991,8 @@ LEXICON VTA_IND_3_PL_DIM
 +4Sg/Pl+3SgO+Dial:%>i2ko%>s%^DIMi%>w VERBS_Endlex ;
 +4Sg/Pl+5Sg/PlO:%>ê%>s%^DIMi%>ýiwa VERBS_Endlex ;
 +5Sg/Pl+4Sg/PlO:%>i2ko%>s%^DIMi%>ýiwa VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+3PlO:%>iko%>s%^DIMi%>wak VERBS_ENDLEX ;
 
 LEXICON VTA_ConjunctSuffixes
 @D.diminutive.DIM@@D.number.SG@ VTA_CNJ_PL ;
@@ -993,6 +1021,10 @@ LEXICON VTA_CNJ_SG
 +3Sg+2PlO:%>i2ko%>yêk VERBS_Endlex ;
 +3Sg+4Sg/PlO:%>â%>t VERBS_Endlex ;
 +3Sg+5Sg/PlO:%>i2%>mât VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1SgO:%>iko%>yân VERBS_EndLex ;
++%0Sg/Pl+2SgO:%>iko%>yan VERBS_EndLex ;
++%0Sg/Pl+3SgO:%>iko%>t VERBS_EndLex ;
 
 LEXICON VTA_CNJ_SG_DIM
 ! 1Sg ->
@@ -1015,6 +1047,10 @@ LEXICON VTA_CNJ_SG_DIM
 +3Sg+2PlO:%>i2ko%>s%^DIMi%>yêk VERBS_Endlex ;
 +3Sg+4Sg/PlO:%>â%>s%^DIMi%>t VERBS_Endlex ;
 +3Sg+5Sg/PlO:%>i2%>s%^DIMi%>mât VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1SgO:%>iko%>s%^DIMi%>yân VERBS_EndLex ;
++%0Sg/Pl+2SgO:%>iko%>s%^DIMi%>yan VERBS_EndLex ;
++%0Sg/Pl+3SgO:%>iko%>s%^DIMi%>t VERBS_EndLex ;
 
 LEXICON VTA_CNJ_PL
 ! 1Pl ->
@@ -1052,6 +1088,12 @@ LEXICON VTA_CNJ_PL
 +4Sg/Pl+5Sg/PlO:%>â%>ýit VERBS_Endlex ;
 ! 5Sg/Pl ->
 +5Sg/Pl+4Sg/PlO:%>i2ko%>ýit VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1PlO:%>iko%>yâhk VERBS_EndLex ;
++%0Sg/Pl+21PlO:%>iko%>yahk VERBS_EndLex ;
++%0Sg/Pl+2PlO:%>iko%>yêk VERBS_EndLex ;
++%0Sg/Pl+3PlO:%>iko%>cik VERBS_EndLex ;
++%0Sg/Pl+4Sg/PlO:%>iko%>ýit VERBS_EndLex ;
 
 LEXICON VTA_CNJ_PL_DIM
 ! 1Pl ->
@@ -1089,6 +1131,12 @@ LEXICON VTA_CNJ_PL_DIM
 +4Sg/Pl+5Sg/PlO:%>â%>s%^DIMi%>ýit VERBS_Endlex ;
 ! 5Sg/Pl ->
 +5Sg/Pl+4Sg/PlO:%>i2ko%>s%^DIMi%>ýit VERBS_Endlex ;
+! Inanimate actor
++%0Sg/Pl+1PlO:%>iko%>s%^DIMi%>yâhk VERBS_EndLex ;
++%0Sg/Pl+21PlO:%>iko%>s%^DIMi%>yahk VERBS_EndLex ;
++%0Sg/Pl+2PlO:%>iko%>s%^DIMi%>yêk VERBS_EndLex ;
++%0Sg/Pl+3PlO:%>iko%>s%^DIMi%>cik VERBS_EndLex ;
++%0Sg/Pl+4Sg/PlO:%>iko%>s%^DIMi%>ýit VERBS_EndLex ;
 
 LEXICON VTA_ConditionalSuffixes
 @D.diminutive.DIM@@D.number.SG@ VTA_COND_PL ;
