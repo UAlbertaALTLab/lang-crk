@@ -1120,6 +1120,15 @@ LEXICON VTA_CNJ_PL
 +4Sg/Pl+5Sg/PlO:%>â%>ýit VERBS_Endlex ;
 ! 5Sg/Pl ->
 +5Sg/Pl+4Sg/PlO:%>i2ko%>ýit VERBS_Endlex ;
+! Unspecified actor
++X+1SgO:%>i2kawi%>yân VERBS_Endlex ;
++X+2SgO:%>i2kawi%>yan VERBS_Endlex ;
++X+3SgO:%>i2ht VERBS_Endlex ;
++X+1PlO:%>i2kawi%>yâhk VERBS_Endlex ;
++X+21PlO:%>i2kawi%>yahk VERBS_Endlex ;
++X+2PlO:%>i2kawi%>yêk VERBS_Endlex ;
++X+3PlO:%>i2hc%>ik VERBS_Endlex ;
++X+4Sg/PlO:%>i2miht VERBS_Endlex ;
 ! Inanimate actor
 +%0Sg/Pl+1PlO:%>iko%>yâhk VERBS_EndLex ;
 +%0Sg/Pl+21PlO:%>iko%>yahk VERBS_EndLex ;
@@ -1163,7 +1172,16 @@ LEXICON VTA_CNJ_PL_DIM
 +4Sg/Pl+5Sg/PlO:%>â%>s%^DIMi%>ýit VERBS_Endlex ;
 ! 5Sg/Pl ->
 +5Sg/Pl+4Sg/PlO:%>i2ko%>s%^DIMi%>ýit VERBS_Endlex ;
-! Inanimate actor
+! X (Unspecified actor) ->
++X+1SgO:%>i2kawi%>s%^DIMi%>yân VERBS_Endlex ;
++X+2SgO:%>i2kawi%>s%^DIMi%>yan VERBS_Endlex ;
++X+3SgO:%>i2ht%>i%^DIMs VERBS_Endlex ;
++X+1PlO:%>i2kawi%>s%^DIMi%>yâhk VERBS_Endlex ;
++X+21PlO:%>i2kawi%>s%^DIMi%>yahk VERBS_Endlex ;
++X+2PlO:%>i2kawi%>s%^DIMi%>yêk VERBS_Endlex ;
++X+3PlO:%>i2hc%>i%^DIMs%>ik VERBS_Endlex ;
++X+4Sg/PlO:%>i2miht%>i%^DIMs VERBS_Endlex ;
+! 0Sg/Pl (Inanimate actor) ->
 +%0Sg/Pl+1PlO:%>iko%>s%^DIMi%>yâhk VERBS_EndLex ;
 +%0Sg/Pl+21PlO:%>iko%>s%^DIMi%>yahk VERBS_EndLex ;
 +%0Sg/Pl+2PlO:%>iko%>s%^DIMi%>yêk VERBS_EndLex ;
