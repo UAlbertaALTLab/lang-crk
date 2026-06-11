@@ -424,34 +424,23 @@ NI_POSS_LOC_COMBO_SUFFIXES ;
 LEXICON NI_POSS_LOC_COMBO_SUFFIXES
 ! Singular possessors
 @U.person.NI@+Px1Sg+Loc:@U.person.NI@%>i2hk  NOUN_ENDLEX ;
-@U.person.NI@+Px1Sg+Loc:@U.person.NI@%>i2h  NOUN_ENDLEX ;
 @U.person.KI@+Px2Sg+Loc:@U.person.KI@%>i2hk NOUN_ENDLEX ;
-@U.person.KI@+Px2Sg+Loc:@U.person.KI@%>i2h NOUN_ENDLEX ;
 @U.person.O@+Px3Sg+Loc:@U.person.O@%>i2hk   NOUN_ENDLEX ;
-@U.person.O@+Px3Sg+Loc:@U.person.O@%>i2h   NOUN_ENDLEX ;
 ! @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  NOUN_ENDLEX ;
-@U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâh  NOUN_ENDLEX ;
 @U.person.KI@+Px12Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
-@U.person.KI@+Px12Pl+Loc:@U.person.KI@%>i2nâh NOUN_ENDLEX ;
 @U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  NOUN_ENDLEX ;
-@U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâh  NOUN_ENDLEX ;
 @U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   NOUN_ENDLEX ;
-@U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâh   NOUN_ENDLEX ;
 ! Obviative possessor
 @U.person.O@+Px4Sg/Pl+Loc:@U.person.O@%>i2ýihk NOUN_ENDLEX ;
-@U.person.O@+Px4Sg/Pl+Loc:@U.person.O@%>i2ýih NOUN_ENDLEX ;
 ! Unspecified possessor
 @U.person.MI@+PxX+Loc:@U.person.MI@%>i2hk NOUN_ENDLEX ;
-@U.person.MI@+PxX+Loc:@U.person.MI@%>i2h NOUN_ENDLEX ;
 
 LEXICON NI_NUMBER_LOC_SUFFIXES
 @D.number.PL@ NI_NUMBER_SUFFIXES_SG ; 
 @D.number.SG@+Pl:@D.number.SG@%>a NOUN_ENDLEX ;
 @R.person.NULL@+Loc:@R.person.NULL@%>i2hk NOUN_ENDLEX ;
-@R.person.NULL@+Loc:@R.person.NULL@%>i2h NOUN_ENDLEX ;
-! @R.person.NULL@+Loc+Dial/East:@R.person.NULL@%>i2h NOUN_ENDLEX ;
 
 LEXICON NI_NUMBER_SUFFIXES_SG
 @D.sg@+Sg:@D.sg@0 NOUN_ENDLEX ; ! Zero Sg morpheme for non NI-4w cases
@@ -480,21 +469,13 @@ LEXICON NOUN_IRREGULARS
 ôsi+N+I+Px4Sg/Pl:otôtiýiw OSI_SUFFIXES ;
 ! Locative combos
 ôsi+N+I+Px1Sg+Loc:nitôtihk # ;
-ôsi+N+I+Px1Sg+Loc:nitôtih # ;
 ôsi+N+I+Px2Sg+Loc:kitôtihk # ;
-ôsi+N+I+Px2Sg+Loc:kitôtih # ;
 ôsi+N+I+Px3Sg+Loc:otôtihk # ;
-ôsi+N+I+Px3Sg+Loc:otôtih # ;
 ôsi+N+I+Px1Pl+Loc:nitôtinâhk # ;
-ôsi+N+I+Px1Pl+Loc:nitôtinâh # ;
 ôsi+N+I+Px12Pl+Loc:kitôtinâhk # ;
-ôsi+N+I+Px12Pl+Loc:kitôtinâh # ;
 ôsi+N+I+Px2Pl+Loc:kitôtiwâhk # ;
-ôsi+N+I+Px2Pl+Loc:kitôtiwâh # ;
 ôsi+N+I+Px3Pl+Loc:otôtiwâhk # ;
-ôsi+N+I+Px3Pl+Loc:otôtiwâh # ;
 ôsi+N+I+Px4Sg/Pl+Loc:otôtiýihk # ;
-ôsi+N+I+Px4Sg/Pl+Loc:otôtiýih # ;
 
 LEXICON OSI_SUFFIXES
 +Sg:0 # ;
