@@ -14,9 +14,38 @@ LEXICON IndependentPrefixes
 @D.class.II@@P.person.NI@0:@D.class.II@@P.person.NI@nit2 IndependentPrefixesBound ;
 @D.class.II@@P.person.KI@0:@D.class.II@@P.person.KI@kit2 IndependentPrefixesBound ;
 @P.person.NULL@ TensePreverbs ;
+! ta- for only 3rd person forms (should the epenthetic form be -t(2)- or -(h)-?)
+@P.person.NULL@PV/ta+:@P.person.NULL@ta  TensePreverbsBound ;
+! (n|k)ohci-/(n|k)ôh- series
+! nôh-/nohci-
+@P.person.NI@PV/ôh+:@P.person.NI@n%<ôh       IndependentPreverbsBound ;
+@P.person.NI@PV/ohci+:@P.person.NI@n%<ohci   IndependentPreverbsBound ;
+! kôh-/kohci-
+@P.person.KI@PV/ôh+:@P.person.KI@k%<ôh       IndependentPreverbsBound ;
+@P.person.KI@PV/ohci+:@P.person.KI@k%<ohci   IndependentPreverbsBound ;
+! ôh-/kohci-
+@P.person.NULL@PV/ôh+:@P.person.NULL@ôh      IndependentPreverbsBound ;
+@P.person.NULL@yPV/ohci+:@U.person.NULL@ohci IndependentPreverbsBound ;
+!! Hypotheticals
+! nikâh-
+@P.person.NI@PV/kâh+:@P.person.NI@ni%<kâh    IndependentPreverbsBound ;
+! kikâh-
+@P.person.KI@PV/kâh+:@P.person.KI@ki%<kâh    IndependentPreverbsBound ;
+! kâh-
+@P.person.NULL@yPV/kâh+:@P.person.NULL@kâh   IndependentPreverbsBound ;
+! nitâh-
+@P.person.NI@PV/tâh+:@P.person.NI@ni%<tâh    IndependentPreverbsBound ;
+! kitâh-
+@P.person.KI@PV/tâh+:@P.person.KI@ki%<tâh    IndependentPreverbsBound ;
+! tâh-
+@P.person.NULL@PV/tâh+:@P.person.NULL@tâh    IndependentPreverbsBound ;
+
 
 LEXICON IndependentPrefixesBound
 0:%< TensePreverbs ;
+
+LEXICON IndependentPreverbsBound
+0:-%< TensePreverbs ;
 
 LEXICON ConjunctPreverbs
 PV/ê+:ê ConjunctPreverbsBound ;
