@@ -232,3 +232,163 @@ y4
 %<
 %>
 
+!! Noun tags
+
++N
++A
++I
++D
++Der/Dim
++Distr
++Err/Dim
++Err/Orth
++Err/Thm
++Loc
++Obv
++Pl
++Px12Pl
++Px1Pl
++Px1Sg
++Px2Pl
++Px2Sg
++Px3Pl
++Px3Sg
++Px4Sg/Pl
++PxX
++Sg
+PN/
+
+!! Flags !!
+
+!! cnj
+@C.cnj@
+!  cnj.CC
+@D.cnj.CC@
+@R.cnj.CC@
+
+!! dep
+@D.dep@
+!  dep.DEP
+@P.dep.DEP@
+@R.dep.DEP@
+
+!! dim
+@D.dim@
+!  dim.DIM
+@D.dim.DIM@
+@P.dim.DIM@
+@R.dim.DIM@
+!  dim.IS
+@P.dim.IS@
+@R.dim.IS@
+!  dim.ISIS
+@P.dim.ISIS@
+@R.dim.ISIS@
+!  dim.NULL
+@D.dim.NULL@
+@P.dim.NULL@
+
+!! err
+!  err.Thm
+@D.err.Thm@
+@P.err.Thm@
+@R.err.Thm@
+
+!! err2
+!  err2.Dim
+@D.err2.Dim@
+@P.err2.Dim@
+@R.err2.Dim@
+
+!! frag
+!  frag.FRAG
+@D.frag.FRAG@
+
+!! im
+!  im.IM
+@D.im.IM@
+@R.im.IM@
+
+!! joiner
+!  joiner.NULL
+@D.joiner.NULL@
+@R.joiner.NULL@
+@U.joiner.NULL@
+!  joiner.hyphen
+@U.joiner.hyphen@
+
+!! loc
+!  loc.NULL
+@D.loc.NULL@
+
+!! noun
+!  noun.DepKin
+@P.noun.DepKin@
+@R.noun.DepKin@
+!  noun.DepNonKin
+@P.noun.DepNonKin@
+@R.noun.DepNonKin@
+!  noun.Indep
+@P.noun.Indep@
+@R.noun.Indep@
+
+!! number
+!  number.PL
+@D.number.PL@
+!  number.SG
+@D.number.SG@
+
+!! person
+!  person.KI
+@P.person.KI@
+@U.person.KI@
+!  person.MI
+@P.person.MI@
+@U.person.MI@
+!  person.NI
+@P.person.NI@
+@U.person.NI@
+!  person.NULL
+@D.person.NULL@
+@P.person.NULL@
+@R.person.NULL@
+@U.person.NULL@
+!  person.O
+@D.person.O@
+@P.person.O@
+@R.person.O@
+@U.person.O@
+
+!! sg
+@C.sg@
+@D.sg@
+!  sg.A
+@P.sg.A@
+@R.sg.A@
+!  sg.I
+@P.sg.I@
+@R.sg.I@
+
+!! theme
+!  theme.IM
+@D.theme.IM@
+@P.theme.IM@
+@R.theme.IM@
+!  theme.IM2
+@D.theme.IM2@
+@P.theme.IM2@
+@R.theme.IM2@
+
+!! Morphophonemic special characters
+i2
+i4
+r2
+t2
+w3
+
+!! Triggers
+^DIM
+^EGLOT
+^IC
+
+!! END OF MULTICHARACTER SYMBOL DECLARATIONS !!
