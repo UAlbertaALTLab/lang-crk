@@ -112,6 +112,7 @@ LEXICON VAI_Derivation
 @P.infl.VTI-m@+Der/Trans:@P.infl.VTI-m@%>st VTI_Class ;
 @P.infl.VTA-1@+Der/Bnf:@P.infl.VTA-1@%>staw VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>h VTA_Class ;
+@R.noun.Indep@+Der/Nom:@R.noun.Indep@%>win NI ;
 
 ! VTI derivation
 

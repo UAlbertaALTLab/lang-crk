@@ -54,6 +54,7 @@ IC+
 RdplS+
 RdplW+
 
+! Derivational features
 +Der/Dim
 +Der/Com
 +Der/Rflx
@@ -65,6 +66,8 @@ RdplW+
 +Der/Dtr
 +Der/Trans
 +Der/makan
++Der/Nom
+! Derivational suffixes
 +Der/iwê
 +Der/iso
 +Der/ito
@@ -126,6 +129,7 @@ RdplW+
 @D.conjunct.CC@
 @D.comitative.COM@
 @C.diminutive@
+@C.comitative@
 
 @P.err.Orth@
 @P.err.Morph@
