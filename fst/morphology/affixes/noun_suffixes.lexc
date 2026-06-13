@@ -498,12 +498,6 @@ LEXICON NOUN_ENDLEX3
 @D.err2.Dim@ NOUN_ENDLEX4 ;
 
 LEXICON NOUN_ENDLEX4
-@D.frag.FRAG@@D.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.frag.FRAG@@D.cnj.CC@@R.joiner.NULL@ # ;
-@D.frag.FRAG@@D.cnj.CC@@D.joiner.NULL@ # ;
-! Adding changed conjunct trigger: IC
-@D.frag.FRAG@@R.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.frag.FRAG@@R.cnj.CC@@R.joiner.NULL@%^IC # ;
-@D.frag.FRAG@@R.cnj.CC@@D.joiner.NULL@:@D.frag.FRAG@@R.cnj.CC@@D.joiner.NULL@%^IC # ;
-! Stem-only fragments
-! @R.frag.FRAG@ VERB_FRAG_END ;
+# ;
 
 !! End of noun affixes LEXC code
