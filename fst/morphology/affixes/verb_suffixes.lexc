@@ -88,6 +88,8 @@ LEXICON VII_Diminutive
 
 LEXICON VII_Derivation
 0 VII_Inflection ;
+! Nominalization
+@R.noun.Indep@+Der/Nom:@R.noun.Indep@%>win NI ;
 
 ! VAI derivation
 
@@ -112,6 +114,7 @@ LEXICON VAI_Derivation
 @P.infl.VTI-m@+Der/Trans:@P.infl.VTI-m@%>st VTI_Class ;
 @P.infl.VTA-1@+Der/Bnf:@P.infl.VTA-1@%>staw VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>h VTA_Class ;
+! Nominalization
 @R.noun.Indep@+Der/Nom:@R.noun.Indep@%>win NI ;
 
 ! VTI derivation
@@ -138,6 +141,9 @@ LEXICON VTI_Derivation
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>i2h VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>amih VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>amoh VTA_Class ;
+! Nominalization
+@R.noun.Indep@@D.infl.VTI-m@+Der/Nom:@R.noun.Indep@@D.infl.VTI-m@%>win NI ;
+@R.noun.Indep@@R.infl.VTI-m@+Der/Nom:@R.noun.Indep@@R.infl.VTI-m@%>amo%>win NI ;
 
 ! VTA derivation
 
@@ -155,6 +161,8 @@ LEXICON VTA_Derivation
 @P.infl.VAI-io@@P.number.PL@+Der/Rcpr:@P.infl.VAI-io@@P.number.PL@%>i2to VAI_Class ;
 @D.morf.amaw@@P.morf.amaw@+Der/Bnf:@D.morf.amaw@@P.morf.amaw@%>amaw VTA_Class ;
 @P.infl.VAI-ae@+Der/Dtr:@P.infl.VAI-ae@%>i2^T2Ckê VAI_Class ;
+! Nominalization
+@R.noun.Indep@+Der/Nom:@R.noun.Indep@%>owin NI ;
 
 !! Inflection
 
