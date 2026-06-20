@@ -108,15 +108,29 @@ LEXICON VAI_Diminutive
 
 LEXICON VAI_Derivation
 0 VAI_Inflection ;
+@D.agent@ VAI_Derivation2 ;
+@R.agent.AGENT@ VAI_AgentiveSuffix ;
+
+LEXICON VAI_Derivation2
 @P.infl.VII-n@@P.number.SG@+Der/Pass:@P.infl.VII-n@@P.number.SG@%>m^V2VVakan3 VII_Class ; ! VII-1
 @P.infl.VTI-m@+Der/Trans:@P.infl.VTI-m@%>st VTI_Class ;
 @P.infl.VTA-1@+Der/Bnf:@P.infl.VTA-1@%>staw VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>h VTA_Class ;
-! Nominalization
+!! Nominalization
+! Productive nominalized -win and variants
 @R.infl.VAI-ae@@R.noun.Indep@+Der/Nom:@R.infl.VAI-ae@@R.noun.Indep@%>win NI ;
 @R.infl.VAI-io@@R.noun.Indep@+Der/Nom:@R.infl.VAI-io@@R.noun.Indep@%>win NI ;
 @R.infl.VAI-n@@R.noun.Indep@+Der/Nom:@R.infl.VAI-n@@R.noun.Indep@%>iwin NI ;
 @R.infl.VAI-m@@R.noun.Indep@+Der/Nom:@R.infl.VAI-m@@R.noun.Indep@%>amo%>win NI ;
+! Older nominalizer -n
+@D.infl.VAI-n@@R.noun.Indep@+Der/Nom2:@D.infl.VAI-n@@R.noun.Indep@%>n2 NI ;
+
+LEXICON VAI_AgentiveSuffix
+! Agentive o- ... -(amo)w
+@R.infl.VAI-ae@+Der/Age:@R.infl.VAI-ae@%>w NA ;
+@R.infl.VAI-io@+Der/Age:@R.infl.VAI-io@%>w NA ;
+@R.infl.VAI-n@+Der/Age:@R.infl.VAI-n@%>iw NA ;
+@R.infl.VAI-m@+Der/Age:@R.infl.VAI-m@%>m%>ow NA ;
 
 ! VTI derivation
 
@@ -136,6 +150,11 @@ LEXICON VTI_Diminutive
 
 LEXICON VTI_Derivation
 0 VTI_Inflection ;
+@D.agent@ VTI_Derivation2 ;
+@R.agent.AGENT@ VTI_AgentiveSuffix ;
+@R.agent.AGENT@@P.infl.VAI-ae@+Der/Antip:@R.agent.AGENT@@P.infl.VAI-ae@%>i2^T2Ckê VAI_Class ;
+
+LEXICON VTI_Derivation2
 @P.infl.VII-v@+Der/Pass:@P.infl.VII-v@%>i2^T2Ckâtê VII_Class ;
 @P.infl.VAI-ae@+Der/Antip:@P.infl.VAI-ae@%>i2^T2Ckê VAI_Class ;
 @P.infl.VTA-1@+Der/Bnf:@P.infl.VTA-1@%>amaw VTA_Class ;
@@ -145,7 +164,14 @@ LEXICON VTI_Derivation
 ! Nominalization
 @R.noun.Indep@@D.infl.VTI-m@+Der/Nom:@R.noun.Indep@@D.infl.VTI-m@%>win NI ;
 @R.noun.Indep@@R.infl.VTI-m@+Der/Nom:@R.noun.Indep@@R.infl.VTI-m@%>amo%>win NI ;
-@R.noun.Indep@+Der/Ins:@R.noun.Indep@%>i2kan NI ;
+@R.noun.Indep@+Der/Ins:@R.noun.Indep@%>i2^T2Ckan NI ;
+@R.noun.Indep@+Der/Ins2:@R.noun.Indep@%>i2^T2Ckâkan NI ;
+
+LEXICON VTI_AgentiveSuffix
+! Agentive o- ... -(amo)w
+@R.infl.VTI-ae@+Der/Age:@R.infl.VTI-ae@%>w NA ;
+@R.infl.VTI-io@+Der/Age:@R.infl.VTI-io@%>w NA ;
+@R.infl.VTI-m@+Der/Age:@R.infl.VTI-m@%>am%>ow NA ;
 
 ! VTA derivation
 
@@ -164,6 +190,8 @@ LEXICON VTA_Derivation
 @D.morf.amaw@@P.morf.amaw@+Der/Bnf:@D.morf.amaw@@P.morf.amaw@%>amaw VTA_Class ;
 @P.infl.VAI-ae@+Der/Dtr:@P.infl.VAI-ae@%>i2^T2Ckê VAI_Class ;
 @P.infl.VAI-io@+Der/MedPass:@P.infl.VAI-io@%>o VAI_Class ;
+! Nominalization
+@R.noun.Indep@+Der/Goa:@R.noun.Indep@%>âkan NA ;
 
 !! Inflection
 

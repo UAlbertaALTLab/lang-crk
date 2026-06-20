@@ -67,7 +67,12 @@ RdplW+
 +Der/MedPass
 +Der/Trans
 +Der/Nom
++Der/Nom2
 +Der/Ins
++Der/Ins2
++Der/Age
++Der/Goa
++Der/Ex
 ! Derivational suffixes
 +Der/makan
 +Der/iwê
@@ -132,6 +137,12 @@ RdplW+
 @D.comitative.COM@
 @C.diminutive@
 @C.comitative@
+@P.agent.AGENT@
+@R.agent.AGENT@
+@D.agent.AGENT@
+@D.agent@
+@P.der.EXIST@
+@R.der.EXIST@
 
 @P.err.Orth@
 @P.err.Morph@
@@ -171,6 +182,7 @@ RdplW+
 @R.infl.VAI-io@
 @R.infl.VAI-n@
 @R.infl.VAI-m@
+@D.infl.VAI-n@
 
 @P.infl.VTI-1@
 @P.infl.VTI-2@

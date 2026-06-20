@@ -247,6 +247,7 @@ LEXICON NID
 LEXICON NA_POSS_GATE1
 @D.person.NULL@ NA_THEME_SUFFIX1 ;
 @R.person.NULL@ NA_DIM_GATE ;
+! @R.der.EXIST@@P.infl.VAI-io@+Der/Ex:@R.der.EXIST@@P.infl.VAI-io@%>i2wi VAI_Class ;
 
 LEXICON NA_THEME_SUFFIX1
 ! Standard forms

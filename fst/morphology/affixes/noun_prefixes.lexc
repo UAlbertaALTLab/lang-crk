@@ -48,7 +48,15 @@ LEXICON NOUN_DEP_NONKINSHIP_PREFIXES
 LEXICON PRENOUNS_GATE
 NOUNSTEMS_GATE ;
 PRENOUNS ;
-@R.noun.Indep@ NominalVerbDerivatives ;
+@R.noun.Indep@ DerivationGate ;
+
+LEXICON DerivationGate
+@P.agent.AGENT@:@P.agent.AGENT@ot2%< AgentiveGate ;
+0 NominalVerbDerivatives ;
+
+LEXICON AgentiveGate
+@P.class.AI@ LexicalPreverbGate ;
+@P.class.TI@ LexicalPreverbGate ;
 
 LEXICON NominalVerbDerivatives
 @P.class.II@ LexicalPreverbGate ;
