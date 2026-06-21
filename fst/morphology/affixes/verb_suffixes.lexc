@@ -159,6 +159,8 @@ LEXICON VTI_Derivation
 LEXICON VTI_Derivation2
 @P.infl.VII-v@+Der/Pass:@P.infl.VII-v@%>i2^T2Ckâtê VII_Class ;
 @P.infl.VAI-ae@+Der/Antip:@P.infl.VAI-ae@%>i2^T2Ckê VAI_Class ;
+@R.infl.VTI-m@@P.infl.VTI-io@+Der/Hab:@R.infl.VTI-m@@P.infl.VTI-io@%>aski VTI_Class ;
+@D.infl.VTI-m@@P.infl.VTI-io@+Der/Hab:@D.infl.VTI-m@@P.infl.VTI-io@%>ski VTI_Class ;
 @P.infl.VTA-1@+Der/Bnf:@P.infl.VTA-1@%>amaw VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>i2h VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>amih VTA_Class ;
