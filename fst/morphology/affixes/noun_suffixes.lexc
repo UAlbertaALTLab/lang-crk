@@ -304,7 +304,7 @@ LEXICON NA_POSS_SUFFIXES
 @U.person.NULL@                    NA_NUMBER_OBV_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@@C.sg@+Px1Pl:@U.person.NI@@C.sg@%>i2nân  NA_NUMBER_OBV_LOC_SUFFIXES ;
-@U.person.KI@@C.sg@+Px12Pl:@U.person.KI@@C.sg@%>i2naw NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.KI@@C.sg@+Px21Pl:@U.person.KI@@C.sg@%>i2naw NA_NUMBER_OBV_LOC_SUFFIXES ;
 @U.person.KI@@C.sg@+Px2Pl:@U.person.KI@@C.sg@%>i2wâw  NA_NUMBER_OBV_LOC_SUFFIXES ;
 @U.person.O@@C.sg@+Px3Pl:@U.person.O@@C.sg@0%>i2wâw   NA_NUMBER_OBV_LOC_SUFFIXES ;
 ! Obviative possessor
@@ -319,7 +319,7 @@ LEXICON NA_POSS_LOC_COMBO_SUFFIXES
 @U.person.O@+Px3Sg+Loc:@U.person.O@%>i2hk   NOUN_ENDLEX ;
 ! Plural possessors
 @U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  NOUN_ENDLEX ;
-@U.person.KI@+Px12Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
+@U.person.KI@+Px21Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
 @U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  NOUN_ENDLEX ;
 @U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   NOUN_ENDLEX ;
 ! Obviative possessor
@@ -429,7 +429,7 @@ LEXICON NI_POSS_SUFFIXES
 @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@@C.sg@+Px1Pl:@U.person.NI@@C.sg@%>i2nân  NI_NUMBER_LOC_SUFFIXES ;
-@U.person.KI@@C.sg@+Px12Pl:@U.person.KI@@C.sg@%>i2naw NI_NUMBER_LOC_SUFFIXES ;
+@U.person.KI@@C.sg@+Px21Pl:@U.person.KI@@C.sg@%>i2naw NI_NUMBER_LOC_SUFFIXES ;
 @U.person.KI@@C.sg@+Px2Pl:@U.person.KI@@C.sg@%>i2wâw  NI_NUMBER_LOC_SUFFIXES ;
 @U.person.O@@C.sg@+Px3Pl:@U.person.O@@C.sg@0%>i2wâw   NI_NUMBER_LOC_SUFFIXES ;
 ! Obviative possessor
@@ -446,7 +446,7 @@ LEXICON NI_POSS_LOC_COMBO_SUFFIXES
 ! @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  NOUN_ENDLEX ;
-@U.person.KI@+Px12Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
+@U.person.KI@+Px21Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
 @U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  NOUN_ENDLEX ;
 @U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   NOUN_ENDLEX ;
 ! Obviative possessor
@@ -480,7 +480,7 @@ LEXICON NOUN_IRREGULARS
 ôsi+N+I+Px2Sg:kitôt OSI_SUFFIXES ;
 ôsi+N+I+Px3Sg:otôt OSI_SUFFIXES ;
 ôsi+N+I+Px1Pl:nitôtinân OSI_SUFFIXES ;
-ôsi+N+I+Px12Pl:kitôtinaw OSI_SUFFIXES ;
+ôsi+N+I+Px21Pl:kitôtinaw OSI_SUFFIXES ;
 ôsi+N+I+Px2Pl:kitôtiwâw OSI_SUFFIXES ;
 ôsi+N+I+Px3Pl:otôtiwâw OSI_SUFFIXES ;
 ôsi+N+I+Px4Sg/Pl:otôtiýiw OSI_SUFFIXES ;
@@ -489,7 +489,7 @@ LEXICON NOUN_IRREGULARS
 ôsi+N+I+Px2Sg+Loc:kitôtihk # ;
 ôsi+N+I+Px3Sg+Loc:otôtihk # ;
 ôsi+N+I+Px1Pl+Loc:nitôtinâhk # ;
-ôsi+N+I+Px12Pl+Loc:kitôtinâhk # ;
+ôsi+N+I+Px21Pl+Loc:kitôtinâhk # ;
 ôsi+N+I+Px2Pl+Loc:kitôtiwâhk # ;
 ôsi+N+I+Px3Pl+Loc:otôtiwâhk # ;
 ôsi+N+I+Px4Sg/Pl+Loc:otôtiýihk # ;
