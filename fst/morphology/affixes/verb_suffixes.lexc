@@ -124,6 +124,8 @@ LEXICON VAI_Derivation2
 @R.infl.VAI-m@@R.noun.Indep@+Der/Nom:@R.infl.VAI-m@@R.noun.Indep@%>amo%>win NI ;
 ! Older nominalizer -n
 @D.infl.VAI-n@@R.noun.Indep@+Der/Nom2:@D.infl.VAI-n@@R.noun.Indep@%>n2 NI ;
+! Instrument with -âkan
+@R.noun.Indep@+Der/Ins2:@R.noun.Indep@%>â^INSkan NI ;
 
 LEXICON VAI_AgentiveSuffix
 ! Agentive o- ... -(amo)w
@@ -163,6 +165,7 @@ LEXICON VTI_Derivation2
 ! Nominalization
 @R.noun.Indep@@D.infl.VTI-m@+Der/Nom:@R.noun.Indep@@D.infl.VTI-m@%>win NI ;
 @R.noun.Indep@@R.infl.VTI-m@+Der/Nom:@R.noun.Indep@@R.infl.VTI-m@%>amo%>win NI ;
+! Instruments
 @R.noun.Indep@+Der/Ins:@R.noun.Indep@%>i2^T2Ckan NI ;
 @R.noun.Indep@+Der/Ins2:@R.noun.Indep@%>â^INSkan NI ;
 @R.noun.Indep@+Der/Ins3:@R.noun.Indep@%>i2^T2Ckâkan NI ;
