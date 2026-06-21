@@ -113,6 +113,7 @@ LEXICON VAI_Derivation
 
 LEXICON VAI_Derivation2
 @P.infl.VII-n@@P.number.SG@+Der/Pass:@P.infl.VII-n@@P.number.SG@%>m^V2VVakan3 VII_Class ; ! VII-1
+@P.infl.VAI-io@+Der/Hab:@P.infl.VAI-io@%>ski VAI_Class ;
 @P.infl.VTI-m@+Der/Trans:@P.infl.VTI-m@%>st VTI_Class ;
 @P.infl.VTA-1@+Der/Bnf:@P.infl.VTA-1@%>staw VTA_Class ;
 @P.infl.VTA-1@+Der/Caus:@P.infl.VTA-1@%>h VTA_Class ;
