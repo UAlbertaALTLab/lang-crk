@@ -109,4 +109,4 @@ LEXICON VerbStems
 @R.class.TI@ VTI_Stems ;
 @R.class.TA@ VTA_Stems ;
 ! Existential noun-to-verb derivations
-! @R.class.AI@@P.der.EXIST@ NOUN_INDEP_STEMS ;
+@R.class.AI@@P.exist.EXIST@ NOUN_INDEP_STEMS ;
