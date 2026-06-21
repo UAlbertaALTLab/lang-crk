@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - masinahikanâhtik - ok : # -m animate noun, pencil AEW NA3
+     masinahikanâhtik+N+A+Sg: masinahikanâhtik
+     masinahikanâhtik+N+A+Px1Sg+Sg: nimasinahikanâhtik
+     masinahikanâhtik+N+A+Px2Sg+Sg: kimasinahikanâhtik
+     masinahikanâhtik+N+A+Px1Pl+Sg: nimasinahikanâhtikonân
+     masinahikanâhtik+N+A+Px21Pl+Sg: kimasinahikanâhtikonaw
+     masinahikanâhtik+N+A+Px2Pl+Sg: kimasinahikanâhtikowâw
+
+     masinahikanâhtik+N+A+Pl: masinahikanâhtikwak
+     masinahikanâhtik+N+A+Px1Sg+Pl: nimasinahikanâhtikwak
+     masinahikanâhtik+N+A+Px2Sg+Pl: kimasinahikanâhtikwak
+     masinahikanâhtik+N+A+Px1Pl+Pl: nimasinahikanâhtikonânak
+     masinahikanâhtik+N+A+Px21Pl+Pl: kimasinahikanâhtikonawak
+     masinahikanâhtik+N+A+Px2Pl+Pl: kimasinahikanâhtikowâwak
+     
+     masinahikanâhtik+N+A+Obv: masinahikanâhtikwa
+     masinahikanâhtik+N+A+Px1Sg+Obv: nimasinahikanâhtikwa
+     masinahikanâhtik+N+A+Px2Sg+Obv: kimasinahikanâhtikwa
+     masinahikanâhtik+N+A+Px1Pl+Obv: nimasinahikanâhtikonâna
+     masinahikanâhtik+N+A+Px21Pl+Obv: kimasinahikanâhtikonawa
+     masinahikanâhtik+N+A+Px2Pl+Obv: kimasinahikanâhtikowâwa
+     masinahikanâhtik+N+A+Px3Sg+Obv: omasinahikanâhtikwa
+     masinahikanâhtik+N+A+Px3Pl+Obv: omasinahikanâhtikowâwa
+     masinahikanâhtik+N+A+Px4Sg/Pl+Obv: omasinahikanâhtikoyiwa
+     
+     masinahikanâhtik+N+A+Loc: masinahikanâhtikohk
+     masinahikanâhtik+N+A+Px1Sg+Loc: nimasinahikanâhtikohk
+     masinahikanâhtik+N+A+Px2Sg+Loc: kimasinahikanâhtikohk
+     masinahikanâhtik+N+A+Px1Pl+Loc: nimasinahikanâhtikonâhk
+     masinahikanâhtik+N+A+Px21Pl+Loc: kimasinahikanâhtikonâhk
+     masinahikanâhtik+N+A+Px2Pl+Loc: kimasinahikanâhtikowâhk
+     masinahikanâhtik+N+A+Px3Sg+Loc: omasinahikanâhtikohk
+     masinahikanâhtik+N+A+Px3Pl+Loc: omasinahikanâhtikowâhk
+     masinahikanâhtik+N+A+Px4Sg/Pl+Loc: omasinahikanâhtikoyihk
+
+     masinahikanâhtik+N+A+Der/Dim+N+A+Sg: [masinahikanâhcikos, masinahikanâhcikosis]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px1Sg+Sg: [nimasinahikanâhcikos, nimasinahikanâhcikosis]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px2Sg+Sg: [kimasinahikanâhcikos, kimasinahikanâhcikosis]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px1Pl+Sg: [nimasinahikanâhcikosinân, nimasinahikanâhcikosisinân]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px21Pl+Sg: [kimasinahikanâhcikosinaw, kimasinahikanâhcikosisinaw]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px2Pl+Sg: [kimasinahikanâhcikosiwâw, kimasinahikanâhcikosisiwâw]
+
+
+
+     masinahikanâhtik+N+A+Der/Dim+N+A+Pl: [masinahikanâhcikosak, masinahikanâhcikosisak]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px1Sg+Pl: [nimasinahikanâhcikosak, nimasinahikanâhcikosisak]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px2Sg+Pl: [kimasinahikanâhcikosak, kimasinahikanâhcikosisak]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px1Pl+Pl: [nimasinahikanâhcikosinânak, nimasinahikanâhcikosisinânak]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px21Pl+Pl: [kimasinahikanâhcikosinawak, kimasinahikanâhcikosisinawak]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px2Pl+Pl: [kimasinahikanâhcikosiwâwak, kimasinahikanâhcikosisiwâwak]
+     
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px3Sg+Obv: [omasinahikanâhcikosa, omasinahikanâhcikosisa]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px3Pl+Obv: [omasinahikanâhcikosiwâwa, omasinahikanâhcikosisiwâwa]
+     masinahikanâhtik+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [omasinahikanâhcikosiyiwa, omasinahikanâhcikosisiyiwa]
+
