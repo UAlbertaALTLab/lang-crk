@@ -1,0 +1,107 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - various -  adsf : # Verbal derivations
+
+     # AI -> II: Pass with -makan
+     nipâw+V+AI+Der/Pass+V+II+Ind+3Sg: nipâmakan
+     PV/ê+nipâw+V+AI+Der/Pass+V+II+Cnj+3Sg: ê-nipâmakahk
+     mâham+V+AI+Der/Pass+V+II+Ind+3Sg: mâhâmakan
+     PV/ê+mâham+V+AI+Der/Pass+V+II+Cnj+3Sg: ê-mâhâmakahk
+
+     # AI -> AI: Hab with -ski
+     nipâw+V+AI+Der/Hab+V+AI+Ind+3Sg: nipâskiw
+     nipâw+V+AI+Der/Hab+V+AI+Ind+1Sg: ninipâskin
+     PV/ê+nipâw+V+AI+Der/Hab+V+AI+Cnj+3Sg: ê-nipâskit
+     PV/ê+nipâw+V+AI+Der/Hab+V+AI+Cnj+1Sg: ê-nipâskiyân
+
+     # AI -> TI: Trans with -st
+     atoskêw+V+AI+Der/Trans+V+TI+Ind+3Sg: atoskêstam
+     atoskêw+V+AI+Der/Trans+V+TI+Ind+1Sg: nitatoskêstên
+     PV/ê+atoskêw+V+AI+Der/Trans+V+TI+Cnj+3Sg: ê-atoskêstahk
+     PV/ê+atoskêw+V+AI+Der/Trans+V+TI+Cnj+1Sg: ê-atoskêstamân
+
+     # AI -> TA: Bnf with -staw
+     atoskêw+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: atoskêstawêw
+     atoskêw+V+AI+Der/Bnf+V+TA+Ind+1Sg+3SgO: nitatoskêstawâw
+     atoskêw+V+AI+Der/Bnf+V+TA+Ind+1Sg+2SgO: kitatoskêstâtin
+     atoskêw+V+AI+Der/Bnf+V+TA+Ind+2Sg+1SgO: kitatoskêstawin
+
+     # AI -> TA: Caus with -h
+     atoskêw+V+AI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: atoskêhêw
+     atoskêw+V+AI+Der/Caus+V+TA+Ind+1Sg+3SgO: nitatoskêhâw
+     atoskêw+V+AI+Der/Caus+V+TA+Ind+1Sg+2SgO: kitatoskêhitin
+
+     ## Nominalization
+
+     # AI -> NI: Nom with -(amo)win
+     nipâw+V+AI+Der/Nom+N+I+Sg: nipâwin
+     nipâw+V+AI+Der/Nom+N+I+Px1Pl+Pl: ninipâwininâna
+     atoskêw+V+AI+Der/Nom+N+I+Sg: atoskêwin
+     atoskêw+V+AI+Der/Nom+N+I+Px1Pl+Pl: nitatoskêwininâna
+     mîcisow+V+AI+Der/Nom+N+I+Sg: mîcisowin
+     mîcisow+V+AI+Der/Nom+N+I+Px1Pl+Pl: nimîcisowininâna
+     pimisin+V+AI+Der/Nom+N+I+Sg: pimisiniwin
+     pimisin+V+AI+Der/Nom+N+I+Px1Pl+Pl: nipimisiniwininâna
+     mâham+V+AI+Der/Nom+N+I+Sg: mâhâmowin
+     mâham+V+AI+Der/Nom+N+I+Px1Pl+Pl: nimâhâmowininâna
+
+     # AI -> NI: Nom2 with -n
+     nipâw+V+AI+Der/Nom2+N+I+Sg: nipân
+     nipâw+V+AI+Der/Nom2+N+I+Px1Pl+Pl: ninipâninâna
+     atoskêw+V+AI+Der/Nom2+N+I+Sg: atoskân
+     atoskêw+V+AI+Der/Nom2+N+I+Px1Pl+Pl: nitatoskâninâna
+     mîcisow+V+AI+Der/Nom2+N+I+Sg: mîcison
+     mîcisow+V+AI+Der/Nom2+N+I+Px1Pl+Pl: nimîcisoninâna
+     mâham+V+AI+Der/Nom2+N+I+Sg: mâhên
+     mâham+V+AI+Der/Nom2+N+I+Px1Pl+Pl: nimâhêninâna
+
+     # AI -> NI: Ins2 with  -âkan
+     nipâw+V+AI+Der/Ins2+N+I+Sg: nipâkan
+     nipâw+V+AI+Der/Ins2+N+I+Px1Pl+Pl: ninipâkaninâna
+     atoskêw+V+AI+Der/Ins2+N+I+Sg: atoskâkan
+     atoskêw+V+AI+Der/Ins2+N+I+Px1Pl+Pl: nitatoskâkaninâna
+     mîcisow+V+AI+Der/Ins2+N+I+Sg: [ mîciswâkan, mîcisowâkan ]
+     mîcisow+V+AI+Der/Ins2+N+I+Px1Pl+Pl:  [ nimîciswâkaninâna, nimîcisowâkaninâna ]
+     mâham+V+AI+Der/Ins2+N+I+Sg: mâhâkan
+     mâham+V+AI+Der/Ins2+N+I+Px1Pl+Pl: nimâhâkaninâna
+
+     ## Agentive forms
+     # Agentive o- ... -(amo)w
+     nipâw+V+AI+Der/Age+N+A+Sg: onipâw
+     nipâw+V+AI+Der/Age+N+A+Px1Pl+Pl: nitônipâwinânak
+     atoskêw+V+AI+Der/Age+N+A+Sg: otatoskêw
+     atoskêw+V+AI+Der/Age+N+A+Px1Pl+Pl: nitôtatoskêwinânak
+     mîcisow+V+AI+Der/Age+N+A+Sg: omîcisow
+     mîcisow+V+AI+Der/Age+N+A+Px1Pl+Pl: nitômîcisowinânak
+     pimisin+V+AI+Der/Age+N+A+Sg: opimisiniw
+     pimisin+V+AI+Der/Age+N+A+Px1Pl+Pl: nitôpimisinînânak
+     mâham+V+AI+Der/Age+N+A+Sg: omâhamow
+     mâham+V+AI+Der/Age+N+A+Px1Pl+Pl: nitômâhamônânak
+
+     # Complex forms
+     atoskêw+V+AI+Der/Trans+V+TI+Ind+3Sg: atoskêstam
+     PV/wîci+atoskêw+V+AI+Der/Com+V+TA+Ind+3Sg+4Sg/PlO: [ wîci-atoskêmêw, wîtatoskêmêw ]
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Ind+3Sg: atoskêscikêw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Pass+V+II+Ind+3Sg: atoskêscikêmakan
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: atoskêscikêhêw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Caus+V+TA+Der/Goa+N+A+Sg: atoskêscikêhâkan
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: atoskêscikêstawêw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Goa+N+A+Sg: atoskêscikêstawâkan
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: atoskêscikêstâsow
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Nom+N+I+Sg: atoskêscikêstâsowin
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Ind+3Pl: atoskêscikêstâtowak
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Der/Nom+N+I+Pl: atoskêscikêstâtowina
+
+     # Diminutives
+     atoskêw+V+AI+Der/Dim+V+AI+Ind+3Sg: acoskêsiw
+     PV/wîci+atoskêw+V+AI+Der/Com+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: [ wîci-acoskêmêsiw, wîcacoskêmêsiw ]
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Dim+V+TI+Ind+3Sg: acoskêscasiw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: acoskêscikêscawêsiw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Dim+V+AI+Ind+3Sg: acoskêscikêscâsosiw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Nom+N+I+Der/Dim+N+I+Sg: [ acoskêscikêscâsowinis, acoskêscikêscâsowinisis ]
+
