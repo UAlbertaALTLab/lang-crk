@@ -253,6 +253,8 @@ LEXICON NA_POSS_GATE1
 @R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi VAI_Class ;
 ! Derivation of possessive verbs (AI)
 @R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2 VAI_Class ;
+! Derivation of manufacture verbs (AI)
+@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@+Der/Manuf:@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@%>i2hkê VAI_Class ;
 
 
 LEXICON NA_THEME_SUFFIX1
@@ -376,6 +378,8 @@ LEXICON NI_POSS_GATE1
 @R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi VAI_Class ;
 ! Derivation of possessive verbs (AI)
 @R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2 VAI_Class ;
+! Derivation of manufacture verbs (AI)
+@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@+Der/Manuf:@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@%>i2hkê VAI_Class ;
 
 LEXICON NI_THEME_SUFFIX1
 ! Standard forms
@@ -512,6 +516,6 @@ LEXICON NOUN_ENDLEX3
 
 LEXICON NOUN_ENDLEX4
 ! Only completed agentive circumfixes and existential constructions are allowed to pass
-@D.agent@@D.exist@@D.poss@ # ;
+@D.agent@@D.exist@@D.poss@@D.manuf@ # ;
 
 !! End of noun affixes LEXC code

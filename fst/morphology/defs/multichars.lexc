@@ -76,6 +76,8 @@ RdplW+
 +Der/Ex
 +Der/Ex2
 +Der/Poss
++Der/Manuf
++Der/Hab
 ! Derivational suffixes
 +Der/makan
 +Der/iwê
@@ -155,6 +157,11 @@ RdplW+
 @D.poss.POSS@
 @D.poss@
 @C.poss@
+@P.manuf.MANUF@
+@R.manuf.MANUF@
+@D.manuf.MANUF@
+@D.manuf@
+@C.manuf@
 
 @P.err.Orth@
 @P.err.Morph@

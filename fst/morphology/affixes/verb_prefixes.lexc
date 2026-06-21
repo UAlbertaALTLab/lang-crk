@@ -112,3 +112,6 @@ LEXICON VerbStems
 @R.class.II@@P.exist.EXIST@ NOUN_INDEP_STEMS ;
 @R.class.AI@@P.exist.EXIST@ NOUN_INDEP_STEMS ;
 @R.class.AI@@P.poss.POSS@:@R.class.AI@@P.poss.POSS@ot2%< NOUN_INDEP_STEMS ;
+! Manufacture: N -> VAI with -îhke
+@R.class.AI@@P.manuf.MANUF@ NOUN_INDEP_STEMS ;
+@R.class.AI@@P.manuf.MANUF@ NOUN_DEP_NONKINSHIP_STEMS ;
