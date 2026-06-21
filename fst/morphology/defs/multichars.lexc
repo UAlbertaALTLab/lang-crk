@@ -74,6 +74,7 @@ RdplW+
 +Der/Age
 +Der/Goa
 +Der/Ex
++Der/Ex2
 ! Derivational suffixes
 +Der/makan
 +Der/iwê
@@ -143,8 +144,11 @@ RdplW+
 @D.agent.AGENT@
 @D.agent@
 @C.agent@
-@P.der.EXIST@
-@R.der.EXIST@
+@P.exist.EXIST@
+@R.exist.EXIST@
+@D.exist.EXIST@
+@D.exist@
+@C.exist@
 
 @P.err.Orth@
 @P.err.Morph@
