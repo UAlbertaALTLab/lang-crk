@@ -111,3 +111,4 @@ LEXICON VerbStems
 ! Existential noun-to-verb derivations
 @R.class.II@@P.exist.EXIST@ NOUN_INDEP_STEMS ;
 @R.class.AI@@P.exist.EXIST@ NOUN_INDEP_STEMS ;
+@R.class.AI@@P.poss.POSS@:@R.class.AI@@P.poss.POSS@ot2%< NOUN_INDEP_STEMS ;

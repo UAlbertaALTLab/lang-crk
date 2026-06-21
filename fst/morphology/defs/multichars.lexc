@@ -75,6 +75,7 @@ RdplW+
 +Der/Goa
 +Der/Ex
 +Der/Ex2
++Der/Poss
 ! Derivational suffixes
 +Der/makan
 +Der/iwê
@@ -149,6 +150,11 @@ RdplW+
 @D.exist.EXIST@
 @D.exist@
 @C.exist@
+@P.poss.POSS@
+@R.poss.POSS@
+@D.poss.POSS@
+@D.poss@
+@C.poss@
 
 @P.err.Orth@
 @P.err.Morph@

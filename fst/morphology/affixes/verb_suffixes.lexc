@@ -1634,7 +1634,8 @@ LEXICON VTA-i_IMP_PL_DIM
 LEXICON VERBS_Endlex
 ! @D.bound@ VERBS_Endlex_Morph ;
 ! @R.bound.h2@:@R.bound.h2@+Orth/Hyph # ;
-@D.agent@ VERBS_Endlex_Morph ;
+! Only completed agentive and possessive constructions are allowed to pass
+@D.agent@@D.poss@ VERBS_Endlex_Morph ;
 
 LEXICON VERBS_Endlex_Morph
 @R.err.Morph@+Err/Morph:@R.err.Morph@ # ;

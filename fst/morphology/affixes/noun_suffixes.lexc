@@ -247,10 +247,13 @@ LEXICON NID
 LEXICON NA_POSS_GATE1
 @D.person.NULL@ NA_THEME_SUFFIX1 ;
 @R.person.NULL@ NA_DIM_GATE ;
-! Derivation of existential verbs
+! Derivation of existential verbs (II + AI)
 @R.exist.EXIST@@R.class.II@@P.infl.VII-v@+Der/Ex:@R.exist.EXIST@@R.class.II@@P.infl.VII-v@%>i2wi VII_Class ;
 @R.exist.EXIST@@R.class.II@@P.infl.VII-n@+Der/Ex2:@R.exist.EXIST@@R.class.II@@P.infl.VII-n@%>i2wân3 VII_Class ;
 @R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi VAI_Class ;
+! Derivation of possessive verbs (AI)
+@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2 VAI_Class ;
+
 
 LEXICON NA_THEME_SUFFIX1
 ! Standard forms
@@ -371,6 +374,8 @@ LEXICON NI_POSS_GATE1
 @R.exist.EXIST@@R.class.II@@P.infl.VII-v@+Der/Ex:@R.exist.EXIST@@R.class.II@@P.infl.VII-v@%>i2wi VII_Class ;
 @R.exist.EXIST@@R.class.II@@P.infl.VII-n@+Der/Ex2:@R.exist.EXIST@@R.class.II@@P.infl.VII-n@%>i2wân3 VII_Class ;
 @R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi VAI_Class ;
+! Derivation of possessive verbs (AI)
+@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2 VAI_Class ;
 
 LEXICON NI_THEME_SUFFIX1
 ! Standard forms
@@ -507,6 +512,6 @@ LEXICON NOUN_ENDLEX3
 
 LEXICON NOUN_ENDLEX4
 ! Only completed agentive circumfixes and existential constructions are allowed to pass
-@D.agent@@D.exist@ # ;
+@D.agent@@D.exist@@D.poss@ # ;
 
 !! End of noun affixes LEXC code
