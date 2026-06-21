@@ -499,6 +499,7 @@ LEXICON NOUN_ENDLEX3
 @D.err2.Dim@ NOUN_ENDLEX4 ;
 
 LEXICON NOUN_ENDLEX4
-# ;
+! Only completed agentive circumfixes allowed to pass
+@D.agent@ # ;
 
 !! End of noun affixes LEXC code

@@ -70,6 +70,7 @@ RdplW+
 +Der/Nom2
 +Der/Ins
 +Der/Ins2
++Der/Ins3
 +Der/Age
 +Der/Goa
 +Der/Ex
@@ -141,6 +142,7 @@ RdplW+
 @R.agent.AGENT@
 @D.agent.AGENT@
 @D.agent@
+@C.agent@
 @P.der.EXIST@
 @R.der.EXIST@
 
@@ -246,6 +248,7 @@ y4
 ^COM
 ^V2VV
 ^T2C
+^INS
 
 %<
 %>

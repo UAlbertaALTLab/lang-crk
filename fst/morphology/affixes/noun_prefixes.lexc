@@ -57,6 +57,7 @@ LEXICON DerivationGate
 LEXICON AgentiveGate
 @P.class.AI@ LexicalPreverbGate ;
 @P.class.TI@ LexicalPreverbGate ;
+@P.class.TA@ LexicalPreverbGate ;
 
 LEXICON NominalVerbDerivatives
 @P.class.II@ LexicalPreverbGate ;

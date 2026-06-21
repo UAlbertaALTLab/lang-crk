@@ -108,8 +108,8 @@ LEXICON VAI_Diminutive
 
 LEXICON VAI_Derivation
 0 VAI_Inflection ;
-@D.agent@ VAI_Derivation2 ;
-@R.agent.AGENT@ VAI_AgentiveSuffix ;
+0 VAI_Derivation2 ;
+@R.agent.AGENT@@C.agent@ VAI_AgentiveSuffix ;
 
 LEXICON VAI_Derivation2
 @P.infl.VII-n@@P.number.SG@+Der/Pass:@P.infl.VII-n@@P.number.SG@%>m^V2VVakan3 VII_Class ; ! VII-1
@@ -150,9 +150,8 @@ LEXICON VTI_Diminutive
 
 LEXICON VTI_Derivation
 0 VTI_Inflection ;
-@D.agent@ VTI_Derivation2 ;
-@R.agent.AGENT@ VTI_AgentiveSuffix ;
-@R.agent.AGENT@@P.infl.VAI-ae@+Der/Antip:@R.agent.AGENT@@P.infl.VAI-ae@%>i2^T2Ckê VAI_Class ;
+0 VTI_Derivation2 ;
+@R.agent.AGENT@@C.agent@ VTI_AgentiveSuffix ;
 
 LEXICON VTI_Derivation2
 @P.infl.VII-v@+Der/Pass:@P.infl.VII-v@%>i2^T2Ckâtê VII_Class ;
@@ -165,7 +164,8 @@ LEXICON VTI_Derivation2
 @R.noun.Indep@@D.infl.VTI-m@+Der/Nom:@R.noun.Indep@@D.infl.VTI-m@%>win NI ;
 @R.noun.Indep@@R.infl.VTI-m@+Der/Nom:@R.noun.Indep@@R.infl.VTI-m@%>amo%>win NI ;
 @R.noun.Indep@+Der/Ins:@R.noun.Indep@%>i2^T2Ckan NI ;
-@R.noun.Indep@+Der/Ins2:@R.noun.Indep@%>i2^T2Ckâkan NI ;
+@R.noun.Indep@+Der/Ins2:@R.noun.Indep@%>â^INSkan NI ;
+@R.noun.Indep@+Der/Ins3:@R.noun.Indep@%>i2^T2Ckâkan NI ;
 
 LEXICON VTI_AgentiveSuffix
 ! Agentive o- ... -(amo)w
@@ -1629,8 +1629,9 @@ LEXICON VTA-i_IMP_PL_DIM
 !! End lexica
 
 LEXICON VERBS_Endlex
-@D.bound@ VERBS_Endlex_Morph ;
+! @D.bound@ VERBS_Endlex_Morph ;
 ! @R.bound.h2@:@R.bound.h2@+Orth/Hyph # ;
+@D.agent@ VERBS_Endlex_Morph ;
 
 LEXICON VERBS_Endlex_Morph
 @R.err.Morph@+Err/Morph:@R.err.Morph@ # ;
