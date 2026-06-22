@@ -1,0 +1,74 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - TA verbs - adsf : # Verbal derivations
+
+     # TA -> AI: Antip with -iwê
+     wîcihêw+V+TA+Der/Antip+V+AI+Ind+3Sg: wîcihiwêw
+     wîcihêw+V+TA+Der/Antip+V+AI+Ind+1Sg: niwîcihiwân
+     PV/ê+wîcihêw+V+TA+Der/Antip+V+AI+Cnj+3Sg: ê-wîcihiwêt
+
+     # TA -> AI: Dtr with -ikê
+     wîcihêw+V+TA+Der/Dtr+V+AI+Ind+3Sg: wîcihikêw
+     wîcihêw+V+TA+Der/Dtr+V+AI+Ind+1Sg: niwîcihikân
+     PV/ê+wîcihêw+V+TA+Der/Dtr+V+AI+Cnj+3Sg: ê-wîcihikêt
+
+     # TA -> AI: MedPass with -o
+     wîcihêw+V+TA+Der/MedPass+V+AI+Ind+3Sg: wîcihow
+     wîcihêw+V+TA+Der/MedPass+V+AI+Ind+1Sg: niwîcihon
+     PV/ê+wîcihêw+V+TA+Der/MedPass+V+AI+Cnj+3Sg: ê-wîcihot
+
+     # TA -> AI: Rflx with -iso
+     wîcihêw+V+TA+Der/Rflx+V+AI+Ind+3Sg: wîcihisow
+     wîcihêw+V+TA+Der/Rflx+V+AI+Ind+1Sg: niwîcihison
+     PV/ê+wîcihêw+V+TA+Der/Rflx+V+AI+Cnj+3Sg: ê-wîcihisot
+
+     # TA -> AI: Rcpr with -ito
+     wîcihêw+V+TA+Der/Rcpr+V+AI+Ind+3Pl: wîcihitowak
+     wîcihêw+V+TA+Der/Rcpr+V+AI+Ind+1Pl: niwîcihitonân
+     PV/ê+wîcihêw+V+TA+Der/Rcpr+V+AI+Cnj+3Pl: ê-wîcihitocik
+
+     # TA -> TA: Bnf with -amaw
+     wîcihêw+V+TA+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wîcihamawêw
+     wîcihêw+V+TA+Der/Bnf+V+TA+Ind+1Sg+3SgO: niwîcihamawâw
+     wîcihêw+V+TA+Der/Bnf+V+TA+Ind+1Sg+2SgO: kiwîcihamâtin
+     wîcihêw+V+TA+Der/Bnf+V+TA+Ind+2Sg+1SgO: kiwîcihamawin
+     PV/ê+wîcihêw+V+TA+Der/Bnf+V+TA+Cnj+3Sg+4Sg/PlO: ê-wîcihamawât
+     
+     # Nominalizations
+     # TA -> AI -> NI: MedPass with -o + Nom with -win
+     wîcihêw+V+TA+Der/MedPass+V+AI+Der/Nom+N+I+Sg: wîcihowin
+     wîcihêw+V+TA+Der/MedPass+V+AI+Der/Nom+N+I+Px1Sg+Pl: niwîcihowina
+     # TA -> NA: Goa with -âkan
+     wîcihêw+V+TA+Der/Goa+N+A+Sg: wîcihâkan
+     wîcihêw+V+TA+Der/Goa+N+A+Px1Sg+Pl: niwîcihâkanak
+     
+     # Diminutives
+     wîcihêw+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: wîcihêsiw
+     wîcihêw+V+TA+Der/Dim+V+TA+Ind+1Sg+3SgO: niwîcihâsiw
+     wîcihêw+V+TA+Der/Dim+V+TA+Ind+3Sg+1SgO: niwîcihikosi
+
+
+     # Complex forms
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: wîcihiwêhêw
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Caus+V+TA+Der/Dtr+V+AI+Ind+3Sg: wîcihiwêhikêw
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Caus+V+TA+Der/Rflx+V+AI+Ind+3Sg: wîcihiwêhisow
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Caus+V+TA+Der/Rflx+V+AI+Der/Nom+N+I+Sg: wîcihiwêhisowin
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wîcihiwêstawêw
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Dtr+V+AI+Ind+3Sg: wîcihiwêstâkêw
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Ind+3Pl: wîcihiwêstâtowak 
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Der/Nom+N+I+Pl: wîcihiwêstâtowina
+
+     # Complex diminutives
+     wîcihêw+V+TA+Der/Antip+V+AI+Der/Dim+V+AI+Ind+3Sg: wîcihiwêsiw
+     wîcihêw+V+TA+Der/Dtr+V+AI+Der/Dim+V+AI+Ind+3Sg: wîcihikêsiw
+     wîcihêw+V+TA+Der/MedPass+V+AI+Der/Dim+V+AI+Ind+3Sg: wîcihosiw
+     wîcihêw+V+TA+Der/Rflx+V+AI+Der/Dim+V+AI+Ind+3Sg: wîcihisosiw
+     wîcihêw+V+TA+Der/Rcpr+V+AI+Der/Dim+V+AI+Ind+3Pl: wîcihicosiwak
+     wîcihêw+V+TA+Der/Bnf+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: wîcihamawêsiw
+
+
