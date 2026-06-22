@@ -1,0 +1,134 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - TI -  adsf : # Verbal TI derivations
+
+     # TI -> II: Pass with -makan
+     wâpahtam+V+TI+Der/Pass+V+II+Ind+3Sg: wâpahcikâtêw
+     PV/ê+wâpahtam+V+TI+Der/Pass+V+II+Cnj+3Sg: ê-wâpahcikâtêk
+     mîciw+V+TI+Der/Pass+V+II+Ind+3Sg: mîcîkâtêw
+     PV/ê+mîciw+V+TI+Der/Pass+V+II+Cnj+3Sg: ê-mîcîkâtêk
+     kîsihtâw+V+TI+Der/Pass+V+II+Ind+3Sg: kîsihcâkâtêw
+     PV/ê+kîsihtâw+V+TI+Der/Pass+V+II+Cnj+3Sg: ê-kîsihcâkâtêk
+
+     # TI -> TI: Dim with -si
+     wâpahtam+V+TI+Der/Dim+V+TI+Ind+3Sg: wâpahcasiw
+     PV/ê+wâpahtam+V+TI+Der/Dim+V+TI+Cnj+3Sg: ê-wâpahcasit
+     mîciw+V+TI+Der/Dim+V+TI+Ind+3Sg: mîcisiw
+     PV/ê+mîciw+V+TI+Der/Dim+V+TI+Cnj+3Sg: ê-mîcisit
+     kîsihtâw+V+TI+Der/Dim+V+TI+Ind+3Sg: kîsihcâsiw
+     PV/ê+kîsihtâw+V+TI+Der/Dim+V+TI+Cnj+3Sg: ê-kîsihcâsit
+
+     # TI -> AI: Hab with -ski
+     wâpahtam+V+TI+Der/Hab+V+TI+Ind+3Sg: wâpahtaskiw
+     PV/ê+wâpahtam+V+TI+Der/Hab+V+TI+Cnj+3Sg: ê-wâpahtaskit
+     mîciw+V+TI+Der/Hab+V+TI+Ind+3Sg: mîciskiw
+     PV/ê+mîciw+V+TI+Der/Hab+V+TI+Cnj+3Sg: ê-mîciskit
+     kîsihtâw+V+TI+Der/Hab+V+TI+Ind+3Sg: kîsihtâskiw
+     PV/ê+kîsihtâw+V+TI+Der/Hab+V+TI+Cnj+3Sg: ê-kîsihtâskit
+
+     # TI -> AI: Antip with -ikê
+     wâpahtam+V+TI+Der/Antip+V+AI+Ind+3Sg: wâpahcikêw
+     PV/ê+wâpahtam+V+TI+Der/Antip+V+AI+Cnj+3Sg: ê-wâpahcikêt
+     mîciw+V+TI+Der/Antip+V+AI+Ind+3Sg: mîcîkêw
+     PV/ê+mîciw+V+TI+Der/Antip+V+AI+Cnj+3Sg: ê-mîcîkêt
+     kîsihtâw+V+TI+Der/Antip+V+AI+Ind+3Sg: kîsihcâkêw
+     PV/ê+kîsihtâw+V+TI+Der/Antip+V+AI+Cnj+3Sg: ê-kîsihcâkêt
+     
+     # TI -> TA: Bnf with -amaw
+     wâpahtam+V+TI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wâpahtamawêw
+     PV/ê+wâpahtam+V+TI+Der/Bnf+V+TA+Cnj+3Sg+4Sg/PlO: ê-wâpahtamawât
+     mîciw+V+TI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: mîcîmawêw
+     PV/ê+mîciw+V+TI+Der/Bnf+V+TA+Cnj+3Sg+4Sg/PlO: ê-mîcîmawât
+     kîsihtâw+V+TI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: kîsihtâmawêw
+     PV/ê+kîsihtâw+V+TI+Der/Bnf+V+TA+Cnj+3Sg+4Sg/PlO: ê-kîsihtâmawât
+     
+     # TI -> TA: Caus with -ih / -amih / -amoh
+     wâpahtam+V+TI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: [ wâpahtihêw, wâpahtamihêw, wâpahtamohêw ]
+     PV/ê+wâpahtam+V+TI+Der/Caus+V+TA+Cnj+3Sg+4Sg/PlO: [ ê-wâpahtihât, ê-wâpahtamihât, ê-wâpahtamohât ]
+     mîciw+V+TI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: [ mîcîhêw, mîcîmihêw, mîcîmohêw ]
+     PV/ê+mîciw+V+TI+Der/Caus+V+TA+Cnj+3Sg+4Sg/PlO: [ ê-mîcîhât, ê-mîcîmihât, ê-mîcîmohât ]
+     kîsihtâw+V+TI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: [ kîsihtâhêw, kîsihtâmihêw, kîsihtâmohêw ]
+     PV/ê+kîsihtâw+V+TI+Der/Caus+V+TA+Cnj+3Sg+4Sg/PlO: [ ê-kîsihtâhât, ê-kîsihtâmihât, ê-kîsihtâmohât ]
+     
+     ## Nominalization
+
+     # AI -> NI: Nom with -(amo)win
+     wâpahtam+V+TI+Der/Nom+N+I+Sg: wâpahtamowin
+     wâpahtam+V+TI+Der/Nom+N+I+Px1Sg+Pl: niwâpahtamowina
+     mîciw+V+TI+Der/Nom+N+I+Sg: mîciwin
+     mîciw+V+TI+Der/Nom+N+I+Px1Sg+Pl: nimîciwina
+     kîsihtâw+V+TI+Der/Nom+N+I+Sg: kîsihtâwin
+     kîsihtâw+V+TI+Der/Nom+N+I+Px1Sg+Pl: nikîsihtâwina
+
+     ## Instruments
+     
+     # AI -> NI: Ins with -ikan
+     wâpahtam+V+TI+Der/Ins+N+I+Sg: wâpahcikan
+     wâpahtam+V+TI+Der/Ins+N+I+Px1Sg+Pl: niwâpahcikana
+     mîciw+V+TI+Der/Ins+N+I+Sg: mîcîkan
+     mîciw+V+TI+Der/Ins+N+I+Px1Sg+Pl: nimîcîkana
+     kîsihtâw+V+TI+Der/Ins+N+I+Sg: kîsihcâkan
+     kîsihtâw+V+TI+Der/Ins+N+I+Px1Sg+Pl: nikîsihcâkana
+
+     # AI -> NI: Ins2 with -âkan
+     wâpahtam+V+TI+Der/Ins2+N+I+Sg: wâpahtâkan
+     wâpahtam+V+TI+Der/Ins2+N+I+Px1Sg+Pl: niwâpahtâkana
+     mîciw+V+TI+Der/Ins2+N+I+Sg: mîcâkan
+     mîciw+V+TI+Der/Ins2+N+I+Px1Sg+Pl: nimîcâkana
+     kîsihtâw+V+TI+Der/Ins2+N+I+Sg: kîsihtâkan
+     kîsihtâw+V+TI+Der/Ins2+N+I+Px1Sg+Pl: nikîsihtâkana
+
+     # AI -> NI: Ins3 with  -ikâkan
+     wâpahtam+V+TI+Der/Ins3+N+I+Sg: wâpahcikâkan
+     wâpahtam+V+TI+Der/Ins3+N+I+Px1Sg+Pl: niwâpahcikâkana
+     mîciw+V+TI+Der/Ins3+N+I+Sg: mîcîkâkan
+     mîciw+V+TI+Der/Ins3+N+I+Px1Sg+Pl: nimîcîkâkana
+     kîsihtâw+V+TI+Der/Ins3+N+I+Sg: kîsihcâkâkan
+     kîsihtâw+V+TI+Der/Ins3+N+I+Px1Sg+Pl: nikîsihcâkâkana
+
+
+     ## Agentive forms
+     # Agentive o- ... -(amo)w
+     wâpahtam+V+TI+Der/Age+N+A+Sg: owâpahtamow
+     wâpahtam+V+TI+Der/Age+N+A+Px1Sg+Pl: nitôwâpahtamowak
+     mîciw+V+TI+Der/Age+N+A+Sg: omîciw
+     mîciw+V+TI+Der/Age+N+A+Px1Sg+Pl: nitômîciwak
+     kîsihtâw+V+TI+Der/Age+N+A+Sg: okîsihtâw
+     kîsihtâw+V+TI+Der/Age+N+A+Px1Sg+Pl: nitôkîsihtâwak
+
+
+     # Complex forms
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Nom+N+I+Sg: wâpahcikêwin
+     PV/wîci+wâpahtam+V+TI+Der/Com+V+TA+Ind+3Sg+4Sg/PlO: wîci-wâpahtamômêw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Pass+V+II+Ind+3Sg: wâpahcikêmakan
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêhêw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Caus+V+TA+Der/Goa+N+A+Sg: wâpahcikêhâkan
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêstawêw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Goa+N+A+Sg: wâpahcikêstawâkan
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: wâpahcikêstâsow
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Nom+N+I+Sg: wâpahcikêstâsowin
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Ind+3Pl: wâpahcikêstâtowak
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Der/Nom+N+I+Pl: wâpahcikêstâtowina
+
+     # Diminutives
+     PV/wîci+atoskêw+V+AI+Der/Com+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: [ wîci-acoskêmêsiw, wîcacoskêmêsiw ]
+     wâpahtam+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Nom+N+I+Sg: wâpahcasîkêwin
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Nom+N+I+Sg: wâpahcikêsiwin
+     wâpahtam+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: wâpahcasîkêhêsiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Caus+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêsihêsiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Caus+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêhêsiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêstawêw
+     wâpahtam+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wâpahcasîkêscawêsiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêsiscawêsiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: wâpahcikêscawêsiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: wâpahcikêstâsow
+     wâpahtam+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: wâpahcasîkêstâsow
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: wâpahcikêsistâsow
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Dim+V+AI+Ind+3Sg: wâpahcikêscâsosiw
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Nom+N+I+Der/Dim+N+I+Sg: [ wâpahcikêscâsowinis, wâpahcikêscâsowinisis ]
+     wâpahtam+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Der/Nom+N+I+Der/Dim+N+I+Pl: [ wâpahcikêscâcowinisa, wâpahcikêscâcowinisisa ]
