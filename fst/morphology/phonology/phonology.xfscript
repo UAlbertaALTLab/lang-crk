@@ -48,7 +48,7 @@ define prevTPalatalization [ Tx  -> c || _ (Vowel) ">" [ ? - ">" ]* "^T2C" ] ;
 
 define vowelAssimilation [ a -> â , i -> î , o -> ô || _ ">" [ a | i | i2 ] ] .o. [ [ a | i | i2 ] -> 0 || [ â | ê | î | ô ] ">" _ ] ;
 
-define akanVariation [ [ â | ê | i ] -> 0 , o -> w , o -> o w || _ ">" â "^INS" ] ;
+define akanVariation [ [ â | ê | a | i ] -> 0 , o -> w , o -> o w || _ ">" â "^INS" ] ;
 
 !! VG>i2 -> VV
 
