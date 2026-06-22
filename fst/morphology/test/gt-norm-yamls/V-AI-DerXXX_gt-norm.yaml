@@ -100,8 +100,25 @@ Tests:
      # Diminutives
      atoskêw+V+AI+Der/Dim+V+AI+Ind+3Sg: acoskêsiw
      PV/wîci+atoskêw+V+AI+Der/Com+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: [ wîci-acoskêmêsiw, wîcacoskêmêsiw ]
+     atoskêw+V+AI+Der/Dim+V+AI+Der/Trans+V+TI+Ind+3Sg: acoskêsistam
      atoskêw+V+AI+Der/Trans+V+TI+Der/Dim+V+TI+Ind+3Sg: acoskêscasiw
+     # Dim: AI + Trans -> TI + Antip -> AI + Bnf -> TA
+     atoskêw+V+AI+Der/Dim+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: acoskêsiscikêscawêsiw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: acoskêscasîkêscawêsiw
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Bnf+V+TA+Ind+3Sg+4Sg/PlO: acoskêscikêsiscawêsiw
      atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Dim+V+TA+Ind+3Sg+4Sg/PlO: acoskêscikêscawêsiw
+     # Dim: AI + Trans -> TI + Antip -> AI + Bnf -> TA + Rflx -> AI
+     atoskêw+V+AI+Der/Dim+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: acoskêsiscikêstâsow
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: acoskêscasîkêstâsow
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Ind+3Sg: acoskêscikêsistâsow
      atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Dim+V+AI+Ind+3Sg: acoskêscikêscâsosiw
+     # Dim: AI + Trans -> TI + Antip -> AI + Bnf -> TA + Rflx -> AI + Nom -> NI
      atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rflx+V+AI+Der/Nom+N+I+Der/Dim+N+I+Sg: [ acoskêscikêscâsowinis, acoskêscikêscâsowinisis ]
+     # Dim: AI + Trans -> TI + Antip -> AI + Bnf -> TA + Rcpr -> AI
+     atoskêw+V+AI+Der/Dim+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Ind+3Pl: acoskêsiscikêstâtowak
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Dim+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Ind+3Pl: acoskêscasîkêstâtowak
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Dim+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Ind+3Pl: acoskêscikêsistâtowak
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Der/Dim+V+AI+Ind+3Pl: acoskêscikêscâcosiwak
+     # Dim: AI + Trans -> TI + Antip -> AI + Bnf -> TA + Rcpr -> AI + Nom -> NI
+     atoskêw+V+AI+Der/Trans+V+TI+Der/Antip+V+AI+Der/Bnf+V+TA+Der/Rcpr+V+AI+Der/Nom+N+I+Der/Dim+N+I+Pl: [ acoskêscikêscâcowinisa, acoskêscikêscâcowinisisa ]
 
