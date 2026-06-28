@@ -1,6 +1,3 @@
 LEXICON Root
 VerbArgClass ;
-NOUN_PREFIXES ;
-
-
-
+NounPrefixes ;
