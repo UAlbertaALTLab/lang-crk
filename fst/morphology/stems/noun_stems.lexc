@@ -61,7 +61,7 @@ LEXICON NounDepNonkinshipStems
 masakay:asakay NAD "skin" ;
 mitâs:tâs NAD "pair of pants" ; ! AEW NDA-1 (Consonant initial regular stem)
 môhpan:ohpan NAD "lung" ; ! AEW NDA-1 (Vowel initial regular stem) note that in 3rd person the w- does not surface
-mitihtihkosiy:tihtihkosiy NAD_DIM/is "kidney" ; ! AEW NDA-2 (Consonant initial regular VG stem) N.B. also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension) ! N.B. tihtihkosiy- vs. tihtikosiy-
+mitihtihkosiy:tihtihkosiy NAD "kidney" ; ! AEW NDA-2 (Consonant initial regular VG stem) N.B. also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension) ! N.B. tihtihkosiy- vs. tihtikosiy-
 maskasiy:askasiy NAD "finger nail/claw" ; ! AEW NDA-2 (Vowel Initial VG stem) 
 ! Inanimate Dependent Noun stems
 mihtawakay:htawakay NID "ear" ;
