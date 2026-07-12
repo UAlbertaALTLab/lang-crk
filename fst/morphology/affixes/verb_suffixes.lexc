@@ -1,14 +1,20 @@
+LEXICON VII-v
+@P.infl.VII-v@ VII_Class ;
+
+LEXICON VII-n
+@P.infl.VII-n@ VII_Class ;
+
 LEXICON VII-n-SG
 @P.infl.VII-n@@P.number.SG@ VII_Class ;
 
 LEXICON VII-v-SG
 @P.infl.VII-v@@P.number.SG@ VII_Class ;
 
-LEXICON VII-v
-@P.infl.VII-v@ VII_Class ;
+LEXICON VII-n-PL
+@P.infl.VII-n@@P.number.PL@ VII_Class ;
 
-LEXICON VII-n
-@P.infl.VII-n@ VII_Class ;
+LEXICON VII-v-PL
+@P.infl.VII-v@@P.number.PL@ VII_Class ;
 
 LEXICON VAI-ae
 @P.infl.VAI-ae@ VAI_Class ;
@@ -222,7 +228,7 @@ LEXICON VII_ConditionalSuffixes
 @R.infl.VII-n@ VII-n_ConditionalSuffixes ;
 
 LEXICON VII-v_IndependentSuffixes
-VII-v_IND_SG ;
+@D.number.PL@ VII-v_IND_SG ;
 @D.number.SG@ VII-v_IND_PL ;
 
 LEXICON VII-v_IND_SG
@@ -234,7 +240,7 @@ LEXICON VII-v_IND_PL
 +4Pl:%>ýiw%>a VERBS_Endlex ;
 
 LEXICON VII-v_ConjunctSuffixes
-VII-v_CNJ_SG ;
+@D.number.PL@ VII-v_CNJ_SG ;
 @D.number.SG@ VII-v_CNJ_PL ;
 
 LEXICON VII-v_CNJ_SG
@@ -246,7 +252,7 @@ LEXICON VII-v_CNJ_PL
 +4Pl:%>ýik%>i VERBS_Endlex ;
 
 LEXICON VII-v_ConditionalSuffixes
-VII-v_COND_SG ;
+@D.number.PL@ VII-v_COND_SG ;
 @D.number.SG@ VII-v_COND_PL ;
 
 LEXICON VII-v_COND_SG
@@ -258,7 +264,7 @@ LEXICON VII-v_COND_PL
 +4Pl:%>ýikwâwi VERBS_Endlex ;
 
 LEXICON VII-n_IndependentSuffixes
-VII-n_IND_SG ;
+@D.number.PL@ VII-n_IND_SG ;
 @D.number.SG@ VII-n_IND_PL ;
 
 LEXICON VII-n_IND_SG
@@ -270,7 +276,7 @@ LEXICON VII-n_IND_PL
 +4Pl:%>iýiw%>a VERBS_Endlex ;
 
 LEXICON VII-n_ConjunctSuffixes
-VII-n_CNJ_SG ;
+@D.number.PL@ VII-n_CNJ_SG ;
 @D.number.SG@ VII-n_CNJ_PL ;
 
 LEXICON VII-n_CNJ_SG
@@ -282,7 +288,7 @@ LEXICON VII-n_CNJ_PL
 +4Pl:%>iýik%>i VERBS_Endlex ;
 
 LEXICON VII-n_ConditionalSuffixes
-VII-n_COND_SG ;
+@D.number.PL@ VII-n_COND_SG ;
 @D.number.SG@ VII-n_COND_PL ;
 
 LEXICON VII-n_COND_SG
