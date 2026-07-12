@@ -64,6 +64,24 @@ Tests:
      wîcihêw+V+TA+Ind+4Sg/Pl+3PlO:    [wîcihikowak, wîcihikwak]
      wîcihêw+V+TA+Ind+5Sg/Pl+4Sg/PlO:    wîcihikoyiwa
 
+     wîcihêw+V+TA+Ind+X+1SgO:     niwîcihikawin # UNSPECIFIED ACTOR
+     wîcihêw+V+TA+Ind+X+2SgO:     kiwîcihikawin
+     wîcihêw+V+TA+Ind+X+3SgO:     wîcihâw
+     wîcihêw+V+TA+Ind+X+1PlO:     niwîcihikawinân
+     wîcihêw+V+TA+Ind+X+21PlO:    [kiwîcihikawinaw, kiwîcihikawinânaw]
+     wîcihêw+V+TA+Ind+X+2PlO:     kiwîcihikawinâwâw
+     wîcihêw+V+TA+Ind+X+3PlO:     wîcihâwak
+     wîcihêw+V+TA+Ind+X+4Sg/PlO:  wîcihâyiwa
+
+     wîcihêw+V+TA+Ind+0Sg/Pl+1SgO:     niwîcihikon # INANIMATE ACTOR
+     wîcihêw+V+TA+Ind+0Sg/Pl+2SgO:     kiwîcihikon
+     wîcihêw+V+TA+Ind+0Sg/Pl+3SgO:     wîcihikow
+     wîcihêw+V+TA+Ind+0Sg/Pl+1PlO:     niwîcihikonân
+     wîcihêw+V+TA+Ind+0Sg/Pl+21PlO:    [kiwîcihikonaw, kiwîcihikonânaw]
+     wîcihêw+V+TA+Ind+0Sg/Pl+2PlO:     kiwîcihikonâwâw
+     wîcihêw+V+TA+Ind+0Sg/Pl+3PlO:     wîcihikowak
+     wîcihêw+V+TA+Ind+0Sg/Pl+4Sg/PlO:  wîcihikoyiwa
+
 
 ## CONJUNCT ##
      PV/ê+wîcihêw+V+TA+Cnj+2Sg+1SgO:    ê-wîcihiyan # LOCAL DIR
