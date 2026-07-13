@@ -75,6 +75,7 @@ LEXICON TensePreverbsBound
 LEXICON LexicalPreverbGate
 0 Reduplication ;
 0 LexicalPreverbs ;
+0 ComitativePreverb ;
 0 VerbStems ;
 
 LEXICON Reduplication
@@ -85,10 +86,14 @@ RdplW+RdplS+:d2ay2-%<d2âh ReduplicationBound ;
 
 LEXICON ReduplicationBound
 0:-%< LexicalPreverbs ;
+0:-%< ComitativePreverb ;
 0:-%< VerbStems ;
 
-LEXICON LexicalPreverbs
-PV/miyo+:miýo LexicalPreverbsBound ;
+!! Here we take in the full list of lexical preverbs from affixes/preverbs.lexc
+! LEXICON LexicalPreverbs
+! PV/miyo+:miýo LexicalPreverbsBound ;
+
+LEXICON ComitativePreverb
 @R.class.AI@@D.comitative.COM@@P.comitative.COM@PV/wîci+:@R.class.AI@@D.comitative.COM@@P.comitative.COM@wî^COMt2 LexicalPreverbsBound ;
 @R.class.TI@@D.comitative.COM@@P.comitative.COM@PV/wîci+:@R.class.TI@@D.comitative.COM@@P.comitative.COM@wî^COMt2 LexicalPreverbsBound ;
 
