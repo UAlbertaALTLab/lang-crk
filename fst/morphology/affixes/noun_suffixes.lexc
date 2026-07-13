@@ -115,6 +115,12 @@ LEXICON NAD_SG/a
 LEXICON NAD_SG/i
 @P.sg.I@  NAD ;
 
+LEXICON NAD_SG/a_DIM/is
+@P.sg.A@  NAD_DIM/is ;
+
+LEXICON NAD_SG/i_DIM/is
+@P.sg.I@  NAD_DIM/is ;
+
 LEXICON NAD_SG/a_POSS/im
 @P.sg.A@  NAD_POSS/im ;
 
@@ -202,6 +208,9 @@ LEXICON NID_POSS/im2_DIM/isis
 
 LEXICON NID_SG/i
 @P.sg.I@  NID ;
+
+LEXICON NID_SG/i_DIM/is
+@P.sg.I@  NID_DIM/is ;
 
 LEXICON NID_SG/i_POSS/im
 @P.sg.I@  NID_POSS/im ;
