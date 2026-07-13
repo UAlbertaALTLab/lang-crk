@@ -10,7 +10,7 @@ define Phon
 source orthography/spellrelax.xfscript
 define SpellRelax
 
-define nLemmaNorm [ n <- n1 ];
+define yLemmaNorm [ n <- "ý" ];
 define rmBx [ Bx -> 0 ];
 
 define ErrTags [ "+Err/Morph" | "+Err/Orth" ];
@@ -20,7 +20,7 @@ set flag-is-epsilon ON
 
 ! Normative FST without morpheme boundaries
 
-define FSTnorm [ ErrFilter .o. nLemmaNorm .o. Morph .o. Phon .o. rmBx ];
+define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. Phon .o. rmBx ];
 
 push FSTnorm
 invert net
@@ -31,7 +31,7 @@ clear stack
 
 ! Normative generator FST with morpheme boundaries in surface forms
 
-define FSTbound [ nLemmaNorm .o. Morph .o. Phon ].i;
+define FSTbound [ yLemmaNorm .o. Morph .o. Phon ].i;
 push FSTbound
 invert net
 save stack fst/generator-gt-norm-bound.hfst
@@ -39,7 +39,7 @@ clear stack
 
 ! Descriptive analyzer FST with spell-relaxation rules (without morpheme
 
-define FSTdesc [ nLemmaNorm .o. Morph .o. Phon .o. rmBx .o. SpellRelax ];
+define FSTdesc [ yLemmaNorm .o. Morph .o. Phon .o. rmBx .o. SpellRelax ];
 push FSTdesc
 invert net
 save stack fst/analyser-gt-desc.hfst
