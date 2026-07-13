@@ -11,6 +11,7 @@ cat \
 ./defs/multichars.lexc \
 ./defs/root.lexc \
 ./affixes/verb_prefixes.lexc \
+./affixes/preverbs.lexc \
 ./stems/verb_stems.lexc \
 ./affixes/verb_suffixes.lexc \
 ./affixes/noun_prefixes.lexc \
