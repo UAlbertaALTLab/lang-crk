@@ -25,14 +25,14 @@ LEXICON IndependentPrefixes
 @P.person.KI@PV/ohci+:@P.person.KI@k%<ohci   IndependentPreverbsBound ;
 ! ôh-/kohci-
 @P.person.NULL@PV/ôh+:@P.person.NULL@ôh      IndependentPreverbsBound ;
-@P.person.NULL@yPV/ohci+:@U.person.NULL@ohci IndependentPreverbsBound ;
+@P.person.NULL@PV/ohci+:@U.person.NULL@ohci IndependentPreverbsBound ;
 !! Hypotheticals
 ! nikâh-
 @P.person.NI@PV/kâh+:@P.person.NI@ni%<kâh    IndependentPreverbsBound ;
 ! kikâh-
 @P.person.KI@PV/kâh+:@P.person.KI@ki%<kâh    IndependentPreverbsBound ;
 ! kâh-
-@P.person.NULL@yPV/kâh+:@P.person.NULL@kâh   IndependentPreverbsBound ;
+@P.person.NULL@PV/kâh+:@P.person.NULL@kâh   IndependentPreverbsBound ;
 ! nitâh-
 @P.person.NI@PV/tâh+:@P.person.NI@ni%<tâh    IndependentPreverbsBound ;
 ! kitâh-
