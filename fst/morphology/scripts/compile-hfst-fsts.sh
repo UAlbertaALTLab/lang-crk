@@ -7,17 +7,11 @@
 
 echo 'Concatenating LEXC source files into: lexicon.lexc.' ;
 
-cat \
-./defs/multichars.lexc \
-./defs/root.lexc \
-./affixes/verb_prefixes.lexc \
-./stems/verb_stems.lexc \
-./affixes/verb_suffixes.lexc \
-./affixes/noun_prefixes.lexc \
-./affixes/prenouns.lexc \
-./stems/noun_stems.lexc \
-./affixes/noun_suffixes.lexc \
-> lexicon.lexc
+rm lexicon.lexc
+
+while read line; do
+    cat "$line" >> lexicon.lexc
+done < defs/lexc.list
 
 echo 'Compiling HFSTs.' ;
 
