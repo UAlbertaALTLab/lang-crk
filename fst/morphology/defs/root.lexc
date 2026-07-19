@@ -1,3 +1,10 @@
 LEXICON Root
+! Inflecting word-classes: verbs + nouns
 VerbArgClass ;
 NounPrefixes ;
+! Vocative forms of certain dependent kinship nouns
+NounVocatives ;
+! Non-inflecting word-classes
+Pronouns ;
+Particles ;
+Numerals ;

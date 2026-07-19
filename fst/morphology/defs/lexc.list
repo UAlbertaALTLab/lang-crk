@@ -8,3 +8,7 @@
 ./affixes/prenouns.lexc
 ./stems/noun_stems.lexc
 ./affixes/noun_suffixes.lexc
+./stems/noun_vocatives.lexc
+./stems/pronouns.lexc
+./stems/particles.lexc
+./stems/numerals.lexc
