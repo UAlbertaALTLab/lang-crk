@@ -41,7 +41,7 @@ LEXICON NounDepNonkinshipPrefixes
 
 LEXICON PrenounsGate
 NounStemsGate ;
-Prenouns ;
+Prenouns "weight: 10" ;
 @R.noun.Indep@  DerivationGate ;
 
 LEXICON DerivationGate

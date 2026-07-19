@@ -73,9 +73,9 @@ LEXICON TensePreverbsBound
 0:-%< LexicalPreverbGate ;
 
 LEXICON LexicalPreverbGate
-0 Reduplication ;
-0 LexicalPreverbs ;
-0 ComitativePreverb ;
+0 Reduplication "weight: 10" ;
+0 LexicalPreverbs "weight: 10" ;
+0 ComitativePreverb "weight: 10" ;
 0 VerbStems ;
 
 LEXICON Reduplication
