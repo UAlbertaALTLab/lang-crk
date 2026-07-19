@@ -250,13 +250,13 @@ LEXICON NA_PossGate1
 @D.person.NULL@  NA_ThemeSuffix1 ;
 @R.person.NULL@  NA_DimGate ;
 ! Derivation of existential verbs (II + AI)
-@R.exist.EXIST@@R.class.II@@P.infl.VII-v@+Der/Ex:@R.exist.EXIST@@R.class.II@@P.infl.VII-v@%>i2wi  VII_Class ;
-@R.exist.EXIST@@R.class.II@@P.infl.VII-n@+Der/Ex2:@R.exist.EXIST@@R.class.II@@P.infl.VII-n@%>i2wân3  VII_Class ;
-@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi  VAI_Class ;
+@R.exist.EXIST@@R.class.II@@P.infl.VII-v@+Der/Ex:@R.exist.EXIST@@R.class.II@@P.infl.VII-v@%>i2wi  VII_Class "weight: 10" ;
+@R.exist.EXIST@@R.class.II@@P.infl.VII-n@+Der/Ex2:@R.exist.EXIST@@R.class.II@@P.infl.VII-n@%>i2wân3  VII_Class "weight: 10" ;
+@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi  VAI_Class "weight: 10" ;
 ! Derivation of possessive verbs (AI)
-@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2  VAI_Class ;
+@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2  VAI_Class "weight: 10" ;
 ! Derivation of manufacture verbs (AI)
-@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@+Der/Manuf:@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@%>i2hkê  VAI_Class ;
+@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@+Der/Manuf:@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@%>i2hkê  VAI_Class "weight: 10" ;
 
 
 LEXICON NA_ThemeSuffix1
@@ -271,8 +271,8 @@ LEXICON NA_ThemeSuffix1
 
 LEXICON NA_DimGate
 @P.dim.NULL@                           NA_PossGate2 ;
-@D.dep@+Der/Dim+N+A:@D.dep@            NA_DimSuffix ;
-@R.dep.DEP@+Der/Dim+N+A+D:@R.dep.DEP@  NA_DimSuffix ;
+@D.dep@+Der/Dim+N+A:@D.dep@            NA_DimSuffix "weight: 10" ;
+@R.dep.DEP@+Der/Dim+N+A+D:@R.dep.DEP@  NA_DimSuffix "weight: 10" ;
 
 LEXICON NA_DimSuffix
 ! Standard forms
@@ -368,13 +368,13 @@ LEXICON NI_PossGate1
 @D.person.NULL@  NI_ThemeSuffix1 ;
 @R.person.NULL@  NI_DimGate ;
 ! Derivation of existential verbs
-@R.exist.EXIST@@R.class.II@@P.infl.VII-v@+Der/Ex:@R.exist.EXIST@@R.class.II@@P.infl.VII-v@%>i2wi  VII_Class ;
-@R.exist.EXIST@@R.class.II@@P.infl.VII-n@+Der/Ex2:@R.exist.EXIST@@R.class.II@@P.infl.VII-n@%>i2wân3  VII_Class ;
-@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi  VAI_Class ;
+@R.exist.EXIST@@R.class.II@@P.infl.VII-v@+Der/Ex:@R.exist.EXIST@@R.class.II@@P.infl.VII-v@%>i2wi  VII_Class "weight: 10" ;
+@R.exist.EXIST@@R.class.II@@P.infl.VII-n@+Der/Ex2:@R.exist.EXIST@@R.class.II@@P.infl.VII-n@%>i2wân3  VII_Class "weight: 10" ;
+@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@+Der/Ex:@R.exist.EXIST@@R.class.AI@@P.infl.VAI-io@%>i2wi  VAI_Class "weight: 10" ;
 ! Derivation of possessive verbs (AI)
-@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2  VAI_Class ;
+@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@+Der/Poss:@R.poss.POSS@@C.poss@@R.class.AI@@P.infl.VAI-io@%>i2  VAI_Class "weight: 10" ;
 ! Derivation of manufacture verbs (AI)
-@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@+Der/Manuf:@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@%>i2hkê  VAI_Class ;
+@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@+Der/Manuf:@R.manuf.MANUF@@C.manuf@@R.class.AI@@P.infl.VAI-ae@%>i2hkê  VAI_Class "weight: 10" ;
 
 LEXICON NI_ThemeSuffix1
 ! Standard forms
@@ -388,8 +388,8 @@ LEXICON NI_ThemeSuffix1
 
 LEXICON NI_DimGate
 @P.dim.NULL@                           NI_PossGate2 ;
-@D.dep@+Der/Dim+N+I:@D.dep@            NI_DimSuffix ;
-@R.dep.DEP@+Der/Dim+N+I+D:@R.dep.DEP@  NI_DimSuffix ;
+@D.dep@+Der/Dim+N+I:@D.dep@            NI_DimSuffix "weight: 10" ;
+@R.dep.DEP@+Der/Dim+N+I+D:@R.dep.DEP@  NI_DimSuffix "weight: 10" ;
 
 LEXICON NI_DimSuffix
 ! Standard forms
