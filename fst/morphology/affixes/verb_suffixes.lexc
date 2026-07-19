@@ -355,8 +355,8 @@ LEXICON VAI-io_IND_3
 @D.number.PL@+3Sg:@D.number.PL@%>w VERBS_Endlex ;
 +3Pl:%>w%>ak VERBS_Endlex ;
 +4Sg/Pl:%>ýiwa VERBS_Endlex ;
-+X:%>n2iwan VERBS_Endlex ;
-+X:%>n2iwiw VERBS_Endlex ;
++X:%>n2âniwan VERBS_Endlex ;
++X:%>n2âniwiw VERBS_Endlex ;
 
 LEXICON VAI-n_IndependentSuffixes
 @R.person.NI@ VAI-n_IND_1 ;
