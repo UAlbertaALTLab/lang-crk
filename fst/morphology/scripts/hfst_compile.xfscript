@@ -7,14 +7,14 @@ define Morph
 source phonology/phonology.xfscript
 define Phon
 
-! source orthography/spellrelax_weighted.xfscript
-source orthography/spellrelax.xfscript
+source orthography/spellrelax_weighted.xfscript
+! source orthography/spellrelax.xfscript
 define SpellRelax
 
 define yLemmaNorm [ y <- "ý" ];
 define rmBx [ Bx -> 0 ];
 
-define ErrTags [ "+Err/Morph" | "+Err/Orth" ];
+define ErrTags [ "+Err/Morph" | "+Err/Orth" | "+Err/Dim" | "+Err/Thm" ];
 define ErrFilter ~$[ ErrTags ];
 
 set flag-is-epsilon ON
@@ -40,7 +40,8 @@ clear stack
 
 ! Descriptive analyzer FST with spell-relaxation rules (without morpheme
 
-define FSTdesc [ yLemmaNorm .o. Morph .o. Phon .o. rmBx .o. SpellRelax ];
+! define FSTdesc [ yLemmaNorm .o. Morph .o. Phon .o. rmBx .o. SpellRelax ];
+define FSTdesc [ FSTbound.i .o. rmBx .o. SpellRelax ];
 push FSTdesc
 invert net
 save stack fst/analyser-gt-desc.hfst
