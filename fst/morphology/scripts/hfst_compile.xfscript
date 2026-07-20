@@ -11,7 +11,7 @@ define Phon
 source orthography/spellrelax.xfscript
 define SpellRelax
 
-define yLemmaNorm [ n <- "ý" ];
+define yLemmaNorm [ y <- "ý" ];
 define rmBx [ Bx -> 0 ];
 
 define ErrTags [ "+Err/Morph" | "+Err/Orth" ];
