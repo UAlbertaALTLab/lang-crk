@@ -61,11 +61,13 @@ i (->) [ %' | ‘ | ’ ],
 # E.G. NS 152 give 'askîy' but Arok gives 'askiy' according to SRO standard.
 a (->) â::0.5,
 i (->) î::0.5,
-o (->) ô,,
+o (->) ô::0.5,
 
 # Prefix-final vowel (preceded by consonant) dropped before following morpheme
 # [ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- ,,
-Vowel  (->) 0::1.0 || Consonant _ %- ,,
+[ a | â | ê | i | î | o | ô ] %- (->) %-::1.0 ,
+# Vowel (->) 0 || Consonant _ %- ,,
+
 
 # Sandhi at prefix boundaries
 # %- -> 0 ,
@@ -80,16 +82,17 @@ Vowel %- [ o | ô ] (->) [ o | ô ]::2.0 ,
 
 # Dealing with spaces instead of hyphens as separators in multipart words, or missing hyphens
 
-[ %- ] (->) [ %- ]+,           # Multiple hyphens into a single hyphen
-[ %- ] (->) 0::2.0,                 # Missing hyphens between prefixes/preverbs
-[ %- ] (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
+[ %- ] (->) [ %- ]+,            # Multiple hyphens into a single hyphen
+[ %- ] (->) 0,                  # Missing hyphens between prefixes/preverbs
+[ %- ] (->) [ %  | %  | %  ]+ ,, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
+[ %-] (->) h::1.0 || Vowel _ Vowel ,, # Epenthetic -h- instead of hyphen separating preverbs
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
 
 # Vowels
 [ i | î ] (->) {ee},
 [ a | â ] (->) u,
-ê (->) [ {ay} | {eh} ]::2.00,
+ê (->) [ {ay} | {eh} ]::2.0,
 
 # Consonants
 k (->) g,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
@@ -107,19 +110,19 @@ c (->) j,   # English influence on spelling <c>
 # Proto-Algonquian dialectal /y/
 ý (->) y,
 
-{iw} (->) {ow}::2.0,       # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
-{ow} (->) {iw}::2.0,
-{êyiht} (->) {êht}::2.0,
-{êyiht} (->) {êt}::2.0,
-{êyim} (->) {êm}::2.0,
-{iyi} (->) [ î | i ]::2.0, # Mishearing of vowel-glide-vowel cluster
-{nwa} (->) {no}::2.0,      # <nwa> is likely to be heard as <no>
+{iw} (->) {ow}::1.0,       # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
+{ow} (->) {iw}::1.0,
+{êyiht} (->) {êht}::1.0,
+{êyiht} (->) {êt}::1.0,
+{êyim} (->) {êm}::1.0,
+{iyi} (->) [ î | i ]::1.0, # Mishearing of vowel-glide-vowel cluster
+{nwa} (->) {no}::1.0,      # <nwa> is likely to be heard as <no>
 
 c (->) {ch},        # English influence on spelling <c>
 c (->) {tch},       # English influence on spelling <c>
 c (->) {ts} ,,      # Another English influence on spelling <c>
 
-[..] (->) h || _ .#. ,, # Excessive word-final pre-aspiration
+[..] (->) h::1.0 || _ .#. ,, # Excessive word-final pre-aspiration
 #    h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t | g | b | d ],,    # Missing preaspiration before stops
 # [..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t | g | b | d ],,  # Excessive preaspiration before stops
    h (->) 0::0.5 || Vowel _ Stop ,,    # Missing preaspiration before stops
@@ -141,8 +144,8 @@ c (->) {ts} ,,      # Another English influence on spelling <c>
 s (->) š,
 
 # Woods and Swampy Cree to Plains Cree
-[ ý | y ] (->) [ t h ]::0.0 ,,
-[ ý | y ] (->) n::2.0 ,,
+[ ý | y ] (->) [ t h ] ,,
+[ ý | y ] (->) [ n ]::2.0 ,,
 ê (->) [ î | i ]::2.0 ,,
 
 # Adding missing or reduced short i's in interconsonantal contexts
