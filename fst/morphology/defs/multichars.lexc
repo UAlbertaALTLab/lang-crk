@@ -242,7 +242,7 @@ RdplW+
 @P.morf.amaw@
 @D.morf.amaw@
 
-! Special characters
+!! Special characters
 d1
 d2
 i2
@@ -261,6 +261,7 @@ y3
 y4
 ý2
 
+!! Triggers
 ^IC
 ^DIM
 ^COM
@@ -426,10 +427,5 @@ i4
 r2
 t2
 w3
-
-!! Triggers
-^DIM
-^EGLOT
-^IC
 
 !! END OF MULTICHARACTER SYMBOL DECLARATIONS !!
