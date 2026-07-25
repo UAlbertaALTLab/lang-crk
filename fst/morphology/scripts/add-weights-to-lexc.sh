@@ -54,7 +54,7 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
     l[t]=-log(w[t]/wmax);
 
   if(match(winfmult, "^=([[:digit:]]+[\\.]?[[:digit:]]*)$", f)!=0)
-    { print "+++";
+    {
       wabsinf=f[1];
       wloginf=f[1];
     }
