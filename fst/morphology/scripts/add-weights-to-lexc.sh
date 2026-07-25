@@ -6,6 +6,13 @@
 # Example:
 #    ./add-weights-to-lexc.sh lexicon.tmp.lexc crk_weights.txt log 2 yes | less
 
+# Alternative ways to define default weights
+# =10 : exact default weight of 10
+# +10 : maximum absolute weight plus 10
+# *10 : maximum absolute weight times 10
+# x10 : maximum absolute weight times 10
+# X10 : maximum absolute weight times 10
+
 cat $1 | gawk -v RM_ALL_WEIGHTS=$5 'BEGIN { rm_all_weights=RM_ALL_WEIGHTS;
   if(rm_all_weights=="yes") rm=1;
 }
@@ -20,12 +27,13 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
     winfmult=2;
   if(wtype!="log" && wtype!="abs")
     wtype="log";
+
   while((getline < weights)!=0)
     if(match($2, "(^\\+)|(\\+$)")!=0)
     {
       tag=$2;
-      if($1*1>max)
-        max=$1;
+      if($1*1>wmax)
+        wmax=$1;
       # gsub("\\+|\\*|\\?|[-]", "\\\\&", tag);
       gsub("0","%0",tag);
       gsub("%+","%",tag);
@@ -43,9 +51,31 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
 #      tlen[lex]=length(f[1]);
 #    }
   for(t in w)
-    l[t]=-log(w[t]/max);
-  wabsinf=1/winfmult;
-  wloginf=-log(wabsinf/max);
+    l[t]=-log(w[t]/wmax);
+
+  if(match(winfmult, "^=([[:digit:]]+[\\.]?[[:digit:]]*)$", f)!=0)
+    { print "+++";
+      wabsinf=f[1];
+      wloginf=f[1];
+    }
+
+  if(match(winfmult, "^\\+([[:digit:]]+[\\.]?[[:digit:]]*)$", f)!=0)
+    {
+      wabsinf=wmax+f[1];
+      wloginf=-log(1/wmax)+f[1];
+    }
+
+  if(match(winfmult, "^[\\*xX]([[:digit:]]+[\\.]?[[:digit:]]*)$", f)!=0)
+    {
+      wabsinf=1/f[1];
+      wloginf=-log(wabsinf/wmax);
+    }
+
+  if(wloginf==0)
+    {
+      wabsinf=1/winfmult;
+      wloginf=-log(wabsinf/wmax);
+    }
 
   # Interim outputting of tags, their lengths, and weights
   # PROCINFO["sorted_in"]="@val_num_desc";
