@@ -1,28 +1,30 @@
 #!/bin/sh
 
 # Usage:
-#    add-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:RM_ALL_WEIGHTS
+#    add-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS
 
 # Example:
-#    ./add-weights-to-lexc.sh lexicon.tmp.lexc crk_weights.txt log 2 yes | less
+#    ./add-weights-to-lexc.sh lexicon.lexc crk_weights.txt log 2 yes '+0' | less
 
-# Alternative ways to define default weights
+# Alternative ways to define default weights or maximum absolute feature count:
 # =10 : exact default weight of 10
 # +10 : maximum absolute weight plus 10
 # *10 : maximum absolute weight times 10
 # x10 : maximum absolute weight times 10
 # X10 : maximum absolute weight times 10
 
-cat $1 | gawk -v RM_ALL_WEIGHTS=$5 'BEGIN { rm_all_weights=RM_ALL_WEIGHTS;
+cat $1 | gawk -v RM_ALL_WEIGHTS=$6 'BEGIN { rm_all_weights=RM_ALL_WEIGHTS;
   if(rm_all_weights=="yes") rm=1;
 }
 {
-  if(rm) sub("\"weight:[^\"]+\"", "");
+  if(rm)
+    gsub("\"weight:[^\"]+\"", "");
   print;
 }' |
 
-gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
-  wtype=WTYPE; winfmult=WINFMULT;
+gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 -v NMAX=$5 'BEGIN { weights=WEIGHTS;
+  wtype=WTYPE; winfmult=WINFMULT; nmax=NMAX;
+
   if(winfmult=="")
     winfmult=2;
   if(wtype!="log" && wtype!="abs")
@@ -33,7 +35,10 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
     {
       tag=$2;
       if($1*1>wmax)
-        wmax=$1;
+        {
+          wmax=$1;
+          maxtag=tag;
+        }
       # gsub("\\+|\\*|\\?|[-]", "\\\\&", tag);
       gsub("0","%0",tag);
       gsub("%+","%",tag);
@@ -50,6 +55,20 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
 #      w[lex]=$1;
 #      tlen[lex]=length(f[1]);
 #    }
+
+  if(match(nmax, "^=([[:digit:]]+)$", f)!=0)
+    {
+      if(f[1]<wmax)
+        printf "WARNING: Assigned maximum absolute feature count (=%i) less than count for most common feature: %s (=%i).\n", f[1], maxtag, wmax > "/dev/stderr/";
+      wmax=f[1];
+    }
+
+  if(match(nmax, "^\\+([[:digit:]]+)$", f)!=0)
+    wmax=wmax+f[1];
+
+  if(match(nmax, "^[\\*xX]([[:digit:]]+[\\.]?[[:digit:]]*)$", f)!=0)
+    wmax=wmax*f[1];
+
   for(t in w)
     l[t]=-log(w[t]/wmax);
 
@@ -80,7 +99,7 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 'BEGIN { weights=WEIGHTS;
   # Interim outputting of tags, their lengths, and weights
   # PROCINFO["sorted_in"]="@val_num_desc";
   # for(t in tlen)
-  #    print tlen[t], w[t], t;
+  #    print tlen[t], w[t], l[t], t;
 
   file="\n";
 }
@@ -105,7 +124,8 @@ END {
                 sub("((!.*)|([ ]*))$", "", mc_line); # print "<" mc_line ">";
                 if(!(mc_line in w) && mc_line!="")
                   {
-                    if(match(mc_line, "^@[^@]+@")==0 && match(mc_line, "^\\^")==0 && match(mc_line, "Err")==0 && match(mc_line, "^[[:lower:]]+[0-9]+")==0 && mc_line!="%<" && mc_line!="%>")
+                    # Ruling out flag-diacritics, carot+upper-case triggers (^XXX), lower-case+number special characters ([a-z][0-9]) and morpheme boundary markers (<, >, /):
+                    if(match(mc_line, "^@[^@]+@")==0 && match(mc_line, "^\\^")==0 && match(mc_line, "^[[:lower:]]+[0-9]+")==0 && mc_line!="%<" && mc_line!="%>" && mc_line!="/")
                       {
                         tlen[mc_line]=length(mc_line)
                         w[mc_line]=wabsinf;
