@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Usage:
-#    add-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS
+#    insert-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS
 
 # Example:
-#    ./add-weights-to-lexc.sh lexicon.lexc crk_weights.txt log 2 yes '+0' | less
+#    ./insert-weights-to-lexc.sh lexicon.lexc crk_weights.txt log 2 yes '+0' | less
 
 # Alternative ways to define default weights or maximum absolute feature count:
 # =10 : exact default weight of 10
