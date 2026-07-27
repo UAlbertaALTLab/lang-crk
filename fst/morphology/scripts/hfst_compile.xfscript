@@ -1,14 +1,13 @@
 ! Instructions for compiling revised verb model for Plains Cree
 ! Output as HFST
 
-read lexc lexicon.lexc
+read lexc lexicon.lexc ! Unweighted version
 define Morph
 
 source phonology/phonology.xfscript
 define Phon
 
-source orthography/spellrelax_weighted.xfscript
-! source orthography/spellrelax.xfscript
+source orthography/spellrelax.xfscript
 define SpellRelax
 
 define yLemmaNorm [ y <- "ý" ];
