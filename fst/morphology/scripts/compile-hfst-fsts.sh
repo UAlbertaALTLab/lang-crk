@@ -5,7 +5,7 @@
 # Script to compile core FSTs from LEXC and XFSCRIPT source code
 # Output: HFST
 
-echo 'Concatenating LEXC source files into: lexicon.lexc.' ;
+echo 'Concatenating LEXC source files.' ;
 
 rm lexicon.lexc
 
@@ -13,9 +13,13 @@ while read line; do
     cat "$line" >> lexicon.lexc
 done < defs/lexc.list
 
+echo 'Concatenated LEXC source files into: lexicon.lexc.' ;
+
 echo 'Compiling HFSTs.' ;
 
 hfst-xfst -F scripts/hfst_compile.xfscript
+
+echo 'Compiled HFSTs.' ;
 
 echo 'Creating HFSTOLs.' ;
 
@@ -23,6 +27,8 @@ hfst-fst2fst -w -i fst/analyser-gt-norm.hfst -o fst/analyser-gt-norm.hfstol
 hfst-fst2fst -w -i fst/analyser-gt-desc.hfst -o fst/analyser-gt-desc.hfstol
 hfst-fst2fst -w -i fst/generator-gt-norm.hfst -o fst/generator-gt-norm.hfstol
 hfst-fst2fst -w -i fst/generator-gt-norm-bound.hfst -o fst/generator-gt-norm-bound.hfstol
+
+echo 'Created HFSTOLs.' ;
 
 echo 'Finished.';
 
