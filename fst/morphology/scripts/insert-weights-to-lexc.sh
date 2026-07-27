@@ -26,7 +26,7 @@ gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 -v NMAX=$5 'BEGIN { weights=WEIGHT
   wtype=WTYPE; winfmult=WINFMULT; nmax=NMAX;
 
   if(winfmult=="")
-    winfmult=2;
+    winfmult="*2";
   if(wtype!="log" && wtype!="abs")
     wtype="log";
 
