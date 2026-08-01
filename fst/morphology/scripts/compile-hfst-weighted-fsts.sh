@@ -19,7 +19,7 @@ echo 'Concatenated LEXC source files into: lexicon.lexc.' ;
 
 echo 'Adding feature weights into LEXC file: lexicon.lexc.' ;
 
-scripts/insert-weights-to-lexc.sh lexicon.lexc scripts/crk_a_w_b_s_m.tags_freq.txt log '*2' '=430631' yes > lexicon_weighted.lexc
+scripts/insert-weights-to-lexc.sh lexicon.lexc scripts/crk_aw_b_s_m_corp+cw_dict.tags_freq.txt log '*2' '=430631' yes > lexicon_weighted.lexc
 
 echo 'Added feature weights into LEXC file: lexicon_weighted.lexc.' ;
 
