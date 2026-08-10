@@ -120,3 +120,8 @@ LEXICON VerbStems
 ! Manufacture: N -> VAI with -îhke
 @R.class.AI@@P.manuf.MANUF@ NounIndepStems ;
 @R.class.AI@@P.manuf.MANUF@ NounDepNonkinshipStems ;
+! Morphemic derivation of verb stems
+@R.class.II@ MorphemicDerivation ;
+@R.class.AI@ MorphemicDerivation ;
+@R.class.TI@ MorphemicDerivation ;
+@R.class.TA@ MorphemicDerivation ;

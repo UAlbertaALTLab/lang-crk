@@ -7,10 +7,14 @@ define Morph
 source phonology/phonology.xfscript
 define Phon
 
+source phonology/derivation-phonology.xfscript
+define DrvPhon
+
 source orthography/spellrelax.xfscript
 define SpellRelax
 
 define yLemmaNorm [ y <- "ý" ];
+define Bx [ "<" | ">" | "/" ];
 define rmBx [ Bx -> 0 ];
 
 define ErrTags [ "+Err/Morph" | "+Err/Orth" | "+Err/Dim" | "+Err/Thm" ];
@@ -20,7 +24,7 @@ set flag-is-epsilon ON
 
 ! Normative FST without morpheme boundaries
 
-define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. Phon .o. rmBx ];
+define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. DrVPhon .o. Phon .o. rmBx ];
 
 push FSTnorm
 invert net
@@ -31,7 +35,7 @@ clear stack
 
 ! Normative generator FST with morpheme boundaries in surface forms
 
-define FSTbound [ yLemmaNorm .o. Morph .o. Phon ].i;
+define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon ].i;
 push FSTbound
 invert net
 save stack fst/generator-gt-norm-bound.hfst
@@ -39,7 +43,7 @@ clear stack
 
 ! Descriptive analyzer FST with spell-relaxation rules (without morpheme
 
-! define FSTdesc [ yLemmaNorm .o. Morph .o. Phon .o. rmBx .o. SpellRelax ];
+! define FSTdesc [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. rmBx .o. SpellRelax ];
 define FSTdesc [ FSTbound.i .o. rmBx .o. SpellRelax ];
 push FSTdesc
 invert net

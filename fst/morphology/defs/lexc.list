@@ -12,3 +12,4 @@
 ./stems/pronouns.lexc
 ./stems/particles.lexc
 ./stems/numerals.lexc
+./stems/morph_derivation.lexc

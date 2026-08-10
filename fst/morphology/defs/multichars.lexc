@@ -54,6 +54,10 @@ IC+
 RdplS+
 RdplW+
 
+!! Derivation
+! Morphemic derivation of stems
++Der/N
++Der/V
 ! Derivational features
 +Der/Dim
 +Der/Com
@@ -86,10 +90,15 @@ RdplW+
 +Der/ikê
 +Der/ikâtê
 
+! Orthographical and dialectal variation
 +Dial
 +Orth/Hyp
 +Err/Morph
 +Err/Orth
+! Non-standard variants for nouns
++Err/Dim
++Err/Orth
++Err/Thm
 
 ! Flags
 @D.bound@
@@ -280,9 +289,6 @@ y4
 +D
 +Der/Dim
 +Distr
-+Err/Dim
-+Err/Orth
-+Err/Thm
 +Loc
 +Obv
 +Pl
