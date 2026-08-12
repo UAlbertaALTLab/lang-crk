@@ -80,7 +80,18 @@ define boundaryRule [ [ %/ ]+ -> %/ ] ;
 
 define rmBoundary  [ %/ -> 0 || .#. _ ] .o. [ %/ -> 0 || _ .#. ] ;
 
-read regex [ dimRule
+! Removing excessive sequences of morphemic syllables consisting only of vowels and glides (three or more)
+
+define Vowel [ a | â | e | ê | i | î | o | ô ] ;
+
+define Glide [ w | y | ý ] ;
+
+define VGsyll [ Vowel | Glide ]+ ;
+
+define VGfilter ~[ $[ [ VGsyll "/" Vsyll "/" VGsyll "/" ] | [ "/" VGsyll "/" VGsyll "/" VGsyll ] ] ];
+
+read regex [ VGfilter
+.o. dimRule
 .o. ên2ânRule
 .o. TsRule
 .o. tcRule
