@@ -39,6 +39,7 @@ echo 'Creating HFSTOLs.' ;
 hfst-fst2fst -w -i fst/analyser-gt-norm.hfst -o fst/analyser-gt-norm.hfstol
 hfst-fst2fst -w -i fst/analyser-gt-desc.hfst -o fst/analyser-gt-desc.hfstol
 hfst-fst2fst -w -i fst/generator-gt-norm.hfst -o fst/generator-gt-norm.hfstol
+hfst-fst2fst -w -i fst/lexicon.hfst -o fst/lexicon.hfstol
 hfst-fst2fst -w -i fst/generator-gt-norm-bound.hfst -o fst/generator-gt-norm-bound.hfstol
 
 echo 'Created HFSTOLs.' ;
