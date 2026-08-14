@@ -48,7 +48,7 @@ define oCollapseRule [ [ o | ô ] %/ [ o | ô ] -> ô %/ ] ;
 
 ! Cw-iC > CoC
 
-define CwiC2CoCRule  [ w %/ i -> o %/ || [ c | h | k | m | n | p | s | t ] _ [ c | h | k | m | n | p | s | t | w | %/ ] ] ;
+define CwiC2CoCRule  [ w %/ i -> o %/ || [ c | h | k | m | n | p | s | t ] _ ( "^DIM" ) [ c | h | k | m | n | p | s | t | w | %/ ] ] ;
 
 ! Cw-ô > Cô
 
@@ -91,7 +91,7 @@ define VGsyll [ Vowel | Glide ]+ ;
 define VGfilter ~[ $[ [ VGsyll "/" Vsyll "/" VGsyll "/" ] | [ "/" VGsyll "/" VGsyll "/" VGsyll ] ] ];
 
 read regex [ VGfilter
-.o. dimRule
+! .o. dimRule
 .o. ên2ânRule
 .o. TsRule
 .o. tcRule
