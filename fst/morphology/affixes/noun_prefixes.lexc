@@ -75,6 +75,7 @@ LEXICON NounStemsGate
 @R.noun.DepNonKin@  NounDepNonkinshipStems ;
 ! Morphemic derivation of Independent noun stems
 @R.noun.Indep@      MorphemicDerivation ;
+@R.noun.DepNonKin@  MorphemicDerivation ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! Looping through the NOUN stems in the following LEXICONs
