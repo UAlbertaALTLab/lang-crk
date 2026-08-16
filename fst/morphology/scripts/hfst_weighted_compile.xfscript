@@ -67,6 +67,7 @@ define FSTdictdesc [ FSTdictbound.i .o. rmBx .o. SpellRelax ];
 push FSTdictdesc
 invert net
 save stack fst/analyser-gt-dict-desc.hfst
+clear stack
 
 ! define FSTdesc [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight .o. rmBx .o. SpellRelax ];
 ! define FSTdesc [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. rmBx .o. SpellRelax ];
