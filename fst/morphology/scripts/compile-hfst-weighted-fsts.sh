@@ -24,7 +24,7 @@ echo 'Adding feature weights into LEXC file: lexicon.lexc.' ;
 # bin/extract-tag-frequencies-from-cw-entry-lexicalized-derivations.sh dicts/Wolvengrey_altlab.toolbox /Users/arppe/altdev/lang-crk/fst/morphology/fst/analyser-gt-norm.hfstol '(N|V)' '^(P[VN]/|Der/).+' 0 > generated/crk_cw_pvn_der.tags_freq.txt
 # bin/aggregate-corpus+dictionary-feature-tag-weights.sh generated/crk_aw_b_s_m.tags_freq.txt generated/crk_cw_pvn_der.tags_freq.txt '1+1' > generated/crk_aw_b_s_m_corp+cw_dict.tags_freq.txt
 
-scripts/insert-weights-to-lexc.sh lexicon.lexc scripts/crk_aw_b_s_m_corp+cw_dict.tags_freq.txt log '*2' '=430631' no > lexicon_weighted.lexc
+scripts/insert-weights-to-lexc.sh lexicon.lexc scripts/crk_aw_b_s_m_corp+cw_dict.tags_freq.txt log '*2' '=430631' no 0 > lexicon_weighted.lexc
 
 echo 'Added feature weights into LEXC file: lexicon_weighted.lexc.' ;
 
