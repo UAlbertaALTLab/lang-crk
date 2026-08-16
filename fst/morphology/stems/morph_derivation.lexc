@@ -316,7 +316,7 @@ LEXICON -ah1
 -ah1/:ah/ -âskw- "weight: 14.934616" ; ! n=16/845 [34/88653]
 -ah1/:ah/ -ýâkan- "weight: 21.517262" ; ! n=1/845 [0/88653]
 @R.class.AI@-ah1+Der/V:@R.class.AI@ah VAI-ae "weight: 18.525515" ; ! n=1/845 (VAI-1) [15/88653]
-@R.class.AI@-ah1+Der/V:@R.class.AI@ah VAI-m "weight: 20.130968" ; ! n=4/845 (VAI-3) [0/88653]
+@R.class.AI@-ah1+Der/V:@R.class.AI@ah%>a VAI-m "weight: 20.130968" ; ! n=4/845 (VAI-3) [0/88653]
 @R.class.II@-ah1+Der/V:@R.class.II@ah VII-v "weight: 16.462881" ; ! n=1/845 (VII-2v) [118/88653]
 @R.class.TA@-ah1+Der/V:@R.class.TA@ah VTA "weight: 16.515066" ; ! n=7/845 (VTA-1) [16/88653]
 @R.class.TI@-ah1+Der/V:@R.class.TI@ah VTI-m "weight: 8.868363" ; ! n=323/845 (VTI-1) [726/88653]
@@ -349,7 +349,7 @@ LEXICON -ah2
 -ah2/:ah/ -âpôýo "weight: 25.758210" ; ! n=1/79 [0/88653]
 -ah2/:ah/ -âsi "weight: 25.758210" ; ! n=1/79 [0/88653]
 -ah2/:ah/ -âst- "weight: 25.758210" ; ! n=1/79 [0/88653]
-@R.class.AI@-ah2+Der/V:@R.class.AI@ah VAI-m "weight: 22.867838" ; ! n=18/79 (VAI-3) [0/88653]
+@R.class.AI@-ah2+Der/V:@R.class.AI@ah%>a VAI-m "weight: 22.867838" ; ! n=18/79 (VAI-3) [0/88653]
 @R.class.TA@-ah2+Der/V:@R.class.TA@ah VTA "weight: 25.758210" ; ! n=1/79 (VAI-1) [0/88653]
 @R.class.TI@-ah2+Der/V:@R.class.TI@ah VTI-m "weight: 15.410519" ; ! n=13/79 (VTI-1) [26/88653]
 -ah2/:ah/ pici- "weight: 25.758210" ; ! n=1/79 [0/88653]
@@ -416,7 +416,7 @@ LEXICON -ah3
 
 LEXICON -ah4
 -ah4/:ah/ -amaw "weight: 17.650046" ; ! n=6/11 [6/88653]
-@R.class.AI@-ah4+Der/V:@R.class.AI@ah VAI-m "weight: 26.351274" ; ! n=3/11 (VAI-3) [0/88653]
+@R.class.AI@-ah4+Der/V:@R.class.AI@ah%>a VAI-m "weight: 26.351274" ; ! n=3/11 (VAI-3) [0/88653]
 @R.class.TI@-ah4+Der/V:@R.class.TI@ah VTI-m "weight: 20.540418" ; ! n=2/11 (VTI-1) [1/88653]
 
 LEXICON -ahc-
@@ -549,7 +549,7 @@ LEXICON -aht2
 -aht2/:aht/ -ikê1 "weight: 15.252151" ; ! n=33/105 [12/88653]
 -aht2/:aht/ -s1 "weight: 21.233565" ; ! n=1/105 [1/88653]
 -aht2/:aht/ -â3 "weight: 22.900531" ; ! n=1/105 [0/88653]
-@R.class.AI@-aht2+Der/V:@R.class.AI@aht VAI-m "weight: 20.821089" ; ! n=8/105 (VAI-3) [0/88653]
+@R.class.AI@-aht2+Der/V:@R.class.AI@aht%>a VAI-m "weight: 20.821089" ; ! n=8/105 (VAI-3) [0/88653]
 @R.class.TI@-aht2+Der/V:@R.class.TI@aht VTI-m "weight: 10.772235" ; ! n=54/105 (VTI-1) [647/88653]
 
 LEXICON -aht3
@@ -1289,7 +1289,7 @@ LEXICON -atâ-
 
 LEXICON -atâht
 -atâht/:atâht/ -ikê1 "weight: 30.088943" ; ! n=1/12 [0/88653]
-@R.class.AI@-atâht+Der/V:@R.class.AI@atâht VAI-m "weight: 28.009502" ; ! n=8/12 (VAI-3) [0/88653]
+@R.class.AI@-atâht+Der/V:@R.class.AI@atâht%>a VAI-m "weight: 28.009502" ; ! n=8/12 (VAI-3) [0/88653]
 @R.class.TI@-atâht+Der/V:@R.class.TI@atâht VTI-m "weight: 28.990331" ; ! n=3/12 (VTI-1) [0/88653]
 
 LEXICON -atâm
@@ -3583,7 +3583,7 @@ LEXICON -n1
 -n1/:n/ -êýim "weight: 21.233565" ; ! n=1/1722 [1/88653]
 @R.noun.Indep@-n1+Der/N:@R.noun.Indep@n NI "weight: 20.998513" ; ! n=1/1722 (VTI-2) [0/88653]
 @R.class.AI@-n1+Der/V:@R.class.AI@n VAI-ae "weight: 20.998513" ; ! n=1/1722 (VAI-1) [0/88653]
-@R.class.AI@-n1+Der/V:@R.class.AI@n VAI-m "weight: 19.899901" ; ! n=3/1722 (VAI-3) [0/88653]
+@R.class.AI@-n1+Der/V:@R.class.AI@n%>a VAI-m "weight: 19.899901" ; ! n=3/1722 (VAI-3) [0/88653]
 @R.class.TA@-n1+Der/V:@R.class.TA@n VTA "weight: 7.656520" ; ! n=498/1722 (VTA-1) [1582/88653]
 @R.class.TI@-n1+Der/V:@R.class.TI@n VTI-ae "weight: 20.998513" ; ! n=1/1722 (VTI-2) [0/88653]
 @R.class.TI@-n1+Der/V:@R.class.TI@n VTI-m "weight: 7.557424" ; ! n=461/1722 (VTI-1) [1887/88653]
@@ -3626,7 +3626,7 @@ LEXICON -n3
 -n3/:n/ -âskw "weight: 24.117682" ; ! n=2/148 [0/88653]
 -n3/:n/ -âskw- "weight: 20.134953" ; ! n=3/148 [1/88653]
 -n3/:n/ -ê2 "weight: 16.638445" ; ! n=11/148 [9/88653]
-@R.noun.Indep@-n3+Der/N:@R.noun.Indep@n NA "weight: 24.810829" ; ! n=1/148 (NA-1) [0/88653]
+@R.noun.Indep@-n3+Der/N:@R.noun.Indep@n NA_POSS/im "weight: 24.810829" ; ! n=1/148 (NA-1) [0/88653]
 @R.noun.Indep@-n3+Der/N:@R.noun.Indep@n NI "weight: 24.810829" ; ! n=1/148 (NI-1) [0/88653]
 @R.class.AI@-n3+Der/V:@R.class.AI@n VAI-ae "weight: 24.810829" ; ! n=1/148 (IPC) [0/88653]
 @R.class.II@-n3+Der/V:@R.class.II@n VII-n "weight: 24.810829" ; ! n=1/148 (VII-2n) [0/88653]
@@ -3636,7 +3636,7 @@ LEXICON -n3
 
 LEXICON -n4
 -n4/:n/ -ikwan "weight: 28.990331" ; ! n=3/4 [0/88653]
-@R.class.AI@-n4+Der/V:@R.class.AI@n VAI-m "weight: 30.088943" ; ! n=1/4 (VAI-3) [0/88653]
+@R.class.AI@-n4+Der/V:@R.class.AI@n%>a VAI-m "weight: 30.088943" ; ! n=1/4 (VAI-3) [0/88653]
 
 LEXICON -nahâhkisîm-
 -nahâhkisîm-/:nahâhkisîm/ -i2 "weight: 20.134953" ; ! n=1/1 [3/88653]
@@ -4443,7 +4443,7 @@ LEXICON -sk1
 -sk1/:sk/ -âkê "weight: 20.540418" ; ! n=2/210 [1/88653]
 -sk1/:sk/ -ât "weight: 15.252151" ; ! n=36/210 [11/88653]
 -sk1/:sk/ -ê2 "weight: 16.790914" ; ! n=5/210 [17/88653]
-@R.class.AI@-sk1+Der/V:@R.class.AI@sk VAI-m "weight: 23.452997" ; ! n=1/210 (VAI-3) [0/88653]
+@R.class.AI@-sk1+Der/V:@R.class.AI@sk%>a VAI-m "weight: 23.452997" ; ! n=1/210 (VAI-3) [0/88653]
 @R.class.TI@-sk1+Der/V:@R.class.TI@sk VTI-ae "weight: 23.452997" ; ! n=1/210 (VAI-1) [0/88653]
 @R.class.TI@-sk1+Der/V:@R.class.TI@sk VTI-m "weight: 10.749260" ; ! n=125/210 (VTI-1) [286/88653]
 -sk1/:sk/ ah- "weight: 19.624127" ; ! n=1/210 [5/88653]
@@ -4455,7 +4455,7 @@ LEXICON -sk2
 -sk2/:sk/ -âT "weight: 23.005556" ; ! n=2/71 [0/88653]
 -sk2/:sk/ -âmo "weight: 23.698703" ; ! n=1/71 [0/88653]
 -sk2/:sk/ -ât "weight: 22.600091" ; ! n=3/71 [0/88653]
-@R.class.AI@-sk2+Der/V:@R.class.AI@sk VAI-m "weight: 21.906943" ; ! n=6/71 (VAI-3) [0/88653]
+@R.class.AI@-sk2+Der/V:@R.class.AI@sk%>a VAI-m "weight: 21.906943" ; ! n=6/71 (VAI-3) [0/88653]
 @R.class.TI@-sk2+Der/V:@R.class.TI@sk VTI-m "weight: 14.212481" ; ! n=28/71 (VTI-1) [40/88653]
 @R.class.TI@-sk2+Der/V:@R.class.TI@sk VTI-m-PL "weight: 23.698703" ; ! n=1/71 (VTI-1) [0/88653]
 
@@ -5192,7 +5192,7 @@ LEXICON -w1
 -w1/:w/ -êýihtâkosi "weight: 24.138301" ; ! n=1/114 [0/88653]
 -w1/:w/ -êýihtâkwan "weight: 24.138301" ; ! n=1/114 [0/88653]
 -w1/:w/ -êýim "weight: 23.445154" ; ! n=2/114 [0/88653]
-@R.noun.Indep@-w1+Der/N:@R.noun.Indep@w NA "weight: 24.138301" ; ! n=1/114 (NA-3) [0/88653]
+@R.noun.Indep@-w1+Der/N:@R.noun.Indep@w NA_POSS/im "weight: 24.138301" ; ! n=1/114 (NA-2) [0/88653]
 @R.class.TA@-w1+Der/V:@R.class.TA@w VTA "weight: 24.138301" ; ! n=1/114 (IPC) [0/88653]
 -w1/:w/ at- "weight: 21.233565" ; ! n=1/114 [1/88653]
 -w1/:w/ iýin- "weight: 23.445154" ; ! n=2/114 [0/88653]
@@ -5259,7 +5259,7 @@ LEXICON -win
 @R.noun.Indep@-win+Der/N:@R.noun.Indep@win NI "weight: 20.134953" ; ! n=1/81 (NI-1) [3/88653]
 @R.class.AI@-win+Der/V:@R.class.AI@win VAI-ae "weight: 25.013770" ; ! n=1/81 (VAI-1) [0/88653]
 @R.class.AI@-win+Der/V:@R.class.AI@win VAI-io "weight: 25.013770" ; ! n=1/81 (VAI-1) [0/88653]
-@R.class.AI@-win+Der/V:@R.class.AI@win VAI-m "weight: 25.013770" ; ! n=1/81 (VAI-1) [0/88653]
+@R.class.AI@-win+Der/V:@R.class.AI@win%>a VAI-m "weight: 25.013770" ; ! n=1/81 (VAI-1) [0/88653]
 @R.class.TA@-win+Der/V:@R.class.TA@win VTA "weight: 24.320622" ; ! n=2/81 (VAI-1) [0/88653]
 @R.class.TI@-win+Der/V:@R.class.TI@win VTI-ae "weight: 20.134953" ; ! n=1/81 (VAI-1) [3/88653]
 
@@ -6926,7 +6926,7 @@ LEXICON -ôsisim-
 LEXICON -ôsân
 -ôsân/:ôsân/ -ihkê "weight: 30.088943" ; ! n=1/3 [0/88653]
 -ôsân/:ôsân/ -iwi "weight: 30.088943" ; ! n=1/3 [0/88653]
-@R.noun.Indep@-ôsân+Der/N:@R.noun.Indep@ôsân NA "weight: 30.088943" ; ! n=1/3 (VAI-1) [0/88653]
+@R.noun.Indep@-ôsân+Der/N:@R.noun.Indep@ôsân NA_POSS/im "weight: 30.088943" ; ! n=1/3 (VAI-1) [0/88653]
 
 LEXICON -ôsân-
 -ôsân-/:ôsân/ -iwi "weight: 19.847271" ; ! n=1/1 [4/88653]
@@ -6999,10 +6999,10 @@ LEXICON -ýî
 -ýî/:ýî/ -staw "weight: 30.088943" ; ! n=1/1 [0/88653]
 
 LEXICON Câ(h)-
-Câ(h)-/:Câh/ misk- "weight: 28.009502" ; ! n=1/11 [0/88653]
-Câ(h)-/:Câ/ misk- "weight: 28.009502" ; ! n=1/11 [0/88653]
-Câ(h)-/:Câh/ miton- "weight: 17.544686" ; ! n=10/11 [4/88653]
-Câ(h)-/:Câ/ miton- "weight: 17.544686" ; ! n=10/11 [4/88653]
+Câ(h)-/:d2âh/ misk- "weight: 28.009502" ; ! n=1/11 [0/88653]
+Câ(h)-/:d2â/ misk- "weight: 28.009502" ; ! n=1/11 [0/88653]
+Câ(h)-/:d2âh/ miton- "weight: 17.544686" ; ! n=10/11 [4/88653]
+Câ(h)-/:d2â/ miton- "weight: 17.544686" ; ! n=10/11 [4/88653]
 
 LEXICON DIM
 @R.noun.Indep@DIM+Der/N:@R.noun.Indep@DIM NI "weight: 29.395796" ; ! n=1/5 (VAI-1) [0/88653]
@@ -14955,7 +14955,7 @@ mâh-/:mâh/ -âpotê "weight: 30.088943" ; ! n=1/26 [0/88653]
 mâh-/:mâh/ -âpôýo "weight: 30.088943" ; ! n=1/26 [0/88653]
 mâh-/:mâh/ -âsi "weight: 30.088943" ; ! n=1/26 [0/88653]
 mâh-/:mâh/ -âstan "weight: 30.088943" ; ! n=1/26 [0/88653]
-@R.class.AI@mâh-+Der/V:@R.class.AI@mâh VAI-m "weight: 29.395796" ; ! n=2/26 (VAI-3) [0/88653]
+@R.class.AI@mâh-+Der/V:@R.class.AI@mâh%>a VAI-m "weight: 29.395796" ; ! n=2/26 (VAI-3) [0/88653]
 mâh-/:mâh/ pici- "weight: 30.088943" ; ! n=1/26 [0/88653]
 
 LEXICON mâhcikw-
@@ -18183,7 +18183,7 @@ ostostot-/:ostostot/ -a4 "weight: 29.395796" ; ! n=2/7 [0/88653]
 ostostot-/:ostostot/ -amw) "weight: 30.088943" ; ! n=1/7 [0/88653]
 ostostot-/:ostostot/ -asi2 "weight: 30.088943" ; ! n=1/7 [0/88653]
 ostostot-/:ostostot/ -aski "weight: 30.088943" ; ! n=1/7 [0/88653]
-@R.class.AI@ostostot-+Der/V:@R.class.AI@ostostot VAI-m "weight: 29.395796" ; ! n=2/7 (VAI-3) [0/88653]
+@R.class.AI@ostostot-+Der/V:@R.class.AI@ostostot%>a VAI-m "weight: 29.395796" ; ! n=2/7 (VAI-3) [0/88653]
 
 LEXICON osw-
 osw-/:osw/ -o "weight: 19.441806" ; ! n=2/3 [3/88653]
@@ -18439,7 +18439,7 @@ pahk4-/:pahk/ -pêst- "weight: 20.540418" ; ! n=2/3 [1/88653]
 pahk4-/:pahk/ -pêstin "weight: 29.395796" ; ! n=1/3 [0/88653]
 
 LEXICON pahkah-
-@R.class.AI@pahkah-+Der/V:@R.class.AI@pahkah VAI-m "weight: 30.088943" ; ! n=1/1 (VAI-3) [0/88653]
+@R.class.AI@pahkah-+Der/V:@R.class.AI@pahkah%>a VAI-m "weight: 30.088943" ; ! n=1/1 (VAI-3) [0/88653]
 
 LEXICON pahkahw-
 pahkahw-/:pahkahw/ -iko "weight: 29.395796" ; ! n=2/4 [0/88653]
@@ -20744,7 +20744,7 @@ pîway-/:pîway/ ay1- "weight: 29.395796" ; ! n=1/5 [0/88653]
 pîway-/:pîway/ ayâ- "weight: 29.395796" ; ! n=1/5 [0/88653]
 
 LEXICON pîwit-
-@R.class.AI@pîwit-+Der/V:@R.class.AI@pîwit VAI-m "weight: 30.088943" ; ! n=1/1 (VAI-3) [0/88653]
+@R.class.AI@pîwit-+Der/V:@R.class.AI@pîwit%>a VAI-m "weight: 30.088943" ; ! n=1/1 (VAI-3) [0/88653]
 
 LEXICON pîwê-
 pîwê-/:pîwê/ -atah "weight: 28.297184" ; ! n=1/6 [0/88653]
