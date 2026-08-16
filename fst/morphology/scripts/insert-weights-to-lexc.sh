@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Usage:
-#    insert-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS
+#    insert-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS 7:REPORT
 
 # Example:
 #    ./insert-weights-to-lexc.sh lexicon.lexc crk_weights.txt log 2 yes '+0' | less
@@ -22,8 +22,11 @@ cat $1 | gawk -v RM_ALL_WEIGHTS=$6 'BEGIN { rm_all_weights=RM_ALL_WEIGHTS;
   print;
 }' |
 
-gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 -v NMAX=$5 'BEGIN { weights=WEIGHTS;
-  wtype=WTYPE; winfmult=WINFMULT; nmax=NMAX;
+gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 -v NMAX=$5 -v REPORT=$7 'BEGIN { weights=WEIGHTS;
+  wtype=WTYPE; winfmult=WINFMULT; nmax=NMAX; report=REPORT;
+
+  if(report!="yes" && report!=1)
+    report=0;
 
   if(winfmult=="")
     winfmult="*2";
@@ -130,7 +133,8 @@ END {
                         tlen[mc_line]=length(mc_line)
                         w[mc_line]=wabsinf;
                         l[mc_line]=wloginf;
-                        printf "Tag without corpus weight: %s - assigned default weight: %f\n", mc_line, wloginf > "/dev/stderr/";
+                        if(report)
+                          printf "Tag without corpus weight: %s - assigned default weight: %f\n", mc_line, wloginf > "/dev/stderr/";
                       }
                   }
               }
@@ -171,8 +175,15 @@ END {
                     if(wlexc!=0 && match(line[j], "\"[^\"]*\"")!=0)
                       {
                         lexicon_name=seps[i]; gsub("(^[\\n]+)|([\\n]+$)", "", lexicon_name);
-                        printf "Removing previous weight/infostring in LEXC code (line %i in: %s):\n--> %s\n", j, lexicon_name, line[j] > "/dev/stderr/";
+                        if(report)
+                          printf "Removing previous weight/infostring in LEXC code (line %i in: %s):\n--> %s\n", j, lexicon_name, line[j] > "/dev/stderr/";
                         sub("\"[^\"]*\"", "", line[j]);
+                      }
+                    if(wlexc==0 && match(line[j], "\"[^\"]*\"")!=0)
+                      {
+                        lexicon_name=seps[i]; gsub("(^[\\n]+)|([\\n]+$)", "", lexicon_name);
+                        if(report)
+                          printf "Keeping previous weight/infostring in LEXC code (line %i in: %s):\n--> %s\n", j, lexicon_name, line[j] > "/dev/stderr/";
                       }
                     # Assigning aggregate weight to LEXC line
                     if(wlexc!=0)
