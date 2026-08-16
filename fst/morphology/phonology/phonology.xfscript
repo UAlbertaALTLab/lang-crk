@@ -689,7 +689,7 @@ VGi2VVRule
 .o. o2ooPossNounRule
 .o. DimRule
 .o. deep2surfRule
-.o. yNormRule
+! .o. yNormRule
 .o. rmTriggerRule
 ] ;
 

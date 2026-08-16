@@ -27,9 +27,17 @@ set flag-is-epsilon ON
 
 ! Normative FST without morpheme boundaries
 
-define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. rmBx ];
-! define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight .o. rmBx ];
+define FSTdictnorm [ ErrFilter .o. Morph .o. DrvPhon .o. Phon .o. rmBx ];
+push FSTdictnorm
+invert net
+save stack fst/analyser-gt-dict-norm.hfst
+invert net
+save stack fst/generator-gt-dict-norm.hfst
+clear stack
 
+define FSTnorm [ yLemmaNorm .o. FSTdictnorm .o. yLemmaNorm.i ];
+! define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. rmBx ]; ! Normalization of accented <ý> on analysis side
+! define FSTnorm [ ErrFilter .o. yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight .o. rmBx ]; ! Default weighting
 push FSTnorm
 invert net
 save stack fst/analyser-gt-norm.hfst
@@ -39,8 +47,15 @@ clear stack
 
 ! Normative generator FST with morpheme boundaries in surface forms
 
-define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon ].i;
+define FSTdictbound [ Morph .o. DrvPhon .o. Phon ].i;
+push FSTdictbound
+invert net
+save stack fst/generator-gt-dict-norm-bound.hfst
+clear stack
+
+! define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon ].i; ! Normalization of accented <ý> on analysis side
 ! define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight ].i;
+define FSTbound [ yLemmaNorm .o. FSTdictbound.i .o. yLemmaNorm.i ].i;
 push FSTbound
 invert net
 save stack fst/generator-gt-norm-bound.hfst
@@ -48,9 +63,15 @@ clear stack
 
 ! Descriptive analyzer FST with spell-relaxation rules (without morpheme
 
+define FSTdictdesc [ FSTdictbound.i .o. rmBx .o. SpellRelax ];
+push FSTdictdesc
+invert net
+save stack fst/analyser-gt-dict-desc.hfst
+
 ! define FSTdesc [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight .o. rmBx .o. SpellRelax ];
 ! define FSTdesc [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. rmBx .o. SpellRelax ];
-define FSTdesc [ FSTbound.i .o. rmBx .o. SpellRelax ];
+! define FSTdesc [ yLemmaNorm .o. FSTdictbound.i .o. rmBx .o. SpellRelax ];
+define FSTdesc [ yLemmaNorm .o. FSTdictdesc ];
 push FSTdesc
 invert net
 save stack fst/analyser-gt-desc.hfst
