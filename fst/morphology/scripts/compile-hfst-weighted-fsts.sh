@@ -17,7 +17,7 @@ echo 'Concatenated LEXC source files into: lexicon.lexc.' ;
 
 # Max: 119400 (Ipc) + 90831 (V) + 61599 (N) + 21906 (Pron) + 106523 (CLB) +30372 (Punct) = 430631
 
-echo 'Adding feature weights into LEXC file: lexicon.lexc.' ;
+echo 'Adding feature weights into LEXC file: lexicon_weighted.lexc.' ;
 
 # bin/generate-a-w-b-s-m-wordform-lemma-anl-frequency-list.sh corpora ~/gt/lang-crk/ " -b 2 /Users/arppe/altdev/lang-crk/fst/morphology/fst/analyser-gt-norm.hfstol" > generated/ahenakew_wolfart_bloomfield_supplements_mason.fst+cg.freq-sorted.txt3
 # cat generated/ahenakew_wolfart_bloomfield_supplements_mason.fst+cg.freq-sorted.txt3 | bin/extract-individual-tag-frequencies-from-full-analysis-list.sh > generated/crk_aw_b_s_m.tags_freq.txt
@@ -36,13 +36,22 @@ echo 'Compiled HFSTs.' ;
 
 echo 'Creating HFSTOLs.' ;
 
+# Regular HFSTOL FSTs
 hfst-fst2fst -w -i fst/analyser-gt-norm.hfst -o fst/analyser-gt-norm.hfstol
 hfst-fst2fst -w -i fst/analyser-gt-desc.hfst -o fst/analyser-gt-desc.hfstol
 hfst-fst2fst -w -i fst/generator-gt-norm.hfst -o fst/generator-gt-norm.hfstol
 hfst-fst2fst -w -i fst/lexicon.hfst -o fst/lexicon.hfstol
 hfst-fst2fst -w -i fst/generator-gt-norm-bound.hfst -o fst/generator-gt-norm-bound.hfstol
+echo 'Created regular HFSTOLs.' ;
 
-echo 'Created HFSTOLs.' ;
+# Dictionary HFSTOL FSTs
+hfst-fst2fst -w -i fst/analyser-gt-dict-norm.hfst -o fst/analyser-gt-dict-norm.hfstol
+hfst-fst2fst -w -i fst/analyser-gt-dict-desc.hfst -o fst/analyser-gt-dict-desc.hfstol
+hfst-fst2fst -w -i fst/generator-gt-dict-norm.hfst -o fst/generator-gt-dict-norm.hfstol
+hfst-fst2fst -w -i fst/generator-gt-dict-norm-bound.hfst -o fst/generator-gt-dict-norm-bound.hfstol
+echo 'Created dictionary HFSTOLs.' ;
+
+echo 'Created all HFSTOLs.' ;
 
 echo 'Finished.';
 
