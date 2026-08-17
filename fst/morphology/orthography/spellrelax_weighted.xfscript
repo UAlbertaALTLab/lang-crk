@@ -162,18 +162,18 @@ o (->) ô::0.5 ,,
 
 define Diacritics
 
-# Converting combining characters into precomposed ones (for the potentially diacriticized vowels).
-regex
-[
-â -> {ā} ,, # a + combining macron U+0304
-ê -> {ē} ,, # e + combining macron U+0304
-î -> {ī} ,, # i + combining macron U+0304
-ô -> {ō} ,, # o + combining macron U+0304
+regex [
 
-â -> {â} ,, # a + combining circumflex accent U+0302
-ê -> {ê} ,, # e + combining circumflex accent U+0302
-î -> {î} ,, # i + combining circumflex accent U+0302
-ô -> {ô}    # o + combining circumflex accent U+0302
+â (->) {ā} ,, # a + combining macron U+0304
+ê (->) {ē} ,, # e + combining macron U+0304
+î (->) {ī} ,, # i + combining macron U+0304
+ô (->) {ō} ,, # o + combining macron U+0304
+
+â (->) {â} ,, # a + combining circumflex accent U+0302
+ê (->) {ê} ,, # e + combining circumflex accent U+0302
+î (->) {î} ,, # i + combining circumflex accent U+0302
+ô (->) {ô}    # o + combining circumflex accent U+0302
+
 ];
 
 define CompositeChars
