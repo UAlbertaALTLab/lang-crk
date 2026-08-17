@@ -16,6 +16,8 @@ define tc2Rule [ t (->) c || _ %/ [ i | î ] ] ;
 
 define TtRule [ T -> t ] ;
 
+define S2htsRule [ S -> [ h | t | s ] ] ;
+
 define e2iRule [ e -> i || %/ _ ] ;
 
 define CiCEpenthesisRule [ %/ -> %/ i  || [ c | h | k | m | n | p | s | t | w | y | ý ]  _ [ c | h | k | m | n | p | s | t | y | ý ] ] ;
@@ -115,6 +117,7 @@ read regex [ VGfilter
 .o. tc2Rule
 .o. iBiRule
 .o. VBVRule
+.o. S2htsRule
 .o. boundaryRule
 ! .o. rmBoundary
 ] ;
