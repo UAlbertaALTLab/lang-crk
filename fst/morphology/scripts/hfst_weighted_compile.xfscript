@@ -27,7 +27,8 @@ set flag-is-epsilon ON
 
 ! Normative FST without morpheme boundaries
 
-define FSTdictnorm [ ErrFilter .o. Morph .o. DrvPhon .o. Phon .o. rmBx ];
+! define FSTdictnorm [ ErrFilter .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight .o. rmBx ]; ! Default weighting
+define FSTdictnorm [ ErrFilter .o. Morph .o. DrvPhon .o. Phon .o. rmBx ]; ! Morpheme-specific weighting
 push FSTdictnorm
 invert net
 save stack fst/analyser-gt-dict-norm.hfst
@@ -47,14 +48,15 @@ clear stack
 
 ! Normative generator FST with morpheme boundaries in surface forms
 
-define FSTdictbound [ Morph .o. DrvPhon .o. Phon ].i;
+! define FSTdictbound [ Morph .o. DrvPhon .o. Phon .o. MorphWeight ].i; ! Default morpheme weighting
+define FSTdictbound [ Morph .o. DrvPhon .o. Phon ].i; ! Morpheme-specific weighting
 push FSTdictbound
 invert net
 save stack fst/generator-gt-dict-norm-bound.hfst
 clear stack
 
 ! define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon ].i; ! Normalization of accented <ý> on analysis side
-! define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight ].i;
+! define FSTbound [ yLemmaNorm .o. Morph .o. DrvPhon .o. Phon .o. MorphWeight ].i; ! Default morpheme weighting
 define FSTbound [ yLemmaNorm .o. FSTdictbound.i .o. yLemmaNorm.i ].i;
 push FSTbound
 invert net
