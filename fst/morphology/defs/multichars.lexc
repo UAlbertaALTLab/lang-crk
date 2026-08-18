@@ -291,6 +291,7 @@ y4
 +Distr
 +Loc
 +Obv
++Voc
 +Pl
 +Px12Pl
 +Px21Pl
@@ -434,5 +435,34 @@ i4
 r2
 t2
 w3
+
+!! Pronoun tags
++Pron
++Pers
++Dem
++Prox
++Med
++Dist
++Def
++Indef
++Interr
++Incl
+
+!! Particle tags
++Ipc
++Prop
++Phr
++Interj
+
+!! Numeral tags
++Num
++Ord
++Card
++Rom
++Arab
+
+!! Other tags
++Eng
++Fra
 
 !! END OF MULTICHARACTER SYMBOL DECLARATIONS !!
