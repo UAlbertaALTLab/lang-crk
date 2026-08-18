@@ -85,8 +85,7 @@ i (->) 0::1.0 || Consonant _ Consonant
 
 define CommonMispellings
 
-regex
-[
+regex [
 # Converting from Woods Cree and Swampy Cree to Plains Cree
 [ ý | y ] (->) [ t h ] ,,
 [ ý | y ] (->) [ n ]::4.0 ,,
