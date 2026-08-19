@@ -1,10 +1,11 @@
 #!/bin/sh
 
 # Usage:
-#    insert-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS 7:REPORT
+#    insert-weights-to-lexc.sh 1:LEXC 2:WEIGHTS 3:WTYPE 4:WINFMULT 5:NMAX 6:RM_ALL_WEIGHTS 7:WFORMAT 8:REPORT
 
 # Example:
-#    ./insert-weights-to-lexc.sh lexicon.lexc crk_weights.txt log 2 yes '+0' | less
+#    scripts/insert-weights-to-lexc.sh lexicon.lexc scripts/crk_aw_b_s_m_corp+cw_dict.tags_freq.txt log '*2' '=430631' no '%f' 0
+#    > lexicon_weighted.lexc 
 
 # Alternative ways to define default weights or maximum absolute feature count:
 # =10 : exact default weight of 10
@@ -22,11 +23,14 @@ cat $1 | gawk -v RM_ALL_WEIGHTS=$6 'BEGIN { rm_all_weights=RM_ALL_WEIGHTS;
   print;
 }' |
 
-gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 -v NMAX=$5 -v REPORT=$7 'BEGIN { weights=WEIGHTS;
-  wtype=WTYPE; winfmult=WINFMULT; nmax=NMAX; report=REPORT;
+gawk -v WEIGHTS=$2 -v WTYPE=$3 -v WINFMULT=$4 -v NMAX=$5 -v WFORMAT=$7 -v REPORT=$8 'BEGIN { weights=WEIGHTS;
+  wtype=WTYPE; winfmult=WINFMULT; nmax=NMAX; wf=WFORMAT; report=REPORT;
 
   if(report!="yes" && report!=1)
     report=0;
+
+  if(match(wf, "^%[0-9]+(\\.[0-9]+)?f$")==0 && match(wf, "^%[0-9]*i$")==0)
+    wf="%f";
 
   if(winfmult=="")
     winfmult="*2";
@@ -134,7 +138,7 @@ END {
                         w[mc_line]=wabsinf;
                         l[mc_line]=wloginf;
                         if(report)
-                          printf "Tag without corpus weight: %s - assigned default weight: %f\n", mc_line, wloginf > "/dev/stderr/";
+                          printf "Tag without corpus weight: %s - assigned default weight: " wf "\n", mc_line, wloginf > "/dev/stderr/";
                       }
                   }
               }
@@ -187,7 +191,7 @@ END {
                       }
                     # Assigning aggregate weight to LEXC line
                     if(wlexc!=0)
-                      sub(";", "\"weight: " wlexc "\" ;", line[j]);
+                      sub(";", "\"weight: " sprintf(wf, wlexc) "\" ;", line[j]);
                   }
                new_section=new_section sprintf("%s\n", line[j]);
              }
