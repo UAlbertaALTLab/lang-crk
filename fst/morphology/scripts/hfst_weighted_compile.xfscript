@@ -1,5 +1,7 @@
-! Instructions for compiling revised verb model for Plains Cree
-! Output as HFST
+!! Instructions for compiling revised verb model for Plains Cree (crk)
+!! (C) Alberta Language Technology Lab & Antti Arppe 2026
+
+!! Output as HFST
 
 read lexc lexicon_weighted.lexc ! Weighted version
 save stack fst/lexicon.hfst
