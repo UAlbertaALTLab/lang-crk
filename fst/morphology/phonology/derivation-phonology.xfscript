@@ -16,11 +16,20 @@ define tc2Rule [ t (->) c || _ %/ [ i | î ] ] ;
 
 define TtRule [ T -> t ] ;
 
-define S2htsRule [ S -> [ h | t | s ] ] ;
+!! Distribution of S/S2 elements in CW
+! 55	S -> h || a _ / t(c), .#. o _ / t, (i) _ / t, a _ / t
+!  4	S -> s || a _ / i, a _ > (am)
+! 66	S2 -> t || s2 / _ / ê, w(i) / _ / ê, (i) / _ / ê
+!  6	S2 -> h || â / _ / t, w(i) / _ / t
+!  2	S2 -> t(c) || (i) / _ / ê
+
+define S2hsRule [ S -> h || _ %/ t ,, S -> s || a _ %/ i , a _ %> a ] ;
+
+define S2htRule [ "S2" -> h || _ %/ t ,, "S2" -> t || _ %/ ê ] ;
 
 define e2iRule [ e -> i || %/ _ ] ;
 
-define CiCEpenthesisRule [ %/ -> %/ i  || [ c | h | k | m | n | p | s | t | w | y | ý ]  _ [ c | h | k | m | n | p | s | t | y | ý ] ] ;
+define CiCEpenthesisRule [ %/ -> %/ i  || [ c | h | k | m | n | p | s | t | w | y | ý ]  _ [ c | h | k | m | n | p | s | t | y | ý | S | "S2" ] ] ;
 
 ! define wiwEpenthesisRule [ %/ (->) %/ i  || w _ w ] ;
 
@@ -80,6 +89,10 @@ define VBVRule [ [ a | â | ê | o | ô ] -> 0 || _ %/ [ a | â | ê | o | ô ] 
 ! define boundaryRule [ [ %/ ]+ -> 0 ] ;
 define boundaryRule [ [ %/ ]+ -> %/ ] ;
 
+! Normalizing special characters
+
+define NormRule [ T -> t , S -> s , "S2" -> s , "s2" -> s ] ;
+
 define rmBoundary  [ %/ -> 0 || .#. _ ] .o. [ %/ -> 0 || _ .#. ] ;
 
 ! Removing excessive sequences of morphemic syllables consisting only of vowels and glides (three or more)
@@ -101,6 +114,8 @@ read regex [ VGfilter
 .o. e2iRule
 .o. CiCEpenthesisRule
 .o. wiwEpenthesisRule
+.o. S2hsRule ! S
+.o. S2htRule ! S2
 .o. aGiRule
 .o. eGiRule
 .o. iGiRule
@@ -117,7 +132,7 @@ read regex [ VGfilter
 .o. tc2Rule
 .o. iBiRule
 .o. VBVRule
-.o. S2htsRule
+.o. NormRule
 .o. boundaryRule
 ! .o. rmBoundary
 ] ;
