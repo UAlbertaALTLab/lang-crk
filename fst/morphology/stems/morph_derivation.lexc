@@ -222,8 +222,8 @@ LEXICON -(î)h
 -(î)h/:h/ -o "weight: 30" ; ! n=2/2 [0/179593]
 
 LEXICON -S2
--S2/:S/ -tê1 "weight: 17" ; ! n=18/138 [6/179593]
--S2/:S/ -ê1 "weight: 11" ; ! n=120/138 [397/179593]
+-S2/:S2/ -tê1 "weight: 17" ; ! n=18/138 [6/179593]
+-S2/:S2/ -ê1 "weight: 11" ; ! n=120/138 [397/179593]
 
 LEXICON -T
 @R.class.TA@-T+Der/V:@R.class.TA@T VTA "weight: 19" ; ! n=4/4 (VTA-1) [4/179593]
